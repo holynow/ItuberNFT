@@ -1,0 +1,41 @@
+@charset "utf-8"; 
+
+/*========================================================
+Reset
+========================================================*/
+html{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; /*-ms-touch-action:none;*/ }
+html,body{height:100%; font-size:15px; font-weight:400; /*letter-spacing:-.25px;*/ line-height:1.4; font-family:'Noto Sans KR', sans-serif; word-break:keep-all;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-tap-highlight-color:transparent;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input {margin:0; padding:0; border:0; vertical-align:baseline; -webkit-font-smoothing:antialiased; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; color:#333; letter-spacing: -0.025em; line-height: 1.2;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section{display:block;}
+ol, ul{list-style:none;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content:''; content:none;}
+table{border-collapse:collapse; border-spacing:0;}
+table td,table th{word-break: keep-all; word-wrap: break-word;}
+address, caption, cite, code, dfn, em, strong, th, var{font-style:normal;}
+hr{display:block; -webkit-box-sizing:content-box; -moz-box-sizing:content-box; box-sizing:content-box; height:1px; border:0; border-top:1px solid #b5b1b2; margin:0; padding:0; overflow:visible;}
+a{background:transparent; text-decoration:none; color:inherit;}
+a:hover, a:active, input {text-decoration:none; outline:0;}
+address, caption, strong[lang=en], em, cite, b {font-weight:normal; font-style:normal; }
+sub, sup{font-size:75%; line-height:0; position:relative; vertical-align:baseline;}
+sub{bottom:-0.25em;}
+sup{top:-0.5em;}
+legend{position:absolute; left:-99999px; display:block; width:1px; height:1px; overflow:hidden; text-indent:-99999px; clip:rect(0,0,0,0); *display:none;}
+caption{visibility:hidden; overflow:hidden; width:0;height:0;font-size:0;line-height:0}
+fieldset, img{border:0}
+select, input, textarea {vertical-align:middle; } /* 20200821 label, 삭제 */
+img{max-width: 100%; vertical-align: top;}
+button{border: 0; background: none;}
+
+
+/* skip navigation */
+.skip_navi a {position: absolute; top: -999em;}
+.skip_navi a:focus {display: block; left: 0; top: 0; z-index: 9999; width: 100%; height: 30px; line-height: 30px; background: #e32c51; color: #fff; text-align: center;}
+
+/* 경고, 에러, 유효성체크 */
+.valid{color:#0082ff; font-size:13px;}
+.error{color:#e44d4d;}
+
+/*  */
+.a11y {position: absolute; top: -999em;}

@@ -1,0 +1,504 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>퍼블리싱 작업현황 | 아이튜버 마켓</title>
+    <link rel="stylesheet" href="./guide/common.css" />
+    <style>
+      .list_wrap {
+        margin: 80px 30px;
+        line-height: 1.5;
+      }
+      .list_wrap h1 {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .list_table_wrap table {
+        margin-top: 30px;
+        width: 100%;
+        border: 2px solid #000;
+      }
+      .list_table_wrap table tr th {
+        padding: 10px;
+        font-weight: bold;
+      }
+      .list_table_wrap table tr td {
+        padding: 6px 20px;
+        border-left: 1px solid #333;
+        border-bottom: 1px dotted #ccc;
+        text-align: left;
+        vertical-align: middle;
+      }
+      .list_table_wrap table .menu {
+        border-top: 1px solid #000;
+      }
+      .list_table_wrap table tbody tr:nth-child(odd) {
+        background: #f1f1f1;
+      }
+      .list_status {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        padding: 20px 30px;
+        border: 2px solid #000;
+      }
+      .list_status h2 {
+        margin-right: 20px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .progress_wrap {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        margin-left: 15px;
+        font-size: 25px;
+        text-align: center;
+      }
+      .progress_wrap .total {
+        color: blue;
+      }
+      .progress_wrap .total:after {
+        content: "/";
+        padding: 0 0 0 5px;
+      }
+      .progress_wrap .progress_bar {
+        position: relative;
+        width: 400px;
+        height: 10px;
+        border: 1px solid #ddd;
+        border-radius: 30px;
+      }
+      .progress_wrap .progress_bar .gauge {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 10px;
+        background: blue;
+        border-radius: 30px;
+      }
+      .progress_wrap .progress_per {
+        margin-left: 20px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="list_wrap">
+      <header class="list_header">
+        <h1>아이튜버마켓 - 퍼블리싱 작업 현황 (Mobile)</h1>
+        <div class="guide_tab"></div>
+      </header>
+      <ul class="list_status">
+        <li class="progress_wrap">
+          <h2>현재 완료된 페이지</h2>
+          <span class="total"></span>
+          <span class="progress"></span>
+        </li>
+        <li class="progress_wrap">
+          <h2>현재 진행률</h2>
+          <div class="progress_bar">
+            <span class="gauge"></span>
+          </div>
+          <p class="progress_per">0</p>
+        </li>
+      </ul>
+      <div class="list_table_wrap">
+        <table>
+          <colgroup>
+            <col span="4" style="width: 13%" />
+            <col />
+            <col />
+            <col style="width: 150px" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">1Depth</th>
+              <th scope="col">2Depth</th>
+              <th scope="col">3Depth</th>
+              <th scope="col">File</th>
+              <th scope="col">Comment</th>
+              <th scope="col">완료일</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="menu">
+              <td>회원정보</td>
+              <td>
+                <a
+                  href="https://o67j1a.axshare.com/#id=4nsbyx&p=01_login&g=14"
+                  target="_blank"
+                  >[Login] 로그인</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="file">
+                <a href="./html/common/login.html" target="_blank"
+                  >./html/common/login.html</a
+                >
+              </td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td></td>
+              <td>
+                <a
+                  href="https://o67j1a.axshare.com/#id=g7hc4x&p=02_find_id&g=14"
+                  >[Find ID] 계정찾기</a
+                >
+              </td>
+              <td></td>
+              <td class="file">
+                <a href="./html/common/find_id.html" target="_blank"
+                  >./html/common/find_id.html</a
+                >
+              </td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <a href="https://o67j1a.axshare.com/#id=g36e2a&p=02-a&g=14"
+                  >계정확인 pop</a
+                >
+              </td>
+              <td class="file"></td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <a href="https://o67j1a.axshare.com/#id=qyt1n3&p=02-b&g=14"
+                  >계정error pop</a
+                >
+              </td>
+              <td class="file"></td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td></td>
+              <td>
+                <a
+                  href="https://o67j1a.axshare.com/#id=kphton&p=03_find_pw&g=14"
+                  >[Find PW] 비밀번호찾기</a
+                >
+              </td>
+              <td></td>
+              <td class="file">
+                <a href="./html/common/find_pw.html" target="_blank"
+                  >./html/common/find_pw.html</a
+                >
+              </td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <a href="https://o67j1a.axshare.com/#id=yzbfl5&p=03-a&g=14"
+                  >비밀번호 전송완료 pop</a
+                >
+              </td>
+              <td class="file"></td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <a href="https://o67j1a.axshare.com/#id=v64lmp&p=03-b&g=14"
+                  >비밀번호 error pop</a
+                >
+              </td>
+              <td class="file"></td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td>
+                <a
+                  href="https://o67j1a.axshare.com/#id=j98ka2&p=04_sign_up&g=14"
+                  target="_blank"
+                  >[Sign up] 회원가입</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="file">
+                <a href="./html/common/sign_up.html" target="_blank"
+                  >./html/common/sign_up.html</a
+                >
+              </td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td></td>
+              <td>
+                <a
+                  href="https://o67j1a.axshare.com/#id=kgx03e&p=04-a&g=14"
+                  target="_blank"
+                  >회원가입 확인 메일안내 pop</a
+                >
+              </td>
+              <td></td>
+              <td class="file">
+                <a href="./html/common/sign_up.html" target="_blank"
+                  >./html/common/sign_up.html</a
+                >
+              </td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td></td>
+              <td>
+                <a
+                  href="https://o67j1a.axshare.com/#id=mvehe6&p=04-01_use_terms&g=14"
+                  target="_blank"
+                  >[Use Terms]이용약관 full pop</a
+                >
+              </td>
+              <td></td>
+              <td class="file">
+                <a href="./html/common/use_terms.html" target="_blank"
+                  >./html/common/use_terms.html</a
+                >
+              </td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td></td>
+              <td>
+                <a
+                  href="https://o67j1a.axshare.com/#id=3c610m&p=04-02_privacy_policy&g=14"
+                  target="_blank"
+                  >[Privacy Policy]개인정보 처리방침 full pop</a
+                >
+              </td>
+              <td></td>
+              <td class="file">
+                <a href="./html/common/privacy_policy.html" target="_blank"
+                  >./html/common/privacy_policy.html</a
+                >
+              </td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td></td>
+              <td>
+                <a
+                  href="https://o67j1a.axshare.com/#id=kbh0vh&p=04-03_marketing_serve&g=14"
+                  target="_blank"
+                  >[Marketing Serve]마케팅 정보수신동의 full pop</a
+                >
+              </td>
+              <td></td>
+              <td class="file">
+                <a href="./html/common/marketing_serve.html" target="_blank"
+                  >./html/common/marketing_serve.html</a
+                >
+              </td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="menu">
+              <td>메인</td>
+              <td>
+                <a
+                  href="https://www.notion.so/509bbef2ed334c6ca274e0fb74adb624?v=3ed8c0d9ac804f5f82fdf05df1756ed1"
+                  target="_blank"
+                  >[Home.List]전체 상품 목록 보기</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="file">
+                <a href="./html/main_list.html" target="_blank"
+                  >./html/main_list.html</a
+                >
+              </td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td>
+                <a
+                  href="https://www.notion.so/e9396ee6fff645b0ba3a22833ede04fd?v=a7040e7c0e0144aeb51d4740cda9ea70"
+                  target="_blank"
+                  >[Detail]개별 상품 정보 확인하기</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="file">
+                <a href="./html/list_detail.html" target="_blank"
+                  >./html/list_detail.html</a
+                >
+              </td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td>BID (tab)</td>
+              <td>
+                <a
+                  href="https://www.notion.so/84d40e3602494b7d91da49cffeede75f?v=8b8b0c126a054029be1d1db447643f58"
+                  target="_blank"
+                  >[Bid]경매 입찰하기</a
+                >
+              </td>
+              <td></td>
+              <td class="file">
+                <a href="./html/bid_buy_list.html" target="_blank"
+                  >./html/bid_buy_list.html</a
+                >
+              </td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td>일반구매(tab)</td>
+              <td>
+                <a
+                  href="https://www.notion.so/18585a45ff4e4a1689fad5403bb19358?v=11086567bce9449c996c42d7dcdd39de"
+                  target="_blank"
+                  >[Buy]일반 즉시 구매하기</a
+                >
+              </td>
+              <td></td>
+              <td class="file">
+                <a href="./html/buy_list.html" target="_blank"
+                  >./html/buy_list.html</a
+                >
+              </td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td></td>
+              <td>
+                <a
+                  href="https://www.notion.so/2cbd6b92b2f04676940eee5038fcfba0?v=ae6d6acc951e421ba4beec4df8396e5a"
+                  target="_blank"
+                  >[Offer]구매요청하기</a
+                >
+              </td>
+              <td></td>
+              <td class="file">
+                <a href="./html/offer.html" target="_blank"
+                  >./html/offer.html</a
+                >
+              </td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="menu">
+              <td>마이메뉴</td>
+              <td>
+                <a
+                  href="https://www.notion.so/179985612e8840fea2c9ec21560e010c?v=26a75ecec22a430db9b1a5e946450150"
+                  target="_blank"
+                  >[My/Menu]내정보 및 메뉴보기</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="file">
+                <a href="./html/my_menu.html" target="_blank"
+                  >./html/my_menu.html</a
+                >
+              </td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td></td>
+              <td>
+                <a
+                  href="https://www.notion.so/6f0755ab661b4498be54ccaee231bdd0?v=dab8f91830384b2e8050f77bd89394d1"
+                  target="_blank"
+                  >[Profile]내정보 편집 및 저장하기</a
+                >
+              </td>
+              <td></td>
+              <td class="file">
+                <a href="./html/my_menu_modify.html" target="_blank"
+                  >./html/my_menu_modify.html</a
+                >
+              </td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+            <tr class="">
+              <td></td>
+              <td>
+                <a
+                  href="https://www.notion.so/4d2ba5a0eb9d484ca5322fd33d216e81?v=8c0b02f911b2498a9e794f565eb63642"
+                  target="_blank"
+                  >[Message]알림메시지 확인하기</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="file"><a href="" target="_blank"></a></td>
+              <td class="comment"></td>
+              <td class="date confirm"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script>
+      const tableList = document.querySelectorAll(".list_table_wrap tbody tr");
+      const totalList = document.querySelector(".list_status .total");
+      const progressPer = document.querySelector(".progress_per");
+      const progressList = document.querySelector(".list_status .progress");
+      const doneList = document.querySelectorAll(".list_table_wrap .done");
+      const progressGauge = document.querySelector(".gauge");
+      let tableListLength = tableList.length;
+      let doneListLength = doneList.length;
+      let per = Math.floor(
+        (tableListLength * 100) /
+          tableListLength /
+          (tableListLength / doneListLength)
+      );
+
+      progressGauge.style.width = `${per}%`;
+      progressPer.innerHTML = `${per}%`;
+      totalList.innerHTML = tableListLength;
+      progressList.innerHTML = doneListLength;
+    </script>
+  </body>
+</html>
