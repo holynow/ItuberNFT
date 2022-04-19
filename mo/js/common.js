@@ -7,6 +7,7 @@ $(function(){
         },
         //swich click Event
         onoffHandler: {
+            body : 'body',
             gnbMenu : '.gnb_menu_wrap',
             swichBtn : '.btn_menu',
             swichBtnText : '.btn_menu span',
@@ -16,9 +17,11 @@ $(function(){
                     var btnHasOn = $(this).hasClass('on');
                     if(btnHasOn){
                         $(_this.swichBtnText).html("메뉴열기");
+                        $(_this.body).css('overflowY', 'auto');
                         _this.removeOn();
                     } else {
-                    $(_this.swichBtnText).html("메뉴닫기");
+                        $(_this.swichBtnText).html("메뉴닫기");
+                        $(_this.body).css('overflowY', 'hidden');
                         _this.addOn();
                     }
                 });

@@ -26,7 +26,7 @@ var include = {
         document.write('<span class="a11y">뒤로가기</span>');
         document.write('</i>');
         document.write('</a>');
-        document.write('<h2 class="page_title">로그인</h2>');
+        document.write('<h2 class="page_title">'+document.title.split('|')[0]+'</h2>');
         document.write('</div>');
         document.write('<div class="header_menu">');
         document.write('<button type="button" class="btn_menu">');
