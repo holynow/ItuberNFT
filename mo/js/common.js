@@ -2,10 +2,11 @@
 $(function(){
     var ui = {
         init: function() {
-            if($('.gnb_menu_wrap').length > 0) {this.clickHandler.init();}
+            if($('.gnb_menu_wrap').length > 0) {this.onoffHandler.init();}
+            if($('.fixed_bottom_area').length > 0) {this.scrollTop.init();}
         },
         //swich click Event
-        clickHandler: {
+        onoffHandler: {
             gnbMenu : '.gnb_menu_wrap',
             swichBtn : '.btn_menu',
             swichBtnText : '.btn_menu span',
@@ -31,6 +32,15 @@ $(function(){
                 var _this = this;
                 $(_this.gnbMenu).removeClass('on');
                 $(_this.swichBtn).removeClass('on');
+            }
+        },
+        scrollTop: {
+            scrollTopBtn : '.btn_gotop',
+            init : function() {
+                var _this = this;
+                $(_this.scrollTopBtn).on('click',function(){
+                    $("html, body").animate({scrollTop: 0}, "slow");
+                })
             }
         }
     };
