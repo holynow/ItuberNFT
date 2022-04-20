@@ -4,6 +4,7 @@ $(function(){
         init: function() {
             if($('.gnb_menu_wrap').length > 0) {this.onoffHandler.init();}
             if($('.fixed_bottom_area').length > 0) {this.scrollTop.init();}
+            if($('.pop_container').length > 0) {this.popupHandler.init();}
         },
         //swich click Event
         onoffHandler: {
@@ -44,6 +45,36 @@ $(function(){
                 $(_this.scrollTopBtn).on('click',function(){
                     $("html, body").animate({scrollTop: 0}, "slow");
                 })
+            }
+        },
+        popupHandler: {
+            popContainer : '.pop_container',
+            popOpenBtn : '.pop_open',
+            popCloseBtn : '.pop_close',
+            dim : '<div class="dim"></dim>',
+            init : function() {
+               var _this = this;
+               $(_this.popOpenBtn).on('click', function(){
+                   _this.open(this);
+               })
+               $(_this.popCloseBtn).on('click', function(){
+                _this.close(this);
+            })
+            },
+            open : function(target) {
+                var _this = this;
+                $(_this.popContainer).each(function(i){
+                    if ($(_this.popContainer).eq(i).attr('id') === $(target).data('open')) {
+                        var id = $(target).data('open');
+                        $('#'+ id).show();
+                        $('body').prepend(_this.dim);
+                    }
+                })
+            },
+            close : function(target) {
+                var _this = this;
+                $(target).parents(_this.popContainer).hide();
+                $('body').children().remove('.dim');
             }
         }
     };
