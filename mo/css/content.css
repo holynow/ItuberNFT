@@ -1,95 +1,18 @@
 @charset "utf-8"; 
-/* ico */
-i[class^="ico"]:before {content: ''; display: inline-block; position: absolute; left: 50%; top: 0; transform: translateX(-50%);}
-i[class^="ico"][class*="login"] {display: block; width: 54px; height: 54px; margin: 0 auto 6px;}
-i[class^="ico"][class*="login"]:before {width: 54px; height: 54px;}
-i[class^="ico"][class*="login"][class*="kakao"]:before {background: url('../img/common/ico_login_kakao.png')no-repeat; background-size: 54px;}
-i[class^="ico"][class*="login"][class*="naver"]:before {background: url('../img/common/ico_login_naver.png')no-repeat; background-size: 54px;}
-i[class^="ico"][class*="login"][class*="google"]:before {background: url('../img/common/ico_login_google.png')no-repeat; background-size: 54px;}
-i[class^="ico"][class*="sns"] {display: block; width: 28px; height: 28px;}
-i[class^="ico"][class*="sns"]:before {width: 28px; height: 28px;}
-i[class^="ico"][class*="sns"][class*="facebook"]:before {background: url('../img/common/ico_sns_facebook.png')no-repeat; background-size: 28px;;}
-i[class^="ico"][class*="sns"][class*="insta"]:before {background: url('../img/common/ico_sns_insta.png')no-repeat; background-size: 28px;;}
-i[class^="ico"][class*="sns"][class*="youtube"]:before {background: url('../img/common/ico_sns_youtube.png')no-repeat; background-size: 28px;;}
-/* header */
-.header {height: 60px;}
-.header .header_wrap {height: 100%;}
-.header .header_inner {display: flex; justify-content: space-between; align-items: center; padding: 0 20px; height: 100%;}
-.header .header_inner .header_title {display: flex; align-items: center;}
-.header .header_inner .header_title .page_title {padding-left: 20px; font-size: 16px; font-weight: 500;}
-.header .header_inner .header_menu .btn_menu {width: 30px; height: 30px; position: relative;}
-.header .header_inner .header_menu .btn_menu:before,
-.header .header_inner .header_menu .btn_menu:after {content: ''; display: block; position: absolute; top: 0; right: 15px; width: 3px; height: 30px; background: #333; transition: all .2s ease-in-out; z-index: 101;}
-.header .header_inner .header_menu .btn_menu:before {top: -5px; transform: rotate(90deg);}
-.header .header_inner .header_menu .btn_menu:after {top: 5px; transform: rotate(-90deg);}
-.header .header_inner .header_menu .btn_menu.on:before {top: 0; transform: rotate(45deg);}
-.header .header_inner .header_menu .btn_menu.on:after {top: 0; transform: rotate(-45deg);}
-.gnb_menu_wrap {position: absolute; top: 0; right: -100vw; width: 100vw; height: 100vh; background: #fff; z-index: 100; transition: right .3s ease-in-out;}
-.gnb_menu_wrap.on {right: 0;}
-/* contents */
-.content_area {padding-bottom: 100px;}
-.inner_wrap {padding: 0 20px;}
-/* board_form */
-.board_form .form_group .form_head .form_label {font-size: 14px; font-weight: 500;}
-.board_form .form_group .input_group .input_text {padding: 15px 10px; font-size: 16px; border-bottom: 1px solid #ddd;}
-.board_form .form_group .input_group .input_text::placeholder {font-size: 14px; color: #ddd;}
-.login_area .board_form .form_group .input_group .input_text {border-radius: 10px; border: 1px solid #eee;}
-.board_form .form_group .input_group .valid {display: none; margin-top: 8px; font-size: 13px; color: #FF7582;}
-.board_form .form_group .input_group.error .valid {display: block;}
-.board_form .form_group .btn_group {display: block; margin-top: 50px;}
-.board_form .form_group .btn_group .btn_form {width: 100%; height: 50px ; border-radius: 10px; text-align: center; line-height: 50px;}
-.board_form .form_group .btn_group .btn_form.btn_black {background: #333;}
-.board_form .form_group .btn_group .btn_form.btn_black > span {font-size: 16px; font-weight: 500; color: #fff;}
-.board_form .form_group .form_head + .input_group {margin-top: 5px;}
-.board_form .form_group .input_group + .input_group {margin-top: 20px;}
-.board_form .form_group .input_group + .form_head {margin-top: 20px;}
-/* input size */
-[class^="input_group"][class*="w_full"] .input_text {width: 100%;}
-/* btns */
-.btn_link_group {display: block; margin-top: 20px; width: 100%;}
-.btn_link_group .link_btns {display: flex; justify-content: center;}
-.btn_link_group .link_btns > li {text-align: center;}
-.btn_link_group .link_btns > li + li {margin-left: 10px; padding-left: 10px; border-left: 1px solid #eee;}
-.btn_link_group .link_btns > li span {font-size: 14px; color: #888;}
+
 /* login area */
 .login_area .logo_title {display: block; padding: 50px 0 60px; margin: 0 auto; width: 162px; text-align: center;}
-.login_area .board_form .form_group .btn_group {margin-top: 30px;}
 .login_area .login_sns_area {margin-top: 50px;}
 .login_area .login_sns_area .tit_area {position: relative; width: 100%; margin: 0 auto; text-align: center;}
 .login_area .login_sns_area .tit_area > span {position: relative; margin: 0 auto; padding: 0 15px; text-align: center; color: #888; background: #fff; z-index: 2;}
 .login_area .login_sns_area .tit_area:after {content: ''; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 1px; background: #ddd; z-index: 1;}
-.sns_btn_list {display: flex; justify-content: center; gap: 20px; margin-top: 30px; text-align: center;}
-.sns_btn_list > li {width: 100%; text-align: center;}
-.sns_btn_list .sns_login {display: block;}
-.sns_btn_list .sns_login > span {font-size: 13px;}
-/* titwrap */
-.tit_wrap {margin: 40px 0 70px;}
-.tit_wrap h3.tit {font-size: 22px; line-height: 1.5;}
-/* fixed bottom */
-.fixed_bottom_area {position: fixed; right: 15px; bottom: 15px; z-index: 99;}
-.fixed_bottom_area .fixed_item button {width: 50px; height: 50px; border-radius: 50px; background: #222;}
-.fixed_bottom_area .fixed_item button > span {color: #fff;}
-/* footer */
-.footer {background: #333;}
-.footer .footer_inner {padding: 30px 20px 80px;}
-.footer .footer_inner .footer_head {display: flex; align-items: center; justify-content: space-between;}
-.footer .footer_inner .footer_head .office_name p {font-size: 18px; font-weight: 500; color: #fff;}
-.footer .footer_inner .footer_head .footer_btn_wrap .sns_btns {display: flex; justify-content: flex-end;}
-.footer .footer_inner .footer_head .footer_btn_wrap .sns_btns li > a {display: block;}
-.footer .footer_inner .footer_head .footer_btn_wrap .sns_btns li + li {margin-left: 10px;}
-.footer .footer_inner .footer_info .footer_sort_list {margin-top: 40px;}
-.footer .footer_inner .footer_info .footer_sort_list li {display: flex; font-size: 13px;}
-.footer .footer_inner .footer_info .footer_sort_list li + li {margin-top: 6px;}
-.footer .footer_inner .footer_info .footer_sort_list .tit {font-weight: 500; color: #ddd;}
-.footer .footer_inner .footer_info .footer_sort_list .txt {padding-left: 10px; color: #ddd;}
-.footer .footer_inner .footer_info .footer_sort_list .txt:before {content: ''; display: inline-block; margin-right: 10px; width: 1px; height: 10px; background: #555;}
-.footer .footer_inner .footer_menu .copy {margin-top: 30px; font-size: 12px; color: #ddd;}
-.footer .footer_inner .footer_menu {margin-top: 20px; padding-top: 20px; border-top: 1px solid #555;}
-.footer .footer_inner .footer_menu .footer_menu_list {display: flex; justify-content: space-between;}
-.footer .footer_inner .footer_menu .footer_menu_list li span {position: relative; font-size: 12px; color: #fff; border-bottom: 1px solid #ddd;}
-/* btn */
-[class^="btn"] {display: inline-block; cursor: pointer;}
-/* ico */
-[class^="ico"] {position: relative;}
-[class^="ico"][class*="arr"]:before {content: ''; display: inline-block; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
-[class^="ico"][class*="arr"][class*="left"]:before {width: 10px; height: 20px; background: url('../img/common/ico_arr_left.png')no-repeat; background-size: 10px;} 
+.login_area .board_form .form_group .btn_group {margin-top: 30px;}
+.login_area .board_form .form_group .input_group .input_text {border-radius: 10px; border: 1px solid #eee;}
+
+/* temporary_pw */
+.publish_box {padding: 40px 40px 30px; background: #f7f7f7; border-radius: 10px;}
+.publish_box .publish_info ul > li {display: flex;}
+.publish_box .publish_info ul > li + li {margin-top: 10px;}
+.publish_box .publish_info ul > li > p {flex: 1; color: #888;}
+.publish_box .publish_info ul > li > span {flex: 1; font-weight: 500;}
+.publish_box .btn_group {margin-top: 30px;}
