@@ -10,9 +10,8 @@
 .login_area .board_form .form_group .input_group .input_text {border-radius: 10px; border: 1px solid #eee;}
 
 /* temporary_pw */
-.publish_box {padding: 40px 40px 30px; background: #f7f7f7; border-radius: 10px;}
-.publish_box .publish_info ul > li {display: flex;}
-.publish_box .publish_info ul > li + li {margin-top: 10px;}
-.publish_box .publish_info ul > li > p {width: 120px; color: #888;}
-.publish_box .publish_info ul > li > span {margin-left: 20px; font-weight: 500;}
-.publish_box .btn_group {margin-top: 30px;}
+.publish_info ul > li {display: flex;}
+.publish_info ul > li + li {margin-top: 10px;}
+.publish_info ul > li > p {width: 120px; color: #888;}
+.publish_info ul > li > span {margin-left: 20px; font-weight: 500;}
+.publish_info + .btn_group {margin-top: 30px;}

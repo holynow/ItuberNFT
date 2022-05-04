@@ -5,6 +5,7 @@ $(function(){
             if($('.gnb_menu_wrap').length > 0) {this.onoffHandler.init();}
             if($('.fixed_bottom_area').length > 0) {this.scrollTop.init();}
             if($('.pop_container').length > 0) {this.popupHandler.init();}
+            if ($('.all_check').length > 0) { this.agreeCheck.init();}
         },
         //swich click Event
         onoffHandler: {
@@ -76,6 +77,26 @@ $(function(){
                 $(target).parents(_this.popContainer).hide();
                 $('body').children().remove('.dim');
             }
+        },
+        // 체크박스
+        agreeCheck: {
+            allCheckBtn: '.all_check',
+            item : '.item',
+            checkInput: '.item input',
+            init: function () {
+                var _this = this;
+                $(_this.allCheckBtn).on('click', function () {
+                    _this.inputAllCheck(this);
+                });
+            },
+            inputAllCheck: function ($this) {
+                var _this = this;
+                if ($($this).is(':checked')){
+                    $(_this.checkInput).prop('checked', true);
+                } else {
+                    $(_this.checkInput).prop('checked', false);
+                }
+            },
         }
     };
     ui.init();
