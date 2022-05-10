@@ -5,7 +5,8 @@ $(function(){
             if($('.gnb_menu_wrap').length > 0) {this.onoffHandler.init();}
             if($('.fixed_bottom_area').length > 0) {this.scrollTop.init();}
             if($('.pop_container').length > 0) {this.popupHandler.init();}
-            if ($('.all_check').length > 0) { this.agreeCheck.init();}
+            if($('.all_check').length > 0) {this.agreeCheck.init();}
+            if($('.full_pop').length > 0) {this.sticky.init();}
         },
         //swich click Event
         onoffHandler: {
@@ -81,7 +82,6 @@ $(function(){
         // 체크박스
         agreeCheck: {
             allCheckBtn: '.all_check',
-            item : '.item',
             checkInput: '.item input',
             init: function () {
                 var _this = this;
@@ -97,6 +97,25 @@ $(function(){
                     $(_this.checkInput).prop('checked', false);
                 }
             },
+        },
+        sticky: {
+            fullPopup: '.full_pop',
+            popupHeader: '.pop_head',
+            init: function () {
+                var _this = this;
+                $(_this.fullPopup).scroll(function () {
+                    var thisScroll = $(_this.fullPopup).scrollTop();
+                    _this.stickyOn(thisScroll);
+                })
+            },
+            stickyOn: function (thisScroll) {
+                var _this = this;
+                if (thisScroll > 100) {
+                    $(_this.popupHeader).addClass('sticky')
+                } else {
+                    $(_this.popupHeader).removeClass('sticky')
+                }
+            }
         }
     };
     ui.init();

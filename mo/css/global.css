@@ -151,10 +151,31 @@ button{border: 0; background: none;}
 .dash_list li:before {content: '-'; display: inline-block; position: absolute; left: 0;}
 
 /* popup */
-.pop_container {position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 0 20px; background: #fff; z-index: 120;}
+.pop_container {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #fff; z-index: 120;}
 .pop_container.layer_pop {top: 50%; left: 50%; transform: translate(-50%, -50%); width: calc(100% - 40px); height: auto; padding: 48px 40px; border-radius: 10px;}
 .pop_container.layer_pop .pop_inner p {font-size: 16px; text-align: center; line-height: 1.4;}
 .pop_container.layer_pop .pop_inner .btn_group {margin-top: 30px;}
+.pop_container.full_pop {position: fixed; top: 0; left: 0; overflow-y: auto;}
+/* full popup */
+.pop_container.full_pop .pop_head {position: relative; padding: 20px 0; width: 100%; background: #fff;}
+.pop_container.full_pop .pop_head.sticky {position: sticky; top: 0; left: 0; border-bottom: 1px solid #ddd;}
+.pop_container.full_pop .pop_head h2 {text-align: center; font-size: 18px;}
+.pop_container.full_pop .tit_wrap {margin: 40px 0 0;}
+.pop_container.full_pop .tit_wrap h3 + p { margin-top: 20px; font-size: 13px; line-height: 24px;}
+.pop_container.full_pop .pop_inner {padding: 0 20px 80px;}
+.pop_container.full_pop .pop_close {position: absolute; top: 20px; right: 20px;}
+/* terms */
+.terms_cont .tit {margin-top: 40px;}
+.terms_cont .tit h4 {font-size: 22px; font-weight: 500;}
+.terms_cont .tit h5 {font-size: 20px; font-weight: 500}
+.terms_cont .tit h4 + h5 {margin-top: 20px;}
+.terms_cont .cont {margin-top: 20px; font-size: 13px; color: #666;}
+.terms_cont .cont .sub_tit {margin-top: 30px; font-size: 14px; font-weight: 500;}
+.terms_cont .cont p + p {margin-top: 10px;}
+.terms_cont .cont li, .terms_cont .cont p {line-height: 22px;}
+.terms_cont .cont li {margin-top: 10px;}
+.terms_cont .cont > ol ul li {margin-top: 5px;}
+.terms_cont .cont > ol > li + li {margin-top: 20px;}
 
 /* check box */
 .sub_tit_wrap + .checkbox_wrap {margin-top: 20px;}
@@ -216,3 +237,4 @@ i[class^="ico"][class*="arr"]:before {content: ''; display: inline-block; positi
 i[class^="ico"][class*="arr"][class*="left"]:before {width: 10px; height: 20px; background: url('../img/common/ico_arr_left.png')no-repeat; background-size: 10px;} 
 i[class^="ico"][class*="arr"][class*="right"]:before {width: 10px; height: 20px; background: url('../img/common/ico_arr_right.png')no-repeat; background-size: 10px;} 
 i[class^="ico"][class*="arr"][class*="sm"]:before {background: url('../img/common/ico_arr_right_xs.png')no-repeat 100%; background-size: 8px;} 
+i[class^="ico"][class*="close"]:before {width: 24px; height: 24px; background: url('../img/common/ico_close_btn.png')no-repeat; background-size: 100%;}
