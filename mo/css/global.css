@@ -80,8 +80,8 @@ button{border: 0; background: none;}
 .header .header_inner .header_menu .btn_menu:after {content: ''; display: block; position: absolute; top: 0; right: 15px; width: 3px; height: 30px; background: #333; transition: all .2s ease-in-out; z-index: 101;}
 .header .header_inner .header_menu .btn_menu:before {top: -5px; transform: rotate(90deg);}
 .header .header_inner .header_menu .btn_menu:after {top: 5px; transform: rotate(-90deg);}
-.header .header_inner .header_menu .btn_menu.on:before {top: 0; transform: rotate(45deg);}
-.header .header_inner .header_menu .btn_menu.on:after {top: 0; transform: rotate(-45deg);}
+.header .header_inner .header_menu .btn_menu.on:before {top: 0; transform: rotate(45deg); background: #fff;}
+.header .header_inner .header_menu .btn_menu.on:after {top: 0; transform: rotate(-45deg);  background: #fff;}
 .gnb_menu_wrap {position: absolute; top: 0; right: -100vw; width: 100vw; height: 100vh; background: #fff; z-index: 100; transition: right .3s ease-in-out;}
 .gnb_menu_wrap.on {right: 0;}
 
@@ -236,5 +236,8 @@ i[class^="ico"][class*="sns"][class*="youtube"]:before {background: url('../img/
 i[class^="ico"][class*="arr"]:before {content: ''; display: inline-block; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
 i[class^="ico"][class*="arr"][class*="left"]:before {width: 10px; height: 20px; background: url('../img/common/ico_arr_left.png')no-repeat; background-size: 10px;} 
 i[class^="ico"][class*="arr"][class*="right"]:before {width: 10px; height: 20px; background: url('../img/common/ico_arr_right.png')no-repeat; background-size: 10px;} 
+i[class^="ico"][class*="arr"][class*="right"][class*="purple"]:before {width: 8px; height: 13px; background: url('../img/common/ico_arr_right_pp.png')no-repeat; background-size: 100%;} 
 i[class^="ico"][class*="arr"][class*="sm"]:before {background: url('../img/common/ico_arr_right_xs.png')no-repeat 100%; background-size: 8px;} 
 i[class^="ico"][class*="close"]:before {width: 24px; height: 24px; background: url('../img/common/ico_close_btn.png')no-repeat; background-size: 100%;}
+i[class^="ico"][class*="setting"]:before {left: 0; transform: translate(0); width: 30px; height: 30px; background: url('../img/common/ico_setting.png')no-repeat; background-size: 100%;}
+i[class^="ico"][class*="logout"]:before {left: 0; transform: translate(0); width: 30px; height: 30px; background: url('../img/my/ico_logout.png')no-repeat; background-size: 100%;}
