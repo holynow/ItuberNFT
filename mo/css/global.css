@@ -95,6 +95,7 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .board_form .form_group .input_group.error .possible,
 .board_form .form_group .input_group.error .valid {display: block;}
 .board_form .form_group .split_group {display: flex; gap: 20px;}
+.board_form .form_group .split_group .split_item {flex: 1;}
 .board_form .form_group .split_group + .form_head {margin-top: 20px;}
 .board_form .form_group .split_group + .input_group {margin-top: 20px;}
 .board_form .form_group .input_group + .split_group {margin-top: 20px;}
