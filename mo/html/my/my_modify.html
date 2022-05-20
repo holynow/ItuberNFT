@@ -6,7 +6,7 @@
     <script>
       include.meta();
     </script>
-    <title>내 정보 | I-TUBER NFT</title>
+    <title>내 정보 수정 | I-TUBER NFT</title>
     <script>
       include.styles();
     </script>
@@ -28,146 +28,162 @@
       <!-- container -->
       <section id="contents" class="container">
         <div class="content_area">
-          <div class="info_wrap">
-            <!-- 로그인 후 -->
-            <!-- 로그아웃 버튼 -->
-            <!-- <div class="logout_btn">
-              <a href="#none">
-                <i class="ico_logout"></i><span>Logout</span>
-              </a>
-            </div> -->
-            <!--// 로그인 후 -->
-            <!-- 로그인 전 -->
+          <div class="info_wrap modify">
             <div class="info_header">
-              <div class="user_info">
-                <div class="user_profile">
-                  <img src="../../img/my/img_profile_default.png" alt="" />
-                </div>
-                <div class="user_id">
-                  <a href="#none"><span>로그인을 해주세요.</span></a>
-                </div>
+              <div class="my_profile">
+                <span>DR</span>
               </div>
-              <!--// 로그인 전 -->
-              <!-- 로그인 후 -->
-              <!-- <div class="user_info">
-                <div class="user_profile">
-                  <img src="../../img/my/img_user_profile.png" alt="">
-                </div>
-                <div class="user_id">
-                  <p>olivia</p>
-                  <span>dregw9872@naver.com</span>
-                </div>
-              </div> -->
-              <!--// 로그인 후 -->
-              <a href="#none" class="info_setting"
-                ><i class="ico_setting"
-                  ><span class="a11y">정보수정</span></i
-                ></a
-              >
             </div>
             <div class="inner_wrap">
-              <!-- 로그인 전 -->
-              <div class="ddp_wrap">
-                <p class="tit">잔액</p>
-                <div class="my_point">
-                  <p><span>0</span>ddp</p>
+              <fieldset>
+                <legend>내 정보 수정</legend>
+                <div class="board_form">
+                    <div class="form_group">
+                        <div class="form_head">
+                            <label for="email" class="form_label">
+                                이메일
+                            </label>
+                        </div>
+                        <div class="input_group w_full">
+                            <input
+                                type="text"
+                                id="email"
+                                class="input_text"
+                                placeholder=""
+                                value="dregw9872@naver.com"
+                                disabled
+                            />
+                        </div>
+                        <div class="split_group">
+                          <div class="split_item">
+                            <div class="form_head">
+                                <label for="first_name" class="form_label">
+                                    이름
+                                </label>
+                            </div>
+                            <div class="input_group w_full">
+                                <input
+                                    type="text"
+                                    id="first_name"
+                                    class="input_text"
+                                    placeholder=""
+                                    value="길동"
+                                    disabled
+                                />
+                            </div>
+                          </div>
+                          <div class="split_item">
+                            <div class="form_head">
+                                <label for="last_name" class="form_label">
+                                    성
+                                </label>
+                            </div>
+                            <div class="input_group w_full">
+                                <input
+                                    type="text"
+                                    id="last_name"
+                                    class="input_text"
+                                    placeholder=""
+                                    value="홍"
+                                    disabled
+                                />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form_head">
+                            <label for="nickname" class="form_label">
+                                닉네임
+                            </label>
+                        </div>
+                        <div class="input_group w_full auth">
+                            <input
+                                type="text"
+                                id="nickname"
+                                class="input_text"
+                                placeholder=""
+                                value="dooribun123"
+                            />
+                            <button type="button" class="btn_round_bk auth_btn">
+                                <span>변경</span>
+                            </button>
+                        </div>
+                        <div class="form_head">
+                            <label for="pw" class="form_label">
+                                비밀번호
+                            </label>
+                        </div>
+                        <div class="input_group w_full auth">
+                            <input
+                                type="password"
+                                id="pw"
+                                class="input_text"
+                                placeholder=""
+                                value="1234577887df"
+                            />
+                            <button type="button" class="btn_round_bk auth_btn">
+                                <span>변경</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="bot_area">
-                  <a href="#none" class="charge"
-                    ><span>충전하기</span><i class="ico_arr_right_purple"></i
-                  ></a>
-                  <p class="money"><span>0</span>원</p>
-                </div>
-              </div>
-              <!--// 로그인 전 -->
-              <!-- 로그인 후 -->
-              <!-- <div class="ddp_wrap">
-                <p class="tit">잔액</p>
-                <div class="my_point">
-                  <p><span>561</span>ddp</p>
-                </div>
-                <div class="bot_area">
-                  <a href="#none" class="charge">
-                    <span>충전하기</span><i class="ico_arr_right_purple"></i>
-                  </a>
-                  <p class="money"><span>571,000</span>원</p>
-                </div>
-              </div> -->
-              <!--// 로그인 후 -->
-              <div class="gnb_list_wrap">
-                <div class="gnb_tit">
-                  <h4 class="tit">My order</h4>
-                </div>
-                <ul class="order_list">
-                  <li>
-                    <a href="#none">
-                      <div class="icon">
-                        <img src="../../img/my/ico_my_nft.png" alt="" />
+                <div class="accord_wrap">
+                  <div class="accord_item">
+                    <button type="button" class="accord_btn" title="아코디언 닫힘">
+                      <p>추가정보</p>
+                    </button>
+                    <div class="accord_cont">
+                      <div class="board_form">
+                        <div class="form_group">
+                          <div class="form_head">
+                            <label for="phone" class="form_label">
+                                휴대전화
+                            </label>
+                          </div>
+                          <div class="input_group w_full auth">
+                              <input
+                                  type="text"
+                                  id="phone"
+                                  class="input_text"
+                                  placeholder=""
+                                  value=""
+                              />
+                              <button type="button" class="btn_round_bk auth_btn">
+                                  <span>등록 / 변경</span>
+                              </button>
+                          </div>
+                          <div class="form_head">
+                            <label for="bank" class="form_label">
+                                등록계좌
+                            </label>
+                          </div>
+                          <div class="input_group w_full auth">
+                              <input
+                                  type="text"
+                                  id="bank"
+                                  class="input_text"
+                                  placeholder=""
+                                  value=""
+                              />
+                              <button type="button" class="btn_round_bk auth_btn">
+                                  <span>등록 / 변경</span>
+                              </button>
+                          </div>
+                        </div>
                       </div>
-                      <span>MY NFT</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <div class="icon">
-                        <img src="../../img/my/ico_my_ddp.png" alt="" />
+                      <div class="agree_area">
+                        <div class="sub_tit_wrap">
+                            <h4 class="tit">약관동의</h4>
+                        </div>
+                        <div class="checkbox_wrap">
+                            <input type="checkbox" class="slide_check" id="agree">
+                            <label for="agree"><span>마케팅 정보 수신동의 (선택)</span></label>
+                        </div>
+                        <p class="ess_txt">회원 탈퇴 문의는 카카오톡 I-TUBER 채널을 이용해 주세요.</p>
                       </div>
-                      <span>MY DDP</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <div class="icon">
-                        <img src="../../img/my/ico_like.png" alt="" />
-                      </div>
-                      <span>관심 상품</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <div class="icon">
-                        <img src="../../img/my/ico_payment.png" alt="" />
-                      </div>
-                      <span>결제/인출내역</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <div class="icon">
-                        <img src="../../img/my/ico_breakdown.png" alt="" />
-                      </div>
-                      <span>거래 내역</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="gnb_list_wrap">
-                <div class="gnb_tit">
-                  <h4 class="tit">Notice</h4>
+                    </div>
+                  </div>
                 </div>
-                <ul class="notice_list">
-                  <li>
-                    <a href="#none">
-                      <span>이벤트/공지</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <span>자주하는 질문</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <span>고객센터</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <span>아이튜버 NFT란?</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              </fieldset>
             </div>
           </div>
         </div>

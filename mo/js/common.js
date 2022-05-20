@@ -6,7 +6,9 @@ $(function(){
             if($('.fixed_bottom_area').length > 0) {this.scrollTop.init();}
             if($('.pop_container').length > 0) {this.popupHandler.init();}
             if($('.all_check').length > 0) {this.agreeCheck.init();}
-            if($('.full_pop').length > 0) {this.sticky.init();}
+            if ($('.full_pop').length > 0) { this.sticky.init(); }
+            if ($('.accord_wrap').length > 0) { this.accord.init(); }
+            
         },
         //swich click Event
         onoffHandler: {
@@ -114,6 +116,29 @@ $(function(){
                     $(_this.popupHeader).addClass('sticky')
                 } else {
                     $(_this.popupHeader).removeClass('sticky')
+                }
+            }
+        },
+        accord: {
+            accordBtn: '.accord_btn',
+            accordCont: '.accord_cont',
+            init: function () {
+                var _this = this;
+                $(_this.accordBtn).on('click', function () {
+                    _this.accordHandler(this);
+                })
+            },
+            accordHandler: function (target) {
+                var _this = this;
+                var hasOn = $(target).hasClass('on');
+                if (hasOn) {
+                    $(target).siblings(_this.accordCont).stop().slideUp();
+                    $(target).removeClass('on');
+                    $(target).attr('title', "아코디언 닫힘");
+                } else {
+                    $(target).siblings(_this.accordCont).stop().slideDown();
+                    $(target).addClass('on')
+                    $(target).attr('title', "아코디언 열림");
                 }
             }
         }

@@ -16,7 +16,7 @@ var include = {
     skipNav : function(){
         document.write('<div class="skip_navi"><a href="#gnb">주요 메뉴 바로가기</a><a href="#contents">본문 컨텐츠 바로가기</a></div>');
     },
-    header : function(gnbOn){
+    header : function(){
         document.write('<header class="header">');
         document.write('<div class="header_wrap">');
         document.write('<div class="header_inner">');
