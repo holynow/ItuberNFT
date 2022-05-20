@@ -17,6 +17,10 @@
 .publish_info + .btn_group {margin-top: 30px;}
 
 /* gnb */
+.my_info .header {background: #6166FF;}
+.my_info .header .page_title {color: #fff;}
+.my_info .header .header_title i[class^="ico"][class*="arr"][class*="left"]:before {width: 10px; height: 20px; background: url('../img/common/ico_arr_left_wh.png')no-repeat; background-size: 10px;}
+.info_wrap {position: relative;}
 .info_wrap .info_header {display: flex; justify-content: space-between; align-items: center; padding: 70px 20px 100px 20px; background: #6166FF;}
 .info_wrap .info_header .user_info {display: flex; align-items: center;}
 .info_wrap .info_header .user_info .user_id {margin-left: 10px;}
@@ -41,5 +45,5 @@
 .inner_wrap .gnb_list_wrap .notice_list {margin-top: 20px; padding: 0 10px;}
 .inner_wrap .gnb_list_wrap .notice_list li {font-size: 15px; font-weight: 500;}
 .inner_wrap .gnb_list_wrap .notice_list li + li {margin-top: 20px;}
-.inner_wrap .gnb_list_wrap + .logout_btn {margin-top: 30px; padding-top: 30px; border-top: 1px solid #ddd;}
-.inner_wrap .gnb_list_wrap + .logout_btn span {padding-left: 35px; font-size: 18px; vertical-align: middle;}
+.info_wrap .logout_btn {position: absolute; top: 20px; right: 20px;}
+.info_wrap .logout_btn span {padding-left: 35px; font-size: 18px; vertical-align: -webkit-baseline-middle; color: #fff;}

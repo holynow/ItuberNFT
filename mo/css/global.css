@@ -240,4 +240,4 @@ i[class^="ico"][class*="arr"][class*="right"][class*="purple"]:before {width: 8p
 i[class^="ico"][class*="arr"][class*="sm"]:before {background: url('../img/common/ico_arr_right_xs.png')no-repeat 100%; background-size: 8px;} 
 i[class^="ico"][class*="close"]:before {width: 24px; height: 24px; background: url('../img/common/ico_close_btn.png')no-repeat; background-size: 100%;}
 i[class^="ico"][class*="setting"]:before {left: 0; transform: translate(0); width: 30px; height: 30px; background: url('../img/common/ico_setting.png')no-repeat; background-size: 100%;}
-i[class^="ico"][class*="logout"]:before {left: 0; transform: translate(0); width: 30px; height: 30px; background: url('../img/my/ico_logout.png')no-repeat; background-size: 100%;}
+i[class^="ico"][class*="logout"]:before {left: 0; transform: translate(0); width: 30px; height: 30px; background: url('../img/my/ico_logout_wt.png')no-repeat; background-size: 100%;}
