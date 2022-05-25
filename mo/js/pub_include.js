@@ -1,17 +1,19 @@
-var baseURL = '../../';
+// var baseURL = '../../';
 var include = {
     meta : function(){
         document.write('<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>');
         document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>');
         document.write('<meta name="format-detection" content="telephone=no"/>');
     },
-    styles : function(){
-        document.write('<link rel="stylesheet" href="'+baseURL+'css/global.css">');
-        document.write('<link rel="stylesheet" href="'+baseURL+'css/content.css">');
+    styles: function () {
+        document.write('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.css">');
+        document.write('<link rel="stylesheet" href="/mo/css/global.css">');
+        document.write('<link rel="stylesheet" href="/mo/css/content.css">');
     },
     scripts : function(){
-        document.write('<script type="text/javascript" src="'+baseURL+'js/jquery-3.6.0.min.js"></script>');
-        document.write('<script type="text/javascript" src="'+baseURL+'js/common.js"></script>');
+        document.write('<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.min.js"></script>');
+        document.write('<script type="text/javascript" src="/mo/js/jquery-3.6.0.min.js"></script>');
+        document.write('<script type="text/javascript" src="/mo/js/common.js"></script>');
     },
     skipNav : function(){
         document.write('<div class="skip_navi"><a href="#gnb">주요 메뉴 바로가기</a><a href="#contents">본문 컨텐츠 바로가기</a></div>');

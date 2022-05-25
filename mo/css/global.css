@@ -5,7 +5,7 @@ Reset
 ========================================================*/
 html{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; /*-ms-touch-action:none;*/ }
 html,body{height:100%; font-size:16px; font-weight:400; overflow-x: hidden; /*letter-spacing:-.25px;*/ line-height:1.4; font-family:'Noto Sans KR', sans-serif; word-break:keep-all;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-tap-highlight-color:transparent;}
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input {margin:0; padding:0; border:0; vertical-align:baseline; -webkit-font-smoothing:antialiased; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; color:#333; letter-spacing: -0.025em; line-height: 1.2;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, select {margin:0; padding:0; border:0; vertical-align:baseline; -webkit-font-smoothing:antialiased; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; color:#333; letter-spacing: -0.025em; line-height: 1.2;}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section{display:block;}
 ol, ul{list-style:none;}
@@ -28,6 +28,7 @@ select, input, textarea {vertical-align:middle; } /* 20200821 label, 삭제 */
 img{max-width: 100%; vertical-align: top;}
 button{border: 0; background: none; padding: 0; margin: 0;}
 
+.wrap {position: relative;}
 
 /* skip navigation */
 .skip_navi a {position: absolute; top: -999em;}
@@ -105,6 +106,8 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .input_group + .btn_group {margin-top: 50px;}
 .board_form + .agree_area {margin-top: 40px;}
 
+/* select */
+.sort_select select {padding: 7px 8px; border: 1px solid #ddd; font-size: 13px; outline: none;}
 /* input */
 [class^="input_group"] > input {width: 100%;}
 [class^="input_group"] > input[type="password"] {font-family: Verdana; letter-spacing: 0.125em;}
@@ -125,6 +128,7 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 [class^="btn"][class*="h50"] {height: 50px; line-height: 50px;}
 [class^="btn"][class*="bk"] {background: #333;}
 [class^="btn"][class*="bk"] > span {color: #fff;}
+[class^="btn"][class*="more"] > span {color: #555;}
 [class^="btn"][class*="disabled"] {background: #F5F5F5;}
 [class^="btn"][class*="disabled"] > span {color: #ddd;}
 
@@ -209,6 +213,16 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .checkbox_wrap .slide_check:checked + label:before {content: ''; display: inline-block; position: absolute; top: -6px; right: 0; width: 57px; height: 29px; background: #6166FF; border-radius: 30px;}
 .checkbox_wrap .slide_check:checked + label::after {content: ''; display: inline-block; position: absolute; right: 2px; top: -4px; width: 25px; height: 25px; background: #fff; border-radius: 50%;}
 
+/* search_bar */
+.search_wrap {position: relative; margin: 0 20px;}
+.search_wrap .search_bar {width: 100%; height: 50px; padding: 0 50px 0 45px; border-radius: 30px; border: 1px solid #ddd; font-size: 16px; line-height: 50px; background: url('../img/common/ico_search.png')no-repeat 10px center; background-size: 27px; background-color: #f7f7f7;}
+.search_wrap .remove_btn {display: none; position: absolute; top: 50%; right: 10px; transform: translateY(-50%); width: 30px; height: 30px; background: #000; border-radius: 50%;}
+.search_wrap .remove_btn::before,
+.search_wrap .remove_btn::after {content: ''; display: inline-block; position: absolute; top: 8px; right: 14px; width: 2px; height: 14px; background: #fff; border-radius: 3px;}
+.search_wrap .remove_btn::before {transform:rotate(-45deg);}
+.search_wrap .remove_btn::after {transform:rotate(45deg);}
+.main .search_wrap .search_bar {background-color: #fff;}
+
 /* accordian */
 .board_form + .accord_wrap {margin-top: 50px;}
 .accord_wrap .accord_item .accord_btn {display: block; padding: 10px 0; width: 100%; background: url('../img/common/ico_arr_down.png')no-repeat; background-size: 15px; background-position: calc(100% - 10px); text-align: left; border-bottom: 1px solid #333;}
@@ -235,6 +249,7 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .footer .footer_inner .footer_menu .footer_menu_list li span {position: relative; font-size: 12px; color: #fff; border-bottom: 1px solid #ddd;}
 
 /* ico */
+span + i[class^="ico"] {margin-left: 5px;}
 i[class^="ico"] {position: relative;}
 i[class^="ico"]:before {content: ''; display: inline-block; position: absolute; left: 50%; top: 0; transform: translateX(-50%);}
 i[class^="ico"][class*="login"] {display: block; width: 54px; height: 54px; margin: 0 auto 6px;}
@@ -250,6 +265,7 @@ i[class^="ico"][class*="sns"][class*="youtube"]:before {background: url('../img/
 i[class^="ico"][class*="arr"]:before {content: ''; display: inline-block; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
 i[class^="ico"][class*="arr"][class*="left"]:before {width: 10px; height: 20px; background: url('../img/common/ico_arr_left.png')no-repeat; background-size: 10px;} 
 i[class^="ico"][class*="arr"][class*="right"]:before {width: 10px; height: 20px; background: url('../img/common/ico_arr_right.png')no-repeat; background-size: 10px;} 
+i[class^="ico"][class*="arr"][class*="down"]:before {width: 12px; height: 7px; background: url('../img/common/ico_arr_down.png')no-repeat; background-size: 100%;} 
 i[class^="ico"][class*="arr"][class*="right"][class*="purple"]:before {width: 8px; height: 13px; background: url('../img/common/ico_arr_right_pp.png')no-repeat; background-size: 100%;} 
 i[class^="ico"][class*="arr"][class*="sm"]:before {background: url('../img/common/ico_arr_right_xs.png')no-repeat 100%; background-size: 8px;} 
 i[class^="ico"][class*="close"]:before {width: 24px; height: 24px; background: url('../img/common/ico_close_btn.png')no-repeat; background-size: 100%;}

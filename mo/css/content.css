@@ -1,5 +1,51 @@
 @charset "utf-8"; 
 
+/* main */
+.main .content_area {padding-bottom: 0;}
+.main .header {position: absolute; top: 0; left: 0; width: 100%; z-index: 10;}
+.main .header_inner {justify-content: center;}
+.main .header_inner .header_title .page_title {padding: 0; color: #fff; font-weight: 500; font-size: 20px;}
+.main_swiper {background: #333; height: 600px;}
+.main_swiper .swiper-slide {position: relative;}
+.main_swiper .swiper-slide > a {display: block; height: 100%; width: 100%;}
+.main_swiper .swiper_cont {position: relative; display: flex; align-items: center; justify-content: center; height: 100%;}
+.main_swiper .swiper_cont h3 {color: #fff; font-size: 30px; text-align: center;}
+.main_swiper .img_area {position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;}
+.main_swiper .img_area img {position: absolute; top: 0; left: 0; min-width: 430px; min-height: 600px;}
+.main_cont {position: relative; margin-top: -120px; z-index: 1;}
+
+/* sale list */
+.sale_list_wrap {padding: 40px 20px 160px; background: #f7f7f7; border-radius: 30px 30px 0 0;}
+.sale_list_wrap .sub_tit_wrap {display: flex; justify-content: space-between; align-items: center;} 
+.search_wrap + .sale_list_wrap {margin-top: 30px;}
+
+/* item_list */
+.item_wrap {margin-top: 20px;}
+.item_wrap[class*="row"] {display: grid; gap: 20px;}
+.item_wrap[class*="row"][class*="_1"] {grid-template-columns: 1fr;}
+.item_wrap[class*="row"][class*="_2"] {grid-template-columns: repeat(2, 1fr);}
+.item_wrap .item {position: relative; border-radius: 10px; overflow: hidden;}
+.item_wrap .item .item_img {position: relative; overflow: hidden; padding-bottom: 65%;} 
+.item_wrap .item .item_img img {position: absolute; top: 0; left: 50%; transform: translate(-50%, 0); width: 100%;}
+.item_wrap .item .item_info {padding: 20px; background: #fff;}
+.item_wrap .item .item_info .nft_name {font-size: 18px; color: #6166FF; font-weight: 500;}
+.item_wrap .item .item_info .char_name {display: flex;}
+.item_wrap .item .item_info .char_name > p {margin-top: 3px; font-size: 14px; color: #555;}
+.item_wrap .item .item_info .char_name > p + p::before {content: '|'; display: inline-block; margin: 0 5px; font-size: 5px; vertical-align: 3px;}
+.item_wrap .item .item_info .ip_name {margin-top: 15px; font-size: 13px; color: #999;}
+.item_wrap .item .item_info .point_area {width: 100%; text-align: right;}
+.item_wrap .item .item_info .point_area .result_num {font-size: 16px; color: #999;}
+.item_wrap .item .item_info .point_area .result_num > span {padding-right: 3px; color: #999;}
+.item_wrap .item .item_info .point_area .value {font-size: 18px; color: #555;}
+.item_wrap .item .item_info .point_area .value > span {padding-right: 5px; font-size: 30px; font-weight: 700;}
+.item_wrap .item .status_badge {position: absolute; top: 15px; left: 15px; z-index: 1;}
+.item_wrap .item .status_badge span {padding: 4px 10px; font-size: 13px; color: #fff; border-radius: 3px;}
+.item_wrap .item.on_sale .status_badge span {background: #000;}
+.item_wrap .item.end_sale .status_badge span {background: #BF0000;}
+.item_wrap .item.wait .status_badge span {background: #555;}
+.item_wrap .item.end_sale::before{content: ''; display: block; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); width: 80px; height: 80px; background: url('../img/market/ico_soldout_badge.png')no-repeat; z-index: 1; background-size: 100%;}
+.item_wrap + .btn_group {margin-top: 40px;}
+
 /* login area */
 .login_area .logo_title {display: block; padding: 50px 0 60px; margin: 0 auto; width: 162px; text-align: center;}
 .login_area .login_sns_area {margin-top: 50px;}

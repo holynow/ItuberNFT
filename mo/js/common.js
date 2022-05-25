@@ -1,14 +1,56 @@
 'use strict';
 $(function(){
     var ui = {
-        init: function() {
+        init: function() { 
+            if($('.swiper').length > 0) {this.swiperHandler.init();}
             if($('.gnb_menu_wrap').length > 0) {this.onoffHandler.init();}
             if($('.fixed_bottom_area').length > 0) {this.scrollTop.init();}
             if($('.pop_container').length > 0) {this.popupHandler.init();}
             if($('.all_check').length > 0) {this.agreeCheck.init();}
             if ($('.full_pop').length > 0) { this.sticky.init(); }
             if ($('.accord_wrap').length > 0) { this.accord.init(); }
-            
+            if ($('.search_wrap').length > 0) { this.searchHandler.init(); }
+        },
+        searchHandler: {
+            searchWrap : '.search_wrap',
+            searchBar: '.search_bar',
+            removeBtn: '.remove_btn',
+            init: function () {
+                var _this = this;
+                if ($(_this.searchBar).focus()) {
+                    var interval = setInterval(function () {
+                        if (!$(_this.searchBar).val().trim() == '') {
+                            _this.removeBtnOn();
+                        } else {
+                            _this.removeBtnOff();
+                        }
+                    })
+                } else {
+                    clearInterval(interval);
+                }
+                $(_this.removeBtn).on('click', function () {
+                    _this.removeVal(this);
+                })
+            },
+            removeVal: function (target) {
+                var _this = this;
+                $(target).parent(_this.searchWrap).find(_this.searchBar).val('');
+            },
+            removeBtnOn: function () {
+                var _this = this;
+                $(_this.removeBtn).show();
+            },
+            removeBtnOff: function () {
+                var _this = this;
+                $(_this.removeBtn).hide();
+            }
+        },
+        swiperHandler: {
+            swiper : '.swiper',
+            init: function () {
+                var _this = this;
+                var swiper = new Swiper (_this.swiper, {})
+            }
         },
         //swich click Event
         onoffHandler: {
