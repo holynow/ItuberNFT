@@ -214,14 +214,14 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .checkbox_wrap .slide_check:checked + label::after {content: ''; display: inline-block; position: absolute; right: 2px; top: -4px; width: 25px; height: 25px; background: #fff; border-radius: 50%;}
 
 /* search_bar */
-.search_wrap {position: relative; margin: 0 20px;}
-.search_wrap .search_bar {width: 100%; height: 50px; padding: 0 50px 0 45px; border-radius: 30px; border: 1px solid #ddd; font-size: 16px; line-height: 50px; background: url('../img/common/ico_search.png')no-repeat 10px center; background-size: 27px; background-color: #f7f7f7;}
+.search_wrap {position: relative; margin: 40px 20px 0;}
+.search_wrap .search_bar {width: 100%; height: 50px; padding: 0 50px 0 45px; border-radius: 30px; font-size: 16px; line-height: 50px; background: url('../img/common/ico_search.png')no-repeat 10px center; background-size: 27px; background-color: #f7f7f7;}
 .search_wrap .remove_btn {display: none; position: absolute; top: 50%; right: 10px; transform: translateY(-50%); width: 30px; height: 30px; background: #000; border-radius: 50%;}
 .search_wrap .remove_btn::before,
 .search_wrap .remove_btn::after {content: ''; display: inline-block; position: absolute; top: 8px; right: 14px; width: 2px; height: 14px; background: #fff; border-radius: 3px;}
 .search_wrap .remove_btn::before {transform:rotate(-45deg);}
 .search_wrap .remove_btn::after {transform:rotate(45deg);}
-.main .search_wrap .search_bar {background-color: #fff;}
+.search_wrap + .inner_wrap {margin-top: 40px;}
 
 /* accordian */
 .board_form + .accord_wrap {margin-top: 50px;}
