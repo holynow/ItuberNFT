@@ -3,8 +3,9 @@
 /* main */
 .main .content_area {padding-bottom: 0;}
 .main .header {position: absolute; top: 0; left: 0; width: 100%; z-index: 10;}
-.main .header_inner {justify-content: center;}
-.main .header_inner .header_title .page_title {padding: 0; color: #fff; font-weight: 500; font-size: 20px;}
+.header.align_c .header_inner {justify-content: center;}
+.header.align_c .header_inner .header_title .page_title {padding: 0; color: #333; font-weight: 500; font-size: 20px;}
+.main .header.align_c .header_inner .header_title .page_title {color: #fff;}
 .main_swiper {background: #333; height: 600px;}
 .main_swiper .swiper-slide {position: relative;}
 .main_swiper .swiper-slide > a {display: block; height: 100%; width: 100%;}
