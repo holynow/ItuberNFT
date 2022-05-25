@@ -49,7 +49,12 @@ $(function(){
             swiper : '.swiper',
             init: function () {
                 var _this = this;
-                var swiper = new Swiper (_this.swiper, {})
+                var swiper = new Swiper(_this.swiper, {
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                })
             }
         },
         //swich click Event
