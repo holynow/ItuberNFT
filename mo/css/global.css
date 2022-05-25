@@ -207,6 +207,8 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .checkbox_wrap .check_list .item input[type="checkbox"]:checked + label:before {background: url('../img/common/ico_checkbox_on.png') no-repeat; background-size: 18px;}
 .checkbox_wrap input[type="radio"] + label:before {content: ''; display: inline-block; margin-right: 7px; width: 18px; height: 18px; background: url('../img/common/ico_radio_off.png') no-repeat; background-size: 18px; vertical-align: top;}
 .checkbox_wrap input[type="radio"]:checked + label:before {background: url('../img/common/ico_radio_on.png') no-repeat; background-size: 18px;}
+.checkbox_wrap.like_btn input[type="checkbox"] + label:before {content: ''; display: inline-block; margin-right: 5px; width: 18px; height: 16px; background: url('../img/common/ico_like_off.png')no-repeat; background-size: 100%; vertical-align: -2px;}
+.checkbox_wrap.like_btn input[type="checkbox"]:checked + label:before {content: ''; display: inline-block; margin-right: 5px; width: 18px; height: 16px; background: url('../img/common/ico_like_on.png')no-repeat; background-size: 100%; vertical-align: -2px;}
 .checkbox_wrap .slide_check + label {position: relative; display: block; width: 100%; font-size: 14px;}
 .checkbox_wrap .slide_check + label:before {content: ''; display: inline-block; position: absolute; top: -6px; right: 0; width: 57px; height: 29px; background: #ddd; border-radius: 30px; transition: all .2s ease-in-out;}
 .checkbox_wrap .slide_check + label::after {content: ''; display: inline-block; position: absolute; right: 30px; top: -4px; width: 25px; height: 25px; background: #fff; border-radius: 50%; transition: all .2s ease-in-out;}
