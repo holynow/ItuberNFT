@@ -125,7 +125,11 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 [class^="btn"][class*="round"] {border-radius: 10px;}
 [class^="btn"][class*="wfull"] {width: 100%;}
 [class^="btn"][class*="w180"] {width: 180px;}
+[class^="btn"][class*="w120"] {width: 120px;}
 [class^="btn"][class*="h50"] {height: 50px; line-height: 50px;}
+[class^="btn"][class*="h40"] {height: 40px; line-height: 40px;}
+[class^="btn"][class*="wh"] {background: #fff;}
+[class^="btn"][class*="wh"] > span {color: #333;}
 [class^="btn"][class*="bk"] {background: #333;}
 [class^="btn"][class*="bk"] > span {color: #fff;}
 [class^="btn"][class*="more"] > span {color: #555;}
@@ -225,6 +229,16 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .search_wrap .remove_btn::after {transform:rotate(45deg);}
 .search_wrap + .inner_wrap {margin-top: 40px;}
 
+/* 검색결과없음 */
+.no_result_wrap {margin-top: 20px; padding: 50px 0 50px; border-top: 1px solid #333;}
+.no_result_wrap .btn_group {margin-top: 20px;}
+.no_result_wrap .btn_group button {border: 1px solid #ddd;}
+.no_result_wrap .btn_group span {padding-right: 10px; color: #999;}
+.no_result_wrap .result_txt {text-align: center;}
+.no_result_wrap .result_txt .search_txt:before,
+.no_result_wrap .result_txt .search_txt:after {content: '"'; display: inline-block;}
+.no_result_wrap .result_txt .search_txt {padding: 5px;}
+
 /* accordian */
 .board_form + .accord_wrap {margin-top: 50px;}
 .accord_wrap .accord_item .accord_btn {display: block; padding: 10px 0; width: 100%; background: url('../img/common/ico_arr_down.png')no-repeat; background-size: 15px; background-position: calc(100% - 10px); text-align: left; border-bottom: 1px solid #333;}
@@ -273,3 +287,4 @@ i[class^="ico"][class*="arr"][class*="sm"]:before {background: url('../img/commo
 i[class^="ico"][class*="close"]:before {width: 24px; height: 24px; background: url('../img/common/ico_close_btn.png')no-repeat; background-size: 100%;}
 i[class^="ico"][class*="setting"]:before {left: 0; transform: translate(0); width: 30px; height: 30px; background: url('../img/common/ico_setting.png')no-repeat; background-size: 100%;}
 i[class^="ico"][class*="logout"]:before {left: 0; transform: translate(0); width: 30px; height: 30px; background: url('../img/my/ico_logout_wt.png')no-repeat; background-size: 100%;}
+i[class^="ico"][class*="search"]:before {content:''; display: inline-block; top: -5px; width: 20px; height: 20px; background: url('../img/common/ico_search.png')no-repeat; background-size: 100%;}

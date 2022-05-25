@@ -51,6 +51,7 @@
 .item_wrap .item.end_sale::before{content: ''; display: block; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); width: 80px; height: 80px; background: url('../img/market/ico_soldout_badge.png')no-repeat; z-index: 1; background-size: 100%;}
 .item_wrap + .btn_group {margin-top: 40px;}
 
+
 /* item_list row2 (marketplace) */
 .item_wrap.row_2 .item {border: 1px solid #ddd;}
 .item_wrap.row_2 .item .item_info {padding: 10px;}
