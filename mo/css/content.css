@@ -51,6 +51,7 @@
 .detail_cont .nft_publi_info dl dd span {padding-right: 5px; font-weight: 500;}
 .detail_cont .nft_publi_info dl dd > a {color: #6166FF;}
 .detail_cont .total_trans_wrap {position: relative; height: 210px; overflow-y: auto;}
+.detail_cont .total_trans_wrap .no_result_area {margin: 0 auto; padding: 60px 0; text-align: center; font-size: 14px;}
 .detail_cont .total_trans_wrap table {width: 100%; border-collapse: collapse;}
 .detail_cont .total_trans_wrap table thead {position: sticky; top: 0;}
 .detail_cont .total_trans_wrap table tr:not(:last-child) {border-bottom: 1px solid #ddd; border-collapse: collapse;}
@@ -62,6 +63,7 @@
 .nft_trans_wrap {margin-top:20px}
 /* card box wrap */
 .card_box_wrap .box_item {padding: 20px; border-radius: 20px; background: #f7f7f7;}
+.card_box_wrap .box_item .no_result {text-align: center;}
 .card_box_wrap .box_item + .box_item {margin-top: 20px;}
 .card_box_wrap .box_item dl {display: flex; justify-content: space-between; align-items: center;}
 .card_box_wrap .box_item dl + dl {margin-top: 20px;}
