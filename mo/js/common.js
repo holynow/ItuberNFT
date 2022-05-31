@@ -10,6 +10,17 @@ $(function(){
             if ($('.full_pop').length > 0) { this.sticky.init(); }
             if ($('.accord_wrap').length > 0) { this.accord.init(); }
             if ($('.search_wrap').length > 0) { this.searchHandler.init(); }
+            if ($('.tooltip').length > 0) { this.tooltipHandler.init(); }
+        },
+        // 툴팁
+        tooltipHandler: {
+            tooltipBtn: '.tooltip',
+            init: function () {
+                var _this = this;
+                $(_this.tooltipBtn).on('click', function () {
+                    $(this).toggleClass('on')
+                })
+            }
         },
         searchHandler: {
             searchWrap : '.search_wrap',
@@ -171,6 +182,12 @@ $(function(){
             accordCont: '.accord_cont',
             init: function () {
                 var _this = this;
+                $(_this.accordBtn).each(function (e) {
+                    if ($(_this.accordBtn).eq(e).hasClass('on')) {
+                       $(this).siblings(_this.accordCont).stop().slideDown();
+                       $(this).attr('title', "아코디언 열림");
+                    }
+                })
                 $(_this.accordBtn).on('click', function () {
                     _this.accordHandler(this);
                 })

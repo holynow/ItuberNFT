@@ -5,7 +5,7 @@ Reset
 ========================================================*/
 html{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; /*-ms-touch-action:none;*/ }
 html,body{height:100%; font-size:16px; font-weight:400; overflow-x: hidden; /*letter-spacing:-.25px;*/ line-height:1.4; font-family:'Noto Sans KR', sans-serif; word-break:keep-all;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-tap-highlight-color:transparent;}
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, select {margin:0; padding:0; border:0; vertical-align:baseline; -webkit-font-smoothing:antialiased; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; color:#333; letter-spacing: -0.025em; line-height: 1.2;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, select {margin:0; padding:0; border:0; vertical-align:baseline; -webkit-font-smoothing:antialiased; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; color:#333; letter-spacing: -0.025em; line-height: 1.2; outline: none;}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section{display:block;}
 ol, ul{list-style:none;}
@@ -36,8 +36,8 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 
 /* 경고, 에러, 유효성체크 */
 .valid{color:#0082ff; font-size:13px;}
-.error{color:#e44d4d;}
-
+.error{color:#e44d4d; font-size:13px;}
+.btn_group + .error {margin-top: 5px;}
 /* 웹접근성 */
 .a11y {position: absolute; top: -999em;}
 
@@ -123,11 +123,16 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 [class^="btn"] {display: inline-block; cursor: pointer;}
 [class^="btn"] > span {font-size: 16px; font-weight: 500;}
 [class^="btn"][class*="round"] {border-radius: 10px;}
+[class^="btn"][class*="round30"] {border-radius: 30px;}
 [class^="btn"][class*="wfull"] {width: 100%;}
 [class^="btn"][class*="w180"] {width: 180px;}
 [class^="btn"][class*="w120"] {width: 120px;}
+[class^="btn"][class*="h60"] {height: 60px; line-height: 60px;}
+[class^="btn"][class*="h60"] > span {font-size: 18px;}
 [class^="btn"][class*="h50"] {height: 50px; line-height: 50px;}
 [class^="btn"][class*="h40"] {height: 40px; line-height: 40px;}
+[class^="btn"][class*="point"] {background: #6166FF;}
+[class^="btn"][class*="point"] > span {color: #fff;}
 [class^="btn"][class*="wh"] {background: #fff;}
 [class^="btn"][class*="wh"] > span {color: #333;}
 [class^="btn"][class*="bk"] {background: #333;}
@@ -136,6 +141,12 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 [class^="btn"][class*="disabled"] {background: #F5F5F5;}
 [class^="btn"][class*="disabled"] > span {color: #ddd;}
 
+/* tooltip */
+.tooltip {position: relative}
+.tooltip:before {content: '?'; display: inline-block; position: relative; width: 14px; height: 14px; background: #333; border-radius: 50%; color: #fff; font-size: 10px; line-height: 14px; vertical-align: 2px;}
+.tooltip > span {display: none; position: absolute; top: -4px; left: 22px; padding: 5px 6px 3px; min-width: 100px; color: #fff; background: #333; border-radius: 3px; font-size: 12px;}
+.tooltip.on > span {display: block}
+.tooltip > span:before {content: ''; display: inline-block; position: absolute; top: 8px; left: -3px; width: 7px; height: 7px; transform: rotate(45deg); background: #333;}
 /* btn_link list */
 .btn_link_group {display: block; margin-top: 20px; width: 100%;}
 .btn_link_group .link_btns {display: flex; justify-content: center;}
@@ -211,8 +222,11 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .checkbox_wrap .check_list .item input[type="checkbox"]:checked + label:before {background: url('../img/common/ico_checkbox_on.png') no-repeat; background-size: 18px;}
 .checkbox_wrap input[type="radio"] + label:before {content: ''; display: inline-block; margin-right: 7px; width: 18px; height: 18px; background: url('../img/common/ico_radio_off.png') no-repeat; background-size: 18px; vertical-align: top;}
 .checkbox_wrap input[type="radio"]:checked + label:before {background: url('../img/common/ico_radio_on.png') no-repeat; background-size: 18px;}
-.checkbox_wrap.like_btn input[type="checkbox"] + label:before {content: ''; display: inline-block; margin-right: 5px; width: 18px; height: 16px; background: url('../img/common/ico_like_off.png')no-repeat; background-size: 100%; vertical-align: -2px;}
-.checkbox_wrap.like_btn input[type="checkbox"]:checked + label:before {content: ''; display: inline-block; margin-right: 5px; width: 18px; height: 16px; background: url('../img/common/ico_like_on.png')no-repeat; background-size: 100%; vertical-align: -2px;}
+.checkbox_wrap[class*="like_btn"][class*="big"] input[type="checkbox"] + label:before {content: ''; display: inline-block; margin-right: 8px; width: 28px; height: 26px; background: url('../img/common/ico_like_off.png')no-repeat; background-size: 100%; vertical-align: middle;}
+.checkbox_wrap[class*="like_btn"][class*="big"] input[type="checkbox"]:checked + label:before {content: ''; display: inline-block; margin-right: 8px; width: 28px; height: 26px; background: url('../img/common/ico_like_on.png')no-repeat; background-size: 100%; vertical-align: middle;}
+.checkbox_wrap[class*="like_btn"] input[type="checkbox"] + label:before {content: ''; display: inline-block; margin-right: 5px; width: 18px; height: 16px; background: url('../img/common/ico_like_off.png')no-repeat; background-size: 100%; vertical-align: -2px;}
+.checkbox_wrap[class*="like_btn"] input[type="checkbox"] + label {font-size: 18px; line-height: 50px;}
+.checkbox_wrap[class*="like_btn"] input[type="checkbox"]:checked + label:before {content: ''; display: inline-block; margin-right: 5px; width: 18px; height: 16px; background: url('../img/common/ico_like_on.png')no-repeat; background-size: 100%; vertical-align: -2px;}
 .checkbox_wrap .slide_check + label {position: relative; display: block; width: 100%; font-size: 14px;}
 .checkbox_wrap .slide_check + label:before {content: ''; display: inline-block; position: absolute; top: -6px; right: 0; width: 57px; height: 29px; background: #ddd; border-radius: 30px; transition: all .2s ease-in-out;}
 .checkbox_wrap .slide_check + label::after {content: ''; display: inline-block; position: absolute; right: 30px; top: -4px; width: 25px; height: 25px; background: #fff; border-radius: 50%; transition: all .2s ease-in-out;}
@@ -245,6 +259,7 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .accord_wrap .accord_item .accord_btn.on {background: url('../img/common/ico_arr_up.png')no-repeat; background-size: 15px; background-position: calc(100% - 10px);}
 .accord_wrap .accord_item .accord_btn > p {font-size: 16px; font-weight: 500;}
 .accord_wrap .accord_item .accord_btn + .accord_cont {display: none; margin-top: 30px;}
+
 /* footer */
 .footer {background: #333;}
 .footer .footer_inner {padding: 30px 20px 80px;}
