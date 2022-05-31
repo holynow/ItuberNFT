@@ -50,19 +50,30 @@
 .detail_cont .nft_publi_info dl dd {font-size: 16px;}
 .detail_cont .nft_publi_info dl dd span {padding-right: 5px; font-weight: 500;}
 .detail_cont .nft_publi_info dl dd > a {color: #6166FF;}
-.detail_cont .total_trans_wrap {position: relative; height: 210px; overflow-y: auto;}
+.detail_cont .sale_list,
+.detail_cont .total_trans_wrap {position: relative; height: 200px; overflow-y: auto;}
 .detail_cont .total_trans_wrap .no_result_area {margin: 0 auto; padding: 60px 0; text-align: center; font-size: 14px;}
-.detail_cont .total_trans_wrap table {width: 100%; border-collapse: collapse;}
-.detail_cont .total_trans_wrap table thead {position: sticky; top: 0;}
-.detail_cont .total_trans_wrap table tr:not(:last-child) {border-bottom: 1px solid #ddd; border-collapse: collapse;}
-.detail_cont .total_trans_wrap table tr th {padding: 10px 0; font-size: 13px; text-align: center; font-weight: 500; background: #f7f7f7; }
-.detail_cont .total_trans_wrap table tr td {padding: 10px 0; font-size: 13px; text-align: center; font-weight: 500;}
-.detail_cont .total_trans_wrap table + .btn_group {margin-top: 20px;}
-.detail_cont .total_trans_wrap table + .btn_group button > span {color: #999;}
-.detail_cont .total_trans_wrap table + .btn_group button > i {opacity: .6;}
+.detail_cont table {width: 100%; border-collapse: collapse;}
+.detail_cont table thead {position: sticky; top: 0; left: 0; z-index: 10;}
+.detail_cont table tr:not(:last-child) {border-bottom: 1px solid #ddd; border-collapse: collapse;}
+.detail_cont table tr th {padding: 10px 0; font-size: 13px; text-align: center; font-weight: 500; background: #f7f7f7; }
+.detail_cont table tr td {padding: 10px 0; font-size: 13px; text-align: center; font-weight: 500;}
+.detail_cont table + .btn_group {margin-top: 20px;}
+.detail_cont table + .btn_group button > span {color: #999;}
+.detail_cont table + .btn_group button > i {opacity: .6;}
+.detail_cont .btn_group + .refer {margin-top: 20px; font-size: 12px; color: #999;}
+.detail_cont .sale_list table tr {position: relative;}
+.detail_cont .sale_list table tr th {background: #fff;}
+.detail_cont .sale_list table tr td {background: #fff;}
+.detail_cont .sale_list table tr:nth-child(odd) td {background: #F6F3FF;}
+.detail_cont .sale_list table td label {position: absolute; top: 0; left: 0; width: calc(100% - 10px); height: 100%;}
+.detail_cont dl + .sale_list, 
+.detail_cont .sale_list + dl {margin-top: 30px;}
+.detail_cont .sale_list + .btn_group {margin-top: 40px;}
+.detail_cont .sale_list table td.checkbox_wrap input[type="radio"] + label:before {position: absolute; left: 15px; top: 10px; opacity: .8;}
 .nft_trans_wrap {margin-top:20px}
 /* card box wrap */
-.card_box_wrap .box_item {padding: 20px; border-radius: 20px; background: #f7f7f7;}
+.card_box_wrap .box_item {padding: 30px; border-radius: 20px; background: #f7f7f7;}
 .card_box_wrap .box_item .no_result {text-align: center;}
 .card_box_wrap .box_item + .box_item {margin-top: 20px;}
 .card_box_wrap .box_item dl {display: flex; justify-content: space-between; align-items: center;}
@@ -71,6 +82,7 @@
 .card_box_wrap .box_item dl dd {font-size: 16px;}
 .card_box_wrap .box_item dl dd > span {margin-right: 5px; font-size: 20px; font-weight: 700;}
 .card_box_wrap .box_item dl + .btn_group {margin-top: 40px;}
+.card_box_wrap .box_item .regist_quant,
 .card_box_wrap .box_item .final_price {margin-top: 30px; padding-top: 30px; border-top: 1px solid #ddd;}
 .card_box_wrap .box_item .final_price dd > span {font-size: 30px;}
 .card_box_wrap .box_item .box_tit {display: flex; justify-content: space-between; align-items: center;}

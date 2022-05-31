@@ -119,6 +119,8 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 /* btns */
 .btn_group {width: 100%;}
 .btn_group[class*="alignC"] {text-align: center;}
+.btn_group[class*="row3"] {display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 5px;}
+.btn_group[class*="row3"] button {margin: 0;}
 .btn_group button + button {margin-top: 10px;}
 [class^="btn"] {display: inline-block; cursor: pointer;}
 [class^="btn"] > span {font-size: 16px; font-weight: 500;}
@@ -133,6 +135,10 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 [class^="btn"][class*="h40"] {height: 40px; line-height: 40px;}
 [class^="btn"][class*="point"] {background: #6166FF;}
 [class^="btn"][class*="point"] > span {color: #fff;}
+[class^="btn"][class*="del"] {background: #999;}
+[class^="btn"][class*="del"] > span {color: #fff;}
+[class^="btn"][class*="modi"] {background: #555;}
+[class^="btn"][class*="modi"] > span {color: #fff;}
 [class^="btn"][class*="wh"] {background: #fff;}
 [class^="btn"][class*="wh"] > span {color: #333;}
 [class^="btn"][class*="bk"] {background: #333;}
@@ -142,9 +148,9 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 [class^="btn"][class*="disabled"] > span {color: #ddd;}
 
 /* tooltip */
-.tooltip {position: relative}
+.tooltip {position: relative; margin-left: 5px;}
 .tooltip:before {content: '?'; display: inline-block; position: relative; width: 14px; height: 14px; background: #333; border-radius: 50%; color: #fff; font-size: 10px; line-height: 14px; vertical-align: 2px;}
-.tooltip > span {display: none; position: absolute; top: -4px; left: 22px; padding: 5px 6px 3px; min-width: 100px; color: #fff; background: #333; border-radius: 3px; font-size: 12px;}
+.tooltip > span {display: none; position: absolute; top: -4px; left: 22px; padding: 5px 6px 3px; min-width: 130px; color: #fff; background: #333; border-radius: 3px; font-size: 12px; line-height: 18px;}
 .tooltip.on > span {display: block}
 .tooltip > span:before {content: ''; display: inline-block; position: absolute; top: 8px; left: -3px; width: 7px; height: 7px; transform: rotate(45deg); background: #333;}
 /* btn_link list */
@@ -153,6 +159,15 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .btn_link_group .link_btns > li {text-align: center;}
 .btn_link_group .link_btns > li + li {margin-left: 10px; padding-left: 10px; border-left: 1px solid #eee;}
 .btn_link_group .link_btns > li span {font-size: 14px; color: #888;}
+
+/* tab_wrap */
+.box_item + .tab_wrap {margin-top: 20px;}
+.tab_wrap .box_item {margin-top: 20px;}
+.tab_wrap .tab_btn {display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;}
+.tab_wrap .tab_btn > button {height: 50px; line-height: 50px; border: 1px solid #ddd; border-radius: 5px; color: #999;}
+.tab_wrap .tab_btn > button.on {border-color: #333; color: #333; font-weight: 500;}
+.tab_wrap .tab_cont {display: none;}
+.tab_wrap .tab_cont.on {display: block;}
 
 /* sns btns */
 .sns_btn_list {display: flex; justify-content: center; gap: 20px; margin-top: 30px; text-align: center;}

@@ -11,6 +11,29 @@ $(function(){
             if ($('.accord_wrap').length > 0) { this.accord.init(); }
             if ($('.search_wrap').length > 0) { this.searchHandler.init(); }
             if ($('.tooltip').length > 0) { this.tooltipHandler.init(); }
+            if ($('.tab_wrap').length > 0) { this.tabHandler.init(); }
+        },
+        // 탭 버튼
+        tabHandler: {
+            tabBtn: '.tab_btn button',
+            tabCont: '.tab_cont',
+            init: function () {
+                var _this = this;
+                $(_this.tabBtn).on('click', function (e) {
+                    var index = $(this).index();
+                    _this.tabOn(e.target, index);
+                })
+            },
+            tabOn: function (target, index) {
+                var _this = this;
+                if (!$(target).hasClass('on')) {
+                    $(target).addClass('on')
+                    $(target).siblings().removeClass('on')
+                }
+                $(_this.tabCont).eq(index).addClass('on')
+                $(_this.tabCont).eq(index).siblings().removeClass('on')
+               
+            }
         },
         // 툴팁
         tooltipHandler: {
