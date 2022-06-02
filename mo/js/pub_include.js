@@ -44,6 +44,37 @@ var include = {
         document.write('</div>');
         document.write('</div>');
     },
+    followGnb: function () {
+        document.write('<div class="follow_gnb_bar">');
+        document.write('<ul class="gnb_list_wrap">');
+        document.write('<li>');
+        document.write('<a href="/mo/index.html" title="open sale 페이지 이동">');
+        document.write('<span>OPEN SALE</span>');
+        document.write('</a>');
+        document.write('</li>');
+        document.write('<li>');
+        document.write('<a href="/mo/html/market/market_place.html" title="market place 페이지 이동">');
+        document.write('<span>MARKET</span>');
+        document.write('</a>');
+        document.write('</li>');
+        document.write('<li>');
+        document.write('<a href="/mo/html/my/like_list.html" title="좋아요 목록 페이지 이동">');
+        document.write('<span>LIKE</span>');
+        document.write('</a>');
+        document.write('</li>');
+        document.write('<li>');
+        document.write('<a href="/mo/html/my/my_nft.html" title="my nft 페이지 이동">');
+        document.write('<span>MY NFT</span>');
+        document.write('</a>');
+        document.write('</li>');
+        document.write('<li>');
+        document.write('<a href="/mo/html/my/my_info.html" title="내 정보 페이지 이동">');
+        document.write('<span>MY INFO</span>');
+        document.write('</a>');
+        document.write('</li>');
+        document.write('</ul>');
+        document.write('</div>');  
+    },
     footer : function(){
         document.write('<footer class="footer">');
         document.write('<div class="footer_inner">');

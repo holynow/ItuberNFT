@@ -12,6 +12,35 @@ $(function(){
             if ($('.search_wrap').length > 0) { this.searchHandler.init(); }
             if ($('.tooltip').length > 0) { this.tooltipHandler.init(); }
             if ($('.tab_wrap').length > 0) { this.tabHandler.init(); }
+            if ($('.follow_gnb_bar, .fixed_bottom_area').length > 0) { this.scrollEvent.init(); }
+        },
+        scrollEvent: {
+            gnbBar: '.follow_gnb_bar',
+            topBtn: '.fixed_bottom_area',
+            init: function () {
+                var _this = this;
+                $('body').on('scroll', function () {
+                    _this.targetShow();
+                })
+            },
+            targetShow: function () {
+                var _this = this;
+                var thisScroll = $('body').scrollTop();
+                var thisH = $('body').innerHeight();
+                var scrollH = $('body').prop('scrollHeight')
+                if (thisScroll >= 100) {
+                    $(_this.gnbBar).addClass('on')
+                }
+                else {
+                    $(_this.gnbBar).removeClass('on');     
+                }
+                if (thisScroll + thisH >= scrollH) {
+                    $(_this.topBtn).addClass('on')
+                }
+                else {
+                    $(_this.topBtn).removeClass('on');     
+                }
+            }
         },
         // 탭 버튼
         tabHandler: {

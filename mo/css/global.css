@@ -66,8 +66,9 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .inner_wrap {padding: 0 20px;}
 
 /* fixed bottom */
-.fixed_bottom_area {position: fixed; right: 15px; bottom: 15px; z-index: 99;}
-.fixed_bottom_area .fixed_item button {width: 50px; height: 50px; border-radius: 50px; background: #222;}
+.fixed_bottom_area {position: fixed; right: 15px; bottom: 80px; z-index: 99; opacity: 0; transition: all .3s ease-in-out;}
+.fixed_bottom_area.on {opacity: 1;}
+.fixed_bottom_area .fixed_item button {width: 50px; height: 50px; border-radius: 50px; background: rgba(0,0,0,.8);}
 .fixed_bottom_area .fixed_item button > span {color: #fff;}
 
 /* header */
@@ -258,6 +259,18 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .search_wrap .remove_btn::after {transform:rotate(45deg);}
 .search_wrap + .inner_wrap {margin-top: 40px;}
 
+/* follow gnb */
+.follow_gnb_bar {display: block; position: fixed; bottom: -65px; left: 0; width: 100%; height: 65px; background: #fff; border-top: 1px solid #ddd; z-index: 10; transition: all .3s ease-in-out;}
+.follow_gnb_bar.on {bottom: 0;}
+.follow_gnb_bar .gnb_list_wrap {display: flex; justify-content: space-around; align-items: center; height: 100%;}
+.follow_gnb_bar .gnb_list_wrap li {font-size: 10px; font-weight: 500; text-align: center;}
+.follow_gnb_bar .gnb_list_wrap li span:before {content: ''; display: block; padding-top: 3px; margin: 0 auto; width: 30px; height: 30px;}
+.follow_gnb_bar .gnb_list_wrap li:nth-child(1) span:before {background: url('/mo/img/common/ico_gnb_opensale.png')no-repeat; background-size: 100%;}
+.follow_gnb_bar .gnb_list_wrap li:nth-child(2) span:before {background: url('/mo/img/common/ico_market_place.png')no-repeat; background-size: 100%;}
+.follow_gnb_bar .gnb_list_wrap li:nth-child(3) span:before {background: url('/mo/img/common/ico_gnb_like.png')no-repeat; background-size: 100%;}
+.follow_gnb_bar .gnb_list_wrap li:nth-child(4) span:before {background: url('/mo/img/common/ico_gnb_mynft.png')no-repeat; background-size: 100%;}
+.follow_gnb_bar .gnb_list_wrap li:nth-child(5) span:before {background: url('/mo/img/common/ico_gnb_myinfo.png')no-repeat; background-size: 100%;}
+
 /* 검색결과없음 */
 .no_result_wrap {margin-top: 20px; padding: 50px 0 50px; border-top: 1px solid #333;}
 .no_result_wrap .btn_group {margin-top: 20px;}
@@ -277,7 +290,7 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 
 /* footer */
 .footer {background: #333;}
-.footer .footer_inner {padding: 30px 20px 80px;}
+.footer .footer_inner {padding: 30px 20px 100px;}
 .footer .footer_inner .footer_head {display: flex; align-items: center; justify-content: space-between;}
 .footer .footer_inner .footer_head .office_name p {font-size: 18px; font-weight: 500; color: #fff;}
 .footer .footer_inner .footer_head .footer_btn_wrap .sns_btns {display: flex; justify-content: flex-end;}
