@@ -39,7 +39,7 @@ var include = {
         document.write('<div class="fixed_item">');
         document.write('<button type="button" class="btn_gotop">');
         document.write('<i class="ico_arr_up"></i>');
-        document.write('<span>TOP</span>');
+        document.write('<span>최상단이동</span>');
         document.write('</button>');
         document.write('</div>');
         document.write('</div>');

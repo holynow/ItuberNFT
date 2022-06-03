@@ -26,18 +26,12 @@ $(function(){
             targetShow: function () {
                 var _this = this;
                 var thisScroll = $('body').scrollTop();
-                var thisH = $('body').innerHeight();
-                var scrollH = $('body').prop('scrollHeight')
                 if (thisScroll >= 100) {
                     $(_this.gnbBar).addClass('on')
-                }
-                else {
-                    $(_this.gnbBar).removeClass('on');     
-                }
-                if (thisScroll + thisH >= scrollH) {
                     $(_this.topBtn).addClass('on')
                 }
                 else {
+                    $(_this.gnbBar).removeClass('on');     
                     $(_this.topBtn).removeClass('on');     
                 }
             }

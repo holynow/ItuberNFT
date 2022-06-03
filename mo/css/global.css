@@ -66,10 +66,11 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .inner_wrap {padding: 0 20px;}
 
 /* fixed bottom */
-.fixed_bottom_area {position: fixed; right: 15px; bottom: 80px; transform: translateX(80px); z-index: 99; opacity: 1; transition: all .5s ease-in-out;}
+.fixed_bottom_area {position: fixed; right: 15px; bottom: 80px; z-index: 99; opacity: 0; transition: all .4s ease-in-out;}
 .fixed_bottom_area.on {transform: translateY(0px); opacity: 1;}
-.fixed_bottom_area .fixed_item button {width: 50px; height: 50px; border-radius: 50px; background: rgba(0,0,0,.8);}
-.fixed_bottom_area .fixed_item button > span {color: #fff;}
+.fixed_bottom_area .fixed_item button {width: 40px; height: 40px; border-radius: 50px; background: rgba(0,0,0,.5);}
+.fixed_bottom_area .fixed_item button > span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 0;}
+.fixed_bottom_area .fixed_item button > span:before {content: ''; display: block; margin: 0 auto; width: 20px; height: 12px; background: url('../img/common/ico_arr_top.png')no-repeat; background-size: 100%;}
 
 /* header */
 .header {height: 60px;}
