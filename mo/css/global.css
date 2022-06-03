@@ -70,7 +70,7 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .fixed_bottom_area.on {transform: translateY(0px); opacity: 1;}
 .fixed_bottom_area .fixed_item button {width: 40px; height: 40px; border-radius: 50px; background: rgba(0,0,0,.5);}
 .fixed_bottom_area .fixed_item button > span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 0;}
-.fixed_bottom_area .fixed_item button > span:before {content: ''; display: block; margin: 0 auto; width: 20px; height: 12px; background: url('../img/common/ico_arr_top.png')no-repeat; background-size: 100%;}
+.fixed_bottom_area .fixed_item button > span:before {content: ''; display: block; margin: 0 auto; width: 16px; height: 10px; background: url('../img/common/ico_arr_top.png')no-repeat; background-size: 100%;}
 
 /* header */
 .header {height: 60px;}
