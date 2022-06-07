@@ -145,11 +145,11 @@ var include = {
         document.write('<span>개인정보처리방침</span>');
         document.write('</a>');
         document.write('</li>');
-        document.write('<li>');
-        document.write('<a href="#none">');
-        document.write('<span>이메일주소무단수집거부</span>');
-        document.write('</a>');
-        document.write('</li>');
+        // document.write('<li>');
+        // document.write('<a href="#none">');
+        // document.write('<span>이메일주소무단수집거부</span>');
+        // document.write('</a>');
+        // document.write('</li>');
         document.write('<li>');
         document.write('<a href="#none">');
         document.write('<span>이용약관</span>');

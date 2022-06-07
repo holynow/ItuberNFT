@@ -305,7 +305,8 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .footer .footer_inner .footer_info .footer_sort_list .txt:before {content: ''; display: inline-block; margin-right: 10px; width: 1px; height: 10px; background: #555;}
 .footer .footer_inner .footer_menu .copy {margin-top: 30px; font-size: 12px; color: #ddd;}
 .footer .footer_inner .footer_menu {margin-top: 20px; padding-top: 20px; border-top: 1px solid #555;}
-.footer .footer_inner .footer_menu .footer_menu_list {display: flex; justify-content: space-between;}
+.footer .footer_inner .footer_menu .footer_menu_list {display: flex; justify-content: flex-start;}
+.footer .footer_inner .footer_menu .footer_menu_list li + li {margin-left: 20px;}
 .footer .footer_inner .footer_menu .footer_menu_list li span {position: relative; font-size: 12px; color: #fff; border-bottom: 1px solid #ddd;}
 
 /* ico */
