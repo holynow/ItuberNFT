@@ -110,7 +110,7 @@
 .character_detail .inner_txt .sub_tit {margin-top: 20px; font-size: 16px; text-align: center;}
 .character_detail .inner_txt .txt {margin-top: 20px; font-size: 14px; line-height: 21px;}
 /* item_list */
-.item_wrap {margin-top: 20px;}
+.item_wrap {margin-top: 10px;}
 .item_wrap[class*="row"] {display: grid; gap: 20px;}
 .item_wrap[class*="row"][class*="_1"] {grid-template-columns: 1fr;}
 .item_wrap[class*="row"][class*="_2"] {grid-template-columns: repeat(2, 1fr);}
@@ -199,3 +199,30 @@
 .info_wrap .logout_btn span {padding-left: 35px; font-size: 18px; vertical-align: -webkit-baseline-middle; color: #fff;}
 .info_wrap.modify .info_header {padding: 50px 0; margin-bottom: 40px;}
 .info_wrap.modify .info_header .my_profile {margin: 0 auto; width: 80px; height: 80px; border-radius: 50%; background: #fff; border: 5px solid #CDCEFF; font-size: 35px; text-align: center; line-height: 70px;}
+ 
+/* my nft */
+.my_nft .content_area {padding-bottom: 0; background: #f7f7f7;}
+.my_nft .inner_wrap {padding: 40px 20px 100px;}
+.my_nft .nft_list .sub_tit_wrap {display: flex; justify-content: space-between;}
+.my_nft .nft_list .sub_tit_wrap .total_num p {font-size: 13px; color: #999;}
+.my_nft .nft_list .sub_tit_wrap .total_num p > span {padding: 0 5px; font-size: 16px; font-weight: 500;}
+.my_nft .nft_list .sub_tit_wrap + .list_wrap {margin-top: 10px;}
+.my_nft .nft_list .list_wrap .status_badge {left: unset; right: 15px;}
+.my_nft .nft_list .list_wrap .status_badge span {background: #6166FF;}
+.my_nft .nft_list .list_wrap li {position: relative; padding: 15px; border-radius: 10px; box-shadow: 5px 5px 15px rgba(40,40,40,.1); background: #fff;}
+.my_nft .nft_list .list_wrap li + li {margin-top: 20px;}
+.my_nft .nft_list .list_wrap .author_wrap {display: flex; justify-content: flex-start;}
+.my_nft .nft_list .list_wrap .author_wrap p {font-size: 13px; color: #999;}
+.my_nft .nft_list .list_wrap .author_wrap p + p:before {margin: 0 5px; content: ''; display: inline-block; width: 1px; height: 10px; background: #999;}
+.my_nft .nft_list .list_wrap .nft_wrap {display: flex; justify-content: flex-start; align-items: center; margin-top: 10px;}
+.my_nft .nft_list .list_wrap .char_img {width: 130px; height: 130px; background: #ddd; border-radius: 10px; overflow: hidden;}
+.my_nft .nft_list .list_wrap .char_img img {width: 100%;}
+.my_nft .nft_list .list_wrap .info_wrap {flex: 1; margin-left: 20px;}
+.my_nft .nft_list .list_wrap .info_wrap .nft_name {margin-top: 5px; font-size: 16px; font-weight: 500;}
+.my_nft .nft_list .list_wrap .info_wrap .amount_wrap {display: flex; flex-direction: column; justify-content: center; gap: 5px; align-items: flex-start; margin-top: 5px; padding: 10px; border-radius: 5px; background: #f7f7f7;}
+.my_nft .nft_list .list_wrap .info_wrap .amount_wrap > p {font-size: 13px; color: #999;}
+.my_nft .nft_list .list_wrap .info_wrap .amount_wrap > p > span {padding: 0 3px; font-weight: 500; color: #333;}
+.my_nft .nft_list .list_wrap .info_wrap .avg_price {margin-top: 10px; text-align: right;}
+.my_nft .nft_list .list_wrap .info_wrap .avg_price p {font-size: 14px; color: #555;}
+.my_nft .nft_list .list_wrap .info_wrap .avg_price p > span {padding: 0 5px; font-size: 20px; color: #333; font-weight: 500;}
+.my_nft .nft_list .list_wrap + .btn_group {margin-top: 40px;}
