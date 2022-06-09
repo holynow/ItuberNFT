@@ -13,7 +13,6 @@ $(function(){
             if ($('.tooltip').length > 0) { this.tooltipHandler.init(); }
             if ($('.tab_wrap').length > 0) { this.tabHandler.init(); }
             if ($('.follow_gnb_bar, .fixed_bottom_area').length > 0) { this.scrollEvent.init(); }
-            if ($('.increase_btn_wrap').length > 0) { this.increaseHandler.init(); }
         },
         scrollEvent: {
             gnbBar: '.follow_gnb_bar',
@@ -252,35 +251,6 @@ $(function(){
                     $(target).attr('title', "아코디언 열림");
                 }
             }
-        },
-        increaseHandler: {
-            increaseBtn: '.increase_btn_wrap button',
-            increaseValue: '.value', 
-            inputBox: '.input_text',
-            priceVal: '.convert_price span',
-            init: function () {
-                var _this = this;
-                var convert = 100;
-                _this.clickEvent(convert);
-                _this.pressEvnet(convert);
-            },
-            clickEvent: function (convert) {
-                var _this = this;
-                var conut = 0;
-                var input = $(_this.inputBox);
-                $(_this.increaseBtn).bind('click', function () {
-                    var price = 0;
-                    var clickNum = $(this).find(_this.increaseValue).text();
-                    conut += parseInt(clickNum);
-                    input.val(conut)
-                    price += input.val() * convert; 
-                    $(_this.priceVal).text(price)
-                })
-                $(_this.inputBox).on('keyup', function () {
-                    $(_this.priceVal).text(input.val() * convert)
-                })
-            },
-           
         }
     };
     ui.init();

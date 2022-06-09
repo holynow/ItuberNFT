@@ -236,7 +236,7 @@
 .my_wallet_wrap .box_item.my_point .point > span {color: #6166FF;}
 .my_wallet_wrap .box_item .convert_amount {display: flex; justify-content: space-between; padding-top: 10px; margin-top: 10px; border-top: 1px solid #ddd;}
 .my_wallet_wrap .box_item .convert_amount p {font-size: 14px;}
-.my_wallet_wrap .box_item .convert_amount .krw > span {padding-right: 5px; font-size: 16px; font-weight: 500;}
+.my_wallet_wrap .box_item .convert_amount .price > span {padding-right: 5px; font-size: 16px; font-weight: 500;}
 .my_wallet_wrap .tab_wrap .tab_btn button.on {border-color: #6166FF; color: #6166FF;}
 .my_wallet_wrap .increase_btn_wrap {display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-top: 30px;}
 .my_wallet_wrap .increase_btn_wrap button {height: 40px; border: 1px solid #999; border-radius: 5px; font-size: 16px; font-weight: 500;}
@@ -246,3 +246,7 @@
 .my_wallet_wrap .board_form .convert_price {margin-top: 10px; text-align: right;}
 .my_wallet_wrap .board_form .convert_price > span {padding-right: 5px;}
 .my_wallet_wrap .board_form + .btn_group {margin-top: 60px;}
+.my_wallet_wrap .possible_point {display: flex; justify-content: space-between; align-items: center; margin-top:40px;}
+.my_wallet_wrap .possible_point p {font-size: 14px; color: #555;}
+.my_wallet_wrap .possible_point .point {font-size: 16px; color: #555;}
+.my_wallet_wrap .possible_point .point > span {padding-right: 5px; font-size: 25px; font-weight: 700; color: #333;}

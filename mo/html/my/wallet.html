@@ -27,7 +27,7 @@
                             <p class="point"><span>866</span>DDP</p>
                             <div class="convert_amount">
                                 <p>환산액</p>
-                                <p class="krw"><span>86,600</span>원</p>
+                                <p class="price"><span>86,600</span>원</p>
                             </div>
                         </div>
                         <div class="tab_wrap">
@@ -43,10 +43,10 @@
                                     <button type="button">+<span class="value">500</span></button>
                                     <button type="button">+<span class="value">1000</span></button>
                                 </div>
-                                <div class="board_form">
+                                <div class="board_form charge">
                                     <div class="form_group">
                                         <div class="input_group w_full">
-                                            <input type="number" class="input_text" placeholder="충전 할 DD POINT 금액을 입력하세요.">
+                                            <input type="number" class="input_text " placeholder="충전 할 DD POINT 금액을 입력하세요.">
                                             <span>DDP</span>
                                             <!-- input_group에 error 클래스 있을경우 valid 텍스트 노출-->
                                             <!-- <p class="error">최소 충전금액은 10 DDP 입니다.</p> -->
@@ -56,10 +56,53 @@
                                     </div>
                                 </div>
                                 <div class="btn_group">
-                                    <button type="button" class="btn_wfull_round_point_h50"><span>확인</span></button>
+                                    <button type="button" class="btn_wfull_round_point_h50 pop_open" data-open="popup01"><span>확인</span></button>
+                                </div>
+                                <div class="point_note">
+                                    <h4>유의사항</h4>
+                                    <ul class="dash_list">
+                                        <li> 1 DD POINT는 원화 100원의 가치를 가집니다.</li>
+                                        <li>1회 최소 충전금액은 1,000원(10 DDP)입니다.</li>
+                                        <li>충전된 DD POINT는 바로 인출하는 것이 제한됩니다.</li>
+                                        <li>충전된 DD POINT로 최소 1회 이상의 구매 행위와 최소 1회 이상의 판매 완료가 이뤄진 이후에 수익 DD POINT를 포함하여 인출 가능합니다.</li>
+                                        <li>인출 DD POIN T 금액과 상관없이 1회 인출 시 1,000원(10 DDP)의 수수료가 부과됩니다. 잔여 포인트가 10 DD POINT 이하일 경우 인출이 불가합니다.</li>
+                                        <li>쿠폰으로 충전된 캐쉬는 인출이 불가합니다.</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="tab_cont"></div>
+                            <div class="tab_cont">
+                                <div class="possible_point">
+                                    <p>인출 가능 DDP</p>
+                                    <p class="point"><span>856</span>DDP</p>
+                                </div>
+                                <div class="board_form withdraw">
+                                    <div class="form_group">
+                                        <div class="input_group w_full">
+                                            <input type="number" class="input_text" placeholder="인출 할 DD POINT를 입력하세요.">
+                                            <span>DDP</span>
+                                            <!-- input_group에 error 클래스 있을경우 valid 텍스트 노출-->
+                                            <!-- <p class="error">인출 할 포인트가 부족합니다.</p> -->
+                                            <!-- <p class="error">인출 할 포인트를 입력하세요.</p> -->
+                                        </div>
+                                        <p class="convert_price"><span>0</span>KRW</p>
+                                    </div>
+                                </div>
+                                <div class="btn_group">
+                                    <button type="button" class="btn_wfull_round_point_h50 pop_open" data-open="popup02"><span>확인</span></button>
+                                </div>
+                                <div class="point_note">
+                                    <h4>유의사항</h4>
+                                    <ul class="dash_list">
+                                        <li>최초 인출 신청은 본인계좌 인증 과정을 먼저 진행합니다.</li>
+                                        <li>인출 신청한 DD POINT는 익일 15:00 이후에 인출 처리됩니다.</li>
+                                        <li>충전된 DD POINT는 바로 인출하는 것이 제한됩니다.</li>
+                                        <li>충전된 DD POINT로 최소 1회 이상의 구매 행위와 최소 1회 이상의 판매 완료가 이뤄진 이후에 수익 DD POINT를 포함하여 인출 가능합니다.</li>
+                                        <li>인출 DD POINT 금액과 상관없이 1회 인출 시 1,000원(10 DDP)의 수수료가 부과됩니다. DD POINT 잔액이 10 DDP 이하 일 경우 인출이 불가합니다.</li>
+                                        <li>인출신청 후 취소가 불가합니다.</li>
+                                        <li>쿠폰으로 충전된 DD POINT는 인출이 불가합니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
@@ -71,8 +114,69 @@
       <script>include.followGnb();</script>
       <!-- fixed_bottom_area -->
       <script>include.fixBottom();</script>
-      <!-- footer -->
-      <script>include.footer();</script>
+        <!-- pop area -->
+        <div class="pop_container layer_pop2" id="popup01">
+            <div class="pop_tit">
+                <h3 class="tit">DD POINT 충전</h3>
+            </div>
+            <div class="pop_inner">
+                <div class="breakdown_list_wrap">
+                    <dl>
+                        <dt>충전 POINT</dt>
+                        <dd><span>10</span>DDP</dd>
+                    </dl>
+                    <dl>
+                        <dt>결제금액</dt>
+                        <dd><span class="emphasis">1,000</span>원</dd>
+                    </dl>
+                </div>
+                <div class="inner_txt">
+                    <p>위 항목을 확인하였으며,<br>
+                        <span class="point">즉시 결제를 진행하시겠습니까?</span></p>
+                </div>
+            </div>
+            <div class="btn_group row2">
+                <button type="button" class="btn_wh_line_round_h50_wfull pop_close">
+                <span>취소</span>
+                </button>
+                <button type="button" class="btn_point_round_h50_wfull">
+                <span>확인</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="pop_container layer_pop2" id="popup02">
+            <div class="pop_tit">
+                <h3 class="tit">인출 신청</h3>
+            </div>
+            <div class="pop_inner">
+                <div class="breakdown_list_wrap">
+                    <dl>
+                        <dt>인출 POINT</dt>
+                        <dd><span>10</span>DDP</dd>
+                    </dl>
+                    <dl>
+                        <dt>인출금액</dt>
+                        <dd><span class="emphasis">1,000</span>원</dd>
+                    </dl>
+                </div>
+                <div class="inner_txt">
+                    <p class="refer">*인출 수수료는 1회당 10 DDP (1,000원)별도 부과됩니다.</p>
+                    <p>위 항목을 확인하였으며,<br> 
+                        인출을 신청하시겠습니까?</p>
+                </div>
+            </div>
+            <div class="btn_group row2">
+                <button type="button" class="btn_wh_line_round_h50_wfull pop_close">
+                <span>취소</span>
+                </button>
+                <button type="button" class="btn_point_round_h50_wfull">
+                <span>확인</span>
+                </button>
+            </div>
+        </div>
+        <!-- footer -->
+        <script>include.footer();</script>
     </div>
   </body>
 </html>
