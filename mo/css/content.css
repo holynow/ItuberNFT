@@ -75,6 +75,7 @@
 /* card box wrap */
 .card_box_wrap .box_item {padding: 30px; border-radius: 20px; background: #f7f7f7;}
 .card_box_wrap .box_item .no_result {text-align: center;}
+.card_box_wrap .box_item .no_result + .btn_group {margin-top: 20px;}
 .card_box_wrap .box_item + .box_item {margin-top: 20px;}
 .card_box_wrap .box_item dl {display: flex; justify-content: space-between; align-items: center;}
 .card_box_wrap .box_item dl + dl {margin-top: 20px;}
@@ -226,3 +227,22 @@
 .my_nft .nft_list .list_wrap .info_wrap .avg_price p {font-size: 14px; color: #555;}
 .my_nft .nft_list .list_wrap .info_wrap .avg_price p > span {padding: 0 5px; font-size: 20px; color: #333; font-weight: 500;}
 .my_nft .nft_list .list_wrap + .btn_group {margin-top: 40px;}
+
+/* wallet */
+.my_wallet_wrap {position: relative; margin: 40px 0 0;}
+.my_wallet_wrap .box_item.my_point {padding: 20px; background: #fff; border: 1px solid #6166FF;}
+.my_wallet_wrap .box_item.my_point .box_tit p,
+.my_wallet_wrap .box_item.my_point .point,
+.my_wallet_wrap .box_item.my_point .point > span {color: #6166FF;}
+.my_wallet_wrap .box_item .convert_amount {display: flex; justify-content: space-between; padding-top: 10px; margin-top: 10px; border-top: 1px solid #ddd;}
+.my_wallet_wrap .box_item .convert_amount p {font-size: 14px;}
+.my_wallet_wrap .box_item .convert_amount .krw > span {padding-right: 5px; font-size: 16px; font-weight: 500;}
+.my_wallet_wrap .tab_wrap .tab_btn button.on {border-color: #6166FF; color: #6166FF;}
+.my_wallet_wrap .increase_btn_wrap {display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-top: 30px;}
+.my_wallet_wrap .increase_btn_wrap button {height: 40px; border: 1px solid #999; border-radius: 5px; font-size: 16px; font-weight: 500;}
+.my_wallet_wrap .board_form  {margin-top: 20px;}
+.my_wallet_wrap .board_form .input_group .input_text {padding-right: 60px; text-align: right; font-size: 20px;}
+.my_wallet_wrap .board_form .input_group .input_text + span {position: absolute; right: 10px; top: 14px;  font-size: 20px;}
+.my_wallet_wrap .board_form .convert_price {margin-top: 10px; text-align: right;}
+.my_wallet_wrap .board_form .convert_price > span {padding-right: 5px;}
+.my_wallet_wrap .board_form + .btn_group {margin-top: 60px;}

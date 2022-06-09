@@ -93,8 +93,10 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .board_form .form_group .input_group {position: relative;}
 .board_form .form_group .input_group .input_text {padding: 15px 10px; font-size: 16px; border-bottom: 1px solid #ddd;}
 .board_form .form_group .input_group .input_text::placeholder {font-size: 14px; color: #ddd;}
+.board_form .form_group .input_group .error,
 .board_form .form_group .input_group .valid {display: none; margin-top: 8px; font-size: 13px; color: #FF7582;}
 .board_form .form_group .input_group .possible {display: none; margin-top: 8px; font-size: 13px; color: #3c8aff;}
+.board_form .form_group .input_group.error .error,
 .board_form .form_group .input_group.error .possible,
 .board_form .form_group .input_group.error .valid {display: block;}
 .board_form .form_group .split_group {display: flex; gap: 20px;}
@@ -166,7 +168,7 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .box_item + .tab_wrap {margin-top: 20px;}
 .tab_wrap .box_item {margin-top: 20px;}
 .tab_wrap .tab_btn {display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;}
-.tab_wrap .tab_btn > button {height: 50px; line-height: 50px; border: 1px solid #ddd; border-radius: 5px; color: #999;}
+.tab_wrap .tab_btn > button {height: 50px; line-height: 50px; border: 1px solid #ddd; border-radius: 5px; color: #999; font-size: 16px;}
 .tab_wrap .tab_btn > button.on {border-color: #333; color: #333; font-weight: 500;}
 .tab_wrap .tab_cont {display: none;}
 .tab_wrap .tab_cont.on {display: block;}
