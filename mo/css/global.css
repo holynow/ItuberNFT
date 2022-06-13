@@ -30,6 +30,9 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 
 /* .wrap {position: relative;} */
 
+.refer_txt {margin-left: 10px; font-size: 12px; color: #6166FF; font-weight: 500;}
+.ico_ess:before {content: ''; display: inline-block; margin: 0 3px 1px; width: 6px; height: 6px; background: #6166FF; border-radius: 50%;}
+label > .ico_ess::before {margin-bottom: 9px;}
 /* skip navigation */
 .skip_navi a {position: absolute; top: -999em;}
 .skip_navi a:focus {display: block; left: 0; top: 0; z-index: 9999; width: 100%; height: 30px; line-height: 30px; background: #e32c51; color: #fff; text-align: center;}
@@ -49,6 +52,7 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 
 /* txt_color */
 .col_red {color:#e44d4d;}
+.col_pur {color:#6166FF;}
 
 /* titwrap */
 .tit_wrap {margin: 40px 0 50px;}
@@ -91,6 +95,8 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 /* board_form */
 .board_form .form_group .form_head .form_label {font-size: 14px; font-weight: 500;}
 .board_form .form_group .input_group {position: relative;}
+.board_form .form_group .input_group .input_select option[value=""][disabled] {display: none;}
+.board_form .form_group .input_group .input_select,
 .board_form .form_group .input_group .input_text {padding: 15px 10px; font-size: 16px; border-bottom: 1px solid #ddd;}
 .board_form .form_group .input_group .input_text::placeholder {font-size: 14px; color: #ddd;}
 .board_form .form_group .input_group .error,
@@ -113,8 +119,10 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 /* select */
 .sort_select select {padding: 7px 8px; border: 1px solid #ddd; font-size: 13px; outline: none;}
 /* input */
+[class^="input_group"] > select,
 [class^="input_group"] > input {width: 100%;}
 [class^="input_group"] > input[type="password"] {font-family: Verdana; letter-spacing: 0.125em;}
+[class^="input_group"][class*="w_full"] .input_select,
 [class^="input_group"][class*="w_full"] .input_text {width: 100%;}
 [class^="input_group"][class*="auth"] > input {padding-right: 70px;}
 [class^="input_group"][class*="auth"] [class^="btn"] {position: absolute; top: 10px; right: 0; padding: 7px 10px 5px;}
@@ -196,11 +204,15 @@ button{border: 0; background: none; padding: 0; margin: 0;}
 .point_note h4 {font-size: inherit; font-weight: 500;}
 .point_note h4 + ul {margin-top: 20px;}
 .point_note ul > li {font-size: 13px; line-height: 1.5; color: #888;}
+.point_note + .btn_group {margin-top: 40px;}
+fieldset + .point_note {margin-top: 60px;}
 
 /* dash list */
-.dash_list li {position: relative; padding-left: 8px;}
+.dash_list li {position: relative; padding-left: 8px; font-size: 12px;}
 .dash_list li + li {margin-top: 8px;}
 .dash_list li:before {content: '-'; display: inline-block; position: absolute; left: 0;}
+.dash_list.ex_mark li::before {content: ''; display: inline-block; top: 2px; margin-right: 4px; width: 18px; height: 18px; background: url('../img/common/ico_ex_mark.png')no-repeat; background-size: 100%;}
+.dash_list.ex_mark li {padding-left: 23px; color: #6166FF;}
 
 /* popup */
 .pop_container {display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #fff; z-index: 120;}

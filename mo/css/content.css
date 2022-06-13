@@ -177,7 +177,7 @@
 .info_wrap .info_header .user_info .user_id {margin-left: 10px;}
 .info_wrap .info_header .user_info .user_id p {font-size: 24px; font-weight: 500; color: #fff;}
 .info_wrap .info_header .user_info .user_id span {display: inline-block; margin-top: 3px; font-size: 16px; font-weight: 400; color: #fff;}
-.info_wrap .info_header .user_profile {width: 60px;}
+.info_wrap .info_header .user_profile {width: 60px; height: 60px; border-radius: 50%; background: #fff; border: 5px solid #CDCEFF; font-size: 30px; text-align: center; line-height: 50px;}
 .info_wrap .info_header .info_setting {width: 30px; height: 30px;}
 .info_wrap .ddp_wrap {margin-top: -80px; padding: 20px; background: #fff; border-radius: 20px; box-shadow: 3px 3px 10px rgba(0,0,0,.1)}
 .info_wrap .ddp_wrap .tit {font-size: 14px;}
@@ -250,3 +250,14 @@
 .my_wallet_wrap .possible_point p {font-size: 14px; color: #555;}
 .my_wallet_wrap .possible_point .point {font-size: 16px; color: #555;}
 .my_wallet_wrap .possible_point .point > span {padding-right: 5px; font-size: 25px; font-weight: 700; color: #333;}
+
+/* 계좌인증 인증번호 */
+.bank_auth .content_area {padding: 0;}
+.bank_auth .img {margin-top: 30px; text-align: center;}
+.bank_auth .board_form .form_group .input_text {background: #f7f7f7; border: 1px solid #6166FF; border-radius: 10px;}
+.bank_auth .inner_wrap {margin-top: 20px;}
+.bank_auth .point_box {padding: 30px 20px; background: #6166FF;}
+.bank_auth .point_box .point_note {margin: 0;}
+.bank_auth .point_box .point_note li {color: #fff;}
+.bank_auth .point_box .btn_group {margin-top: 20px;}
+.bank_auth .point_box .btn_group button span {color: #6166FF;}

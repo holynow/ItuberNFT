@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="/mo/js/pub_include.js"></script>
+    <script>include.meta();</script>
+    <title>계좌인증 | I-TUBER NFT</title>
+    <script>include.styles();</script>
+    <script>include.scripts();</script>
+  </head>
+  <body>
+    <div class="wrap bank_auth">
+      <!-- skip navi --> 
+      <script>include.skipNav();</script>
+      <!-- header -->
+       <script>include.header();</script>
+      <!-- container -->
+      <section id="contents" class="container">
+        <div class="content_area">
+            <div class="inner_wrap">
+                <div class="board_form">
+                    <div class="form_group">
+                        <div class="form_head">
+                            <label for="authNum" class="form_label">
+                            인증 번호 입력
+                            </label>
+                        </div>
+                        <div class="input_group w_full error">
+                            <input type="number" id="authNum" class="input_text">
+                            <p class="valid">잘못된 코드를 입력하셨습니다.</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="/mo/img/my/img_bank_auth.png" alt="">
+                    </div>
+                </div>   
+            </div>
+            <div class="point_box">
+                <div class="point_note">
+                    <ul class="dash_list ex_mark">
+                        <li>계좌인증을 위하여 1원을 송금할 예정입니다.</li>
+                        <li>계좌 거래내역에서 입금자명 란에 인증번호를 확인해 주세요.</li>
+                    </ul>
+                </div>
+                <div class="btn_group">
+                    <button class="btn_wfull_h50_wh_round pop_open" data-open="popup01">
+                        <span>은행 계좌 인증</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- follow gnb -->
+      <script>include.followGnb();</script>
+      <!-- fixed_bottom_area -->
+      <script>include.fixBottom();</script>
+       <!-- pop area -->
+        <div class="pop_container layer_pop" id="popup01">
+            <div class="pop_inner">
+            <p>인증에 성공했습니다.</p>
+            <!-- <p>인증에 실패했습니다.</p> -->
+            <div class="btn_group">
+                <button type="button" class="btn_bk_round_h50_wfull pop_close">
+                <span>확인</span>
+                </button>
+            </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <script>include.footer();</script>
+    </div>
+  </body>
+</html>
