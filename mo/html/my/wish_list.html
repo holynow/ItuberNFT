@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="/mo/js/pub_include.js"></script>
+    <script>include.meta();</script>
+    <title>WISH LIST | I-TUBER NFT</title>
+    <script>include.styles();</script>
+    <script>include.scripts();</script>
+  </head>
+  <body>
+    <div class="wrap my_nft">
+      <!-- skip navi --> 
+      <script>include.skipNav();</script>
+      <!-- header -->
+       <script>include.header();</script>
+      <!-- container -->
+      <section id="contents" class="container">
+        <div class="content_area">
+            <div class="inner_wrap">
+                <div class="nft_list">
+                    <div class="sub_tit_wrap">
+                        <div class="top_btn_group">
+                            <button type="button" class="select_all_btn">전체선택</button>
+                            <button type="button" class="remove_btn pop_open" data-open="popup01">선택삭제</button>
+                        </div>
+                        <div class="total_num">
+                            <p>총 <span>10</span>개</p>
+                        </div>
+                    </div>
+                     <!-- 목록 없는 경우 -->
+                    <!-- <div class="no_result_wrap">
+                        <p class="result_txt">
+                           찜한 상품이 없습니다.
+                        </p>
+                    </div> -->
+                    <!-- //목록 없는 경우 -->
+                    <ul class="list_wrap">
+                        <li class="wish_list item">
+                            <input type="checkbox" id="wishCh01">
+                            <label for="wishCh01">
+                                <div class="nft_wrap">
+                                    <div class="img_wrap">
+                                        <div class="char_img">
+                                            <img src="/mo/img/common/img_bogo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="info_wrap">
+                                        <a href="#" title="상세페이지 이동">
+                                            <p class="nft_name">BOGO ANIMATION</p>
+                                        </a>
+                                        <div class="amount_wrap">
+                                            <p class="num">보유량<span>40</span>개</p>
+                                        </div>
+                                        <div class="avg_price">
+                                            <p><span class="min">80</span>~<span class="max">160</span>DDP</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="wish_list item">
+                            <input type="checkbox" id="wishCh02">
+                            <label for="wishCh02">
+                                <div class="nft_wrap">
+                                    <div class="img_wrap">
+                                        <div class="char_img">
+                                            <img src="/mo/img/common/img_leo3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="info_wrap">
+                                        <a href="#" title="상세페이지 이동">
+                                            <p class="nft_name">LEO BASEBALL ANIMATION</p>
+                                        </a>
+                                        <div class="amount_wrap">
+                                            <p class="num">보유량<span>40</span>개</p>
+                                        </div>
+                                        <div class="avg_price">
+                                            <p><span class="min">80</span>~<span class="max">160</span>DDP</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="wish_list item">
+                            <input type="checkbox" id="wishCh03">
+                            <label for="wishCh03">
+                                <div class="nft_wrap">
+                                    <div class="img_wrap">
+                                        <div class="char_img">
+                                            <img src="/mo/img/common/img_pinnki.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="info_wrap">
+                                        <a href="#" title="상세페이지 이동">
+                                            <p class="nft_name">PINNKI ANIMATION</p>
+                                        </a>
+                                        <div class="amount_wrap">
+                                            <p class="num">보유량<span>40</span>개</p>
+                                        </div>
+                                        <div class="avg_price">
+                                            <p><span class="min">80</span>~<span class="max">160</span>DDP</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="wish_list item">
+                            <input type="checkbox" id="wishCh04">
+                            <label for="wishCh04">
+                                <div class="nft_wrap">
+                                    <div class="img_wrap">
+                                        <div class="char_img">
+                                            <img src="/mo/img/common/img_qbi.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="info_wrap">
+                                         <div class="author_wrap">
+                                            <p class="name">큐비</p>
+                                            <p class="author">DOORIBUN</p>
+                                        </div>
+                                        <a href="#" title="상세페이지 이동">
+                                            <p class="nft_name">Q-BI ANIMATION</p>
+                                        </a>
+                                        <div class="amount_wrap">
+                                            <p class="num">보유량<span>40</span>개</p>
+                                        </div>
+                                        <div class="avg_price">
+                                            <p><span class="min">80</span>~<span class="max">160</span>DDP</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="wish_list item">
+                            <input type="checkbox" id="wishCh05">
+                            <label for="wishCh05">
+                                <div class="nft_wrap">
+                                    <div class="img_wrap">
+                                        <div class="char_img">
+                                            <img src="/mo/img/common/img_leo1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="info_wrap">
+                                         <div class="author_wrap">
+                                            <p class="name">레오</p>
+                                            <p class="author">DOORIBUN</p>
+                                        </div>
+                                        <a href="#" title="상세페이지 이동">
+                                            <p class="nft_name">LEO CLASSIC ANIMATION</p>
+                                        </a>
+                                        <div class="amount_wrap">
+                                            <p class="num">보유량<span>40</span>개</p>
+                                        </div>
+                                        <div class="avg_price">
+                                            <p><span class="min">80</span>~<span class="max">160</span>DDP</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="btn_group alignC">
+                        <button type="button" class="btn_more">
+                            <span>더 보기</span><i class="ico_arr_down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- follow gnb -->
+      <script>include.followGnb();</script>
+      <!-- fixed_bottom_area -->
+      <script>include.fixBottom();</script>
+       <!-- pop area -->
+       <div class="pop_container layer_pop" id="popup01">
+        <div class="pop_inner">
+          <p>선택된 항목이<br> 삭제되었습니다.</p>
+          <div class="btn_group">
+            <button type="button" class="btn_bk_round_h50_wfull pop_close">
+              <span>확인</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <script>include.footer();</script>
+    </div>
+  </body>
+</html>

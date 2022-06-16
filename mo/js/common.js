@@ -7,6 +7,7 @@ $(function(){
             if($('.fixed_bottom_area').length > 0) {this.scrollTop.init();}
             if($('.pop_container').length > 0) {this.popupHandler.init();}
             if($('.all_check').length > 0) {this.agreeCheck.init();}
+            if($('.select_all_btn').length > 0) {this.itemSelect.init();}
             if ($('.full_pop').length > 0) { this.sticky.init(); }
             if ($('.accord_wrap').length > 0) { this.accord.init(); }
             if ($('.search_wrap').length > 0) { this.searchHandler.init(); }
@@ -203,6 +204,31 @@ $(function(){
                     $(_this.checkInput).prop('checked', false);
                 }
             },
+        },
+        itemSelect: {
+            allBtn: '.select_all_btn',
+            list: '.item',
+            init: function () {
+                var _this = this;
+                $(_this.allBtn).on('click', function () {
+                    _this.selectedList(this);
+                })
+            },
+            selectedList: function ($this) {
+                var _this = this;
+                var allBtn = $($this);
+                allBtn.toggleClass('on');
+                if (allBtn.hasClass('on')) {
+                    $(_this.list).each(function () {
+                        $(this).find('input').prop('checked', true);
+                    })
+                } else {
+                    $(_this.list).each(function () {
+                        $(this).find('input').prop('checked', false);
+                    })
+                }
+                
+            }
         },
         sticky: {
             fullPopup: '.full_pop',
