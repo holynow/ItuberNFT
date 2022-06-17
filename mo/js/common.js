@@ -208,11 +208,24 @@ $(function(){
         itemSelect: {
             allBtn: '.select_all_btn',
             list: '.item',
+            removeBtn: '.remove_btn',
             init: function () {
                 var _this = this;
+                setInterval(function () {
+                  _this.removeBtnCheck() 
+                })
                 $(_this.allBtn).on('click', function () {
                     _this.selectedList(this);
                 })
+                clearInterval();
+            },
+            removeBtnCheck: function () {
+                var _this = this;
+                if ($(_this.list).find('input').is(':checked')) {
+                        $(_this.removeBtn).show()
+                } else {
+                    $(_this.removeBtn).hide()
+                }  
             },
             selectedList: function ($this) {
                 var _this = this;

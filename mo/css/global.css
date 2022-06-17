@@ -265,7 +265,7 @@ fieldset + .point_note {margin-top: 60px;}
 .checkbox_wrap input[type="checkbox"],
 .checkbox_wrap input[type="radio"],
 .checkbox_wrap .all_check,
-.checkbox_wrap .check_list .item input[type="checkbox"] {position: absolute; width: 0; height: 0;}
+.checkbox_wrap .check_list .item input[type="checkbox"] {display: none;}
 .checkbox_wrap .all_check + label::before,
 .checkbox_wrap .check_list .item input[type="checkbox"] + label:before {content: ''; display: inline-block; margin-right: 7px; width: 18px; height: 18px; background: url('../img/common/ico_checkbox_off.png') no-repeat; background-size: 18px; vertical-align: top;}
 .checkbox_wrap .all_check:checked + label::before,
