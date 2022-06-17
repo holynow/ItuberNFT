@@ -217,7 +217,6 @@ $(function(){
                 $(_this.allBtn).on('click', function () {
                     _this.selectedList(this);
                 })
-                clearInterval();
             },
             removeBtnCheck: function () {
                 var _this = this;
