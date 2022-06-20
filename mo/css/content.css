@@ -63,7 +63,7 @@
 .detail_cont .sale_list + dl {margin-top: 30px;}
 .detail_cont .sale_list + .btn_group {margin-top: 40px;}
 .detail_cont .sale_list table td.checkbox_wrap input[type="radio"] + label:before {position: absolute; left: 15px; top: 10px; opacity: .8;}
-.nft_trans_wrap {padding: 20px; margin-top:20px}
+.nft_trans_wrap {margin-top:20px}
 /* card box wrap */
 .card_box_wrap .box_item {padding: 30px; border-radius: 20px; background: #f7f7f7;}
 .card_box_wrap .box_item .no_result {text-align: center;}

@@ -69,7 +69,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>22.05.03</td>
-                                                        <td><a href="#none" class="link" title="상세보기">결제완료</a></td>
+                                                        <td><a href="#none" class="link pop_open" title="상세보기" data-open="popup01">결제완료</a></td>
                                                         <td>국민카드</td>
                                                         <td>+100</td>
                                                         <td>110,000</td>
@@ -164,7 +164,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>22.05.03</td>
-                                                        <td><a href="#none" class="link" title="상세보기">인출완료</a></td>
+                                                        <td><a href="#none" class="link pop_open" title="상세보기" data-open="popup02">인출완료</a></td>
                                                         <td>국민카드</td>
                                                         <td>-100</td>
                                                         <td>110,000</td>
@@ -229,63 +229,95 @@
         <!-- pop area -->
         <div class="pop_container layer_pop2" id="popup01">
             <div class="pop_tit">
-                <h3 class="tit">DD POINT 충전</h3>
+                <h3 class="tit">아이튜버 DDP 충전</h3>
             </div>
             <div class="pop_inner">
                 <div class="breakdown_list_wrap">
                     <dl>
-                        <dt>충전 POINT</dt>
-                        <dd><span>10</span>DDP</dd>
+                        <dt>일련번호</dt>
+                        <dd>2204051810</dd>
                     </dl>
                     <dl>
-                        <dt>결제금액</dt>
-                        <dd><span class="emphasis">1,000</span>원</dd>
+                        <dt>일자</dt>
+                        <dd><em class="date">2022-04-05</em> <em class="time">18:10</em></dd>
+                    </dl>
+                    <dl>
+                        <dt>충전 DDP</dt>
+                        <dd><span class="emphasis">+100</span>DDP</dd>
+                    </dl>
+                </div>
+                <div class="breakdown_list_wrap">
+                    <dl>
+                        <dt>주문 금액</dt>
+                        <dd>100,000 원</dd>
+                    </dl>
+                    <dl>
+                        <dt>부가가치세</dt>
+                        <dd>0 원</dd>
+                    </dl>
+                </div>
+                <div class="breakdown_list_wrap">
+                    <dl>
+                        <dt>카드 결제 금액</dt>
+                        <dd><span>100,000 원</span></dd>
+                    </dl>
+                    <dl>
+                        <dt>KB국민카드 ******101***</dt>
+                        <dd>결제완료</dd>
                     </dl>
                 </div>
                 <div class="inner_txt">
-                    <p>위 항목을 확인하였으며,<br>
-                        <span class="point">즉시 결제를 진행하시겠습니까?</span></p>
+                    <p class="refer">카드 전표 확인은 결제 시 입력한 이메일을 통해서 확인할 수
+                    있으며, 나이스페이 홈페이지에서도 확인할 수 있습니다.
+                    </p>
+                    <p class="refer">취소 신청은 카카오톡 I-TUBER 채널을 이용해주세요.</p>
                 </div>
             </div>
-            <div class="btn_group row2">
-                <button type="button" class="btn_wh_line_round_h50_wfull pop_close">
-                <span>취소</span>
-                </button>
-                <button type="button" class="btn_point_round_h50_wfull">
-                <span>확인</span>
-                </button>
-            </div>
+            <button type="button" class="close_btn pop_close"><span class="a11y">팝업창 닫기</span></button>
         </div>
 
         <div class="pop_container layer_pop2" id="popup02">
             <div class="pop_tit">
-                <h3 class="tit">인출 신청</h3>
+                <h3 class="tit">아이튜버 DDP 충전</h3>
             </div>
             <div class="pop_inner">
                 <div class="breakdown_list_wrap">
                     <dl>
-                        <dt>인출 POINT</dt>
-                        <dd><span>10</span>DDP</dd>
+                        <dt>일련번호</dt>
+                        <dd>2204051810</dd>
                     </dl>
                     <dl>
-                        <dt>인출금액</dt>
-                        <dd><span class="emphasis">1,000</span>원</dd>
+                        <dt>일자</dt>
+                        <dd><em class="date">2022-04-05</em> <em class="time">18:10</em></dd>
+                    </dl>
+                    <dl>
+                        <dt>인출 DDP</dt>
+                        <dd><span class="emphasis">1,000</span>DDP</dd>
                     </dl>
                 </div>
-                <div class="inner_txt">
-                    <p class="refer">*인출 수수료는 1회당 10 DDP (1,000원)별도 부과됩니다.</p>
-                    <p>위 항목을 확인하였으며,<br> 
-                        인출을 신청하시겠습니까?</p>
+                <div class="breakdown_list_wrap">
+                    <dl>
+                        <dt>인출 신청 금액</dt>
+                        <dd>100,000 원</dd>
+                    </dl>
+                    <dl>
+                        <dt>인출 수수료</dt>
+                        <dd>1,000 원</dd>
+                    </dl>
                 </div>
+                <div class="breakdown_list_wrap">
+                    <dl>
+                        <dt>총 인출 금액</dt>
+                        <dd><span>99,000 원</span></dd>
+                    </dl>
+                    <dl>
+                        <dt>국민은행 ******101*** <span>홍길동</span><dt>
+                        <dd>인출완료</dd>
+                    </dl>
+                </div>
+                
             </div>
-            <div class="btn_group row2">
-                <button type="button" class="btn_wh_line_round_h50_wfull pop_close">
-                <span>취소</span>
-                </button>
-                <button type="button" class="btn_point_round_h50_wfull">
-                <span>확인</span>
-                </button>
-            </div>
+            <button type="button" class="close_btn pop_close"><span class="a11y">팝업창 닫기</span></button>
         </div>
         <!-- footer -->
         <script>include.footer();</script>

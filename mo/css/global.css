@@ -182,16 +182,16 @@ label > .ico_ess::before {margin-bottom: 9px;}
 [class^="btn"][class*="disabled"] > span {color: #ddd;}
 
 /* breakedown list */
-.breakdown_list_wrap + .inner_txt {margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;}
+.breakdown_list_wrap + .inner_txt {margin-top: 30px; padding-top: 30px; border-top: 1px solid #ddd;}
 .breakdown_list_wrap dl {display: flex; justify-content: space-between; align-items: center;}
 .breakdown_list_wrap dl + dl {margin-top: 10px;}
 .breakdown_list_wrap dl dt {font-size: 14px; color: #555;}
 .breakdown_list_wrap dl dd {font-size: 16px;}
 .breakdown_list_wrap dl dd span {padding-right: 5px; font-size: 25px; font-weight: 700; color: #333;}
-.breakdown_list_wrap dl dd .emphasis {font-size: 30px; color: #6166FF;}
+.breakdown_list_wrap dl dd .emphasis {font-size: 25px; color: #6166FF;}
 .breakdown_list_wrap .result_price {padding: 10px 0; font-size: 20px;}
 .breakdown_list_wrap .result_price span {padding: 0 10px;}
-
+.breakdown_list_wrap + .breakdown_list_wrap {margin-top: 40px; padding-top: 40px; border-top: 1px dashed #555;}
 /* tooltip */
 .tooltip {position: relative; margin-left: 5px;}
 .tooltip:before {content: '?'; display: inline-block; position: relative; width: 14px; height: 14px; background: #333; border-radius: 50%; color: #fff; font-size: 10px; line-height: 14px; vertical-align: 2px;}
@@ -241,14 +241,16 @@ fieldset + .point_note {margin-top: 60px;}
 .pop_container.layer_pop .pop_inner p {font-size: 16px; text-align: center; line-height: 1.4;}
 .pop_container.layer_pop .pop_inner .btn_group {margin-top: 30px;}
 .pop_container.full_pop {position: fixed; top: 0; left: 0; overflow-y: auto;}
+.pop_container .close_btn {position: absolute; top: 20px; right: 20px; padding: 10px; background: url('../img/common/ico_close_btn.png')no-repeat; background-size: 100%;}
 /* layer_pop2 */
 .pop_container.layer_pop2 {top: 50%; left: 50%; transform: translate(-50%, -50%); width: calc(100% - 40px); height: auto; padding: 30px 20px; border-radius: 10px;}
-.pop_container.layer_pop2 .pop_inner .tit_wrap {margin: 0;}
 .pop_container .pop_tit .tit {font-size: 20px; font-weight: 700; text-align: center;}
-.pop_container.layer_pop2 .pop_inner {padding: 40px 0;}
+.pop_container.layer_pop2 .pop_inner {padding: 40px 0 10px;}
+.pop_container.layer_pop2 .pop_inner .tit_wrap {margin: 0;}
 .pop_container.layer_pop2 .pop_inner .inner_txt {font-size: 18px; line-height: 26px;}
 .pop_container.layer_pop2 .pop_inner .inner_txt .point {color: #6166FF; font-weight: 500;}
 .pop_container.layer_pop2 .pop_inner .inner_txt .refer {margin-bottom: 20px; font-size: 12px; color: #666;}
+.pop_container.layer_pop2 .pop_inner + .btn_group {margin-top: 40px;}
 /* full popup */
 .pop_container.full_pop .pop_head {position: relative; padding: 20px 0; width: 100%; background: #fff;}
 .pop_container.full_pop .pop_head.sticky {position: sticky; top: 0; left: 0; border-bottom: 1px solid #ddd;}
@@ -345,7 +347,7 @@ fieldset + .point_note {margin-top: 60px;}
 .accord_wrap .accord_item .accord_btn + .accord_cont {display: none; margin-top: 30px;}
 
 /* calendar */
-.calendar_wrap {margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;}
+.calendar_wrap {margin-top: 30px; padding-top: 30px; border-top: 1px solid #ddd;}
 .calendar_wrap .tit_wrap + .calendar_list {margin-top: 20px;}
 .calendar_wrap .calendar_list {display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;}
 .calendar_wrap .item label {font-size: 14px; color: #555;}
