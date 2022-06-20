@@ -85,7 +85,7 @@
                   <!-- NFT 구매및 판매 -->
                   <div class="accord_item">
                     <button type="button" class="accord_btn on" title="아코디언 열림">
-                      <p>NFT 구매</p>
+                      <p>NFT 구매 및 판매</p>
                     </button>
                     <div class="accord_cont">
                       <div class="nft_trans_wrap">
@@ -438,7 +438,7 @@
                                         </div>
                                     </div>
                                     <div class="btn_group alignC row3">
-                                        <button type="button" class="btn_h60_wfull_round_point">
+                                        <button type="button" class="btn_h60_wfull_round_point pop_open" data-open="popup02">
                                             <span>판매 등록</span>
                                         </button>
                                         <button type="button" class="btn_h60_wfull_round modi">
@@ -713,8 +713,80 @@
       <script>include.followGnb();</script>
       <!-- fixed_bottom_area -->
       <script>include.fixBottom();</script>
+      <!-- popup -->
+      <div class="pop_container layer_pop2" id="popup02">
+            <div class="pop_tit">
+                <h3 class="tit">판매 등록</h3>
+            </div>
+            <div class="pop_inner">
+                <div class="breakdown_list_wrap">
+                    <dl>
+                        <dt><label for="saleNum">판매 수량</label></dt>
+                        <dd>
+                          <div class="board_form">
+                            <div class="form_group">
+                              <div class="input_group w_150">
+                                <input type="number" class="input_text type2" id="saleNum">
+                                <span>개</span>
+                              </div>
+                            </div>
+                          </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><label for="saleNum">개당 판매가</label></dt>
+                        <dd>
+                          <div class="board_form">
+                            <div class="form_group">
+                              <div class="input_group w_150">
+                                <input type="number" class="input_text type2" id="saleNum">
+                                <span>DDP</span>
+                              </div>
+                            </div>
+                          </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                      <dt>총 판매가</dt>
+                      <dd> 
+                        <p class="result_price">
+                          <span>0</span>DDP
+                        </p>
+                      </dd>
+                    </dl>
+                </div>
+                <div class="calendar_wrap">
+                  <div class="tit_wrap">
+                    <h4 class="tit">판매기간</h4>
+                  </div>
+                  <div class="calendar_list">
+                    <div class="item">
+                      <label for="startDate">시작일</label>
+                      <input type="text" class="datepicker" id="startDate">
+                    </div>
+                    <div class="item">
+                      <label for="endDate">종료일</label>
+                      <input type="text" class="datepicker" id="endDate">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="btn_group row2">
+                <button type="button" class="btn_wh_line_round_h50_wfull pop_close">
+                <span>취소</span>
+                </button>
+                <button type="button" class="btn_point_round_h50_wfull">
+                <span>등록</span>
+                </button>
+            </div>
+      </div>
       <!-- footer -->
       <script>include.footer();</script>
     </div>
+    <script>
+      $(function(){
+            $('.datepicker').datepicker();
+      })
+    </script>
   </body>
 </html>

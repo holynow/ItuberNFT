@@ -7,12 +7,14 @@ var include = {
     },
     styles: function () {
         document.write('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.css">');
+        document.write('<link rel="stylesheet" href="/mo/css/jquery-ui.min.css">');
         document.write('<link rel="stylesheet" href="/mo/css/global.css">');
         document.write('<link rel="stylesheet" href="/mo/css/content.css">');
     },
     scripts : function(){
         document.write('<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.min.js"></script>');
         document.write('<script type="text/javascript" src="/mo/js/jquery-3.6.0.min.js"></script>');
+        document.write('<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>');
         document.write('<script type="text/javascript" src="/mo/js/common.js"></script>');
     },
     skipNav : function(){

@@ -1,5 +1,5 @@
 'use strict';
-$(function(){
+$(function () {
     var ui = {
         init: function() { 
             if($('.swiper').length > 0) {this.swiperHandler.init();}
@@ -291,5 +291,6 @@ $(function(){
             }
         }
     };
+
     ui.init();
 })

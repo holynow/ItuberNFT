@@ -248,8 +248,8 @@
 .my_wallet_wrap .increase_btn_wrap {display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-top: 30px;}
 .my_wallet_wrap .increase_btn_wrap button {height: 40px; border: 1px solid #999; border-radius: 5px; font-size: 16px; font-weight: 500;}
 .my_wallet_wrap .board_form  {margin-top: 20px;}
-.my_wallet_wrap .board_form .input_group .input_text {padding-right: 60px; text-align: right; font-size: 20px;}
-.my_wallet_wrap .board_form .input_group .input_text + span {position: absolute; right: 10px; top: 14px;  font-size: 20px;}
+.board_form .input_group .input_text.type2 {padding-right: 60px; text-align: right; font-size: 20px;}
+.board_form .input_group .input_text.type2 + span {position: absolute; right: 0; top: 14px;  font-size: 20px; font-weight: 400;}
 .my_wallet_wrap .board_form .convert_price {margin-top: 10px; text-align: right;}
 .my_wallet_wrap .board_form .convert_price > span {padding-right: 5px;}
 .my_wallet_wrap .board_form + .btn_group {margin-top: 60px;}
