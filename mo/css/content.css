@@ -53,14 +53,6 @@
 .detail_cont .sale_list,
 .detail_cont .total_trans_wrap {position: relative; height: 200px; overflow-y: auto;}
 .detail_cont .total_trans_wrap .no_result_area {margin: 0 auto; padding: 60px 0; text-align: center; font-size: 14px;}
-.detail_cont table {width: 100%; border-collapse: collapse;}
-.detail_cont table thead {position: sticky; top: 0; left: 0; z-index: 10;}
-.detail_cont table tr:not(:last-child) {border-bottom: 1px solid #ddd; border-collapse: collapse;}
-.detail_cont table tr th {padding: 10px 0; font-size: 13px; text-align: center; font-weight: 500; background: #f7f7f7; }
-.detail_cont table tr td {padding: 10px 0; font-size: 13px; text-align: center; font-weight: 500;}
-.detail_cont table + .btn_group {margin-top: 20px;}
-.detail_cont table + .btn_group button > span {color: #999;}
-.detail_cont table + .btn_group button > i {opacity: .6;}
 .detail_cont .btn_group + .refer {margin-top: 20px; font-size: 12px; color: #999;}
 .detail_cont .sale_list table tr {position: relative;}
 .detail_cont .sale_list table tr th {background: #fff;}
@@ -71,7 +63,7 @@
 .detail_cont .sale_list + dl {margin-top: 30px;}
 .detail_cont .sale_list + .btn_group {margin-top: 40px;}
 .detail_cont .sale_list table td.checkbox_wrap input[type="radio"] + label:before {position: absolute; left: 15px; top: 10px; opacity: .8;}
-.nft_trans_wrap {margin-top:20px}
+.nft_trans_wrap {padding: 20px; margin-top:20px}
 /* card box wrap */
 .card_box_wrap .box_item {padding: 30px; border-radius: 20px; background: #f7f7f7;}
 .card_box_wrap .box_item .no_result {text-align: center;}
@@ -93,6 +85,9 @@
 .card_box_wrap .box_item.my_point .box_tit span {font-size: 14px; color: #fff;}
 .card_box_wrap .box_item.my_point .point {text-align: right; margin-top: 50px; color: #fff; font-size: 16px;}
 .card_box_wrap .box_item.my_point .point > span {margin-right: 10px; font-size: 30px; font-weight: 700; color: #fff;}
+
+/* 결제내역인출내역 */
+
 /* nft 속성 */
 .nft_property_wrap {margin-top: 20px;}
 .nft_property_wrap .property_list {display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;}
