@@ -13,7 +13,25 @@ $(function () {
             if ($('.search_wrap').length > 0) { this.searchHandler.init(); }
             if ($('.tooltip').length > 0) { this.tooltipHandler.init(); }
             if ($('.tab_wrap').length > 0) { this.tabHandler.init(); }
+            if ($('.calendar_wrap').length > 0) { this.calendarHandler.init(); }
             if ($('.follow_gnb_bar, .fixed_bottom_area').length > 0) { this.scrollEvent.init(); }
+        },
+        calendarHandler: {
+            calendar: '.datepicker',
+            sDate: '#sdate',
+            eDate: '#edate',
+            init: function () {
+                var _this = this;
+                $(_this.calendar).datepicker({
+                    minDate: 0,
+                    changeMonth: true,
+                    dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
+                    monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+                });
+                $(_this.sDate).datepicker("option", "onClose", function ( selectedDate ) {
+                    $(_this.eDate).datepicker( "option", "minDate", selectedDate );
+                });
+            }
         },
         scrollEvent: {
             gnbBar: '.follow_gnb_bar',
