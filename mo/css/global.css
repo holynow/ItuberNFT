@@ -97,6 +97,7 @@ label > .ico_ess::before {margin-bottom: 9px;}
 .slide_wrap .sub_tit_wrap {display: flex; justify-content: space-between; align-items: center;}
 .slide_wrap .table_wrap .table_cont {overflow: auto;}
 .slide_wrap .table_wrap table {width: 700px; margin-top: 10px; border-top: 2px solid #333;}
+.slide_wrap .table_wrap table tr th {background: #f2f2ff;}
 
 /* table */
 .table_wrap table {width: 100%; border-collapse: collapse;}
@@ -109,6 +110,20 @@ label > .ico_ess::before {margin-bottom: 9px;}
 .table_wrap .table_cont + .btn_group button > i {opacity: .6;}
 .table_wrap table .link {position: relative; color: #6166FF;}
 .table_wrap table .link::after {content: ''; display: block; position: absolute; bottom: -1px; left: 0; width: 100%; height: 1px; background: #6166FF;}
+
+/* table_listwrap */
+.table_list .list_tit {display: flex; justify-content: space-between; align-items: center; margin-top: 30px;}
+.table_list .list_tit h4 {font-size: 24px; font-weight: 700; color: #333;}
+.table_list .list_tit p {font-size: 16px;}
+.table_list .list_tit + .list_wrap {margin-top: 10px;}
+.table_list .list_wrap {border-top: 2px solid #333;}
+.table_list .list_wrap li {padding: 15px 10px 15px 5px;}
+.table_list .list_wrap li .badge {margin-right: 5px; padding: 1px 5px 2px; font-size: 13px; background: #6166FF; color: #fff; font-weight: 500;}
+.table_list .list_wrap li p {font-size: 15px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.table_list .list_wrap li p + span {display: inline-block; margin-top: 10px; font-size: 13px; color: #999;}
+.table_list .list_wrap li + li {border-top: 1px solid #ddd;}
+.table_list .list_wrap + .btn_group {margin-top: 30px;}
+.table_list .no_result_wrap {border-top: 2px solid #333;}
 
 /* board_form */
 .board_form .form_group .form_head .form_label {font-size: 14px; font-weight: 500;}
@@ -345,6 +360,7 @@ fieldset + .point_note {margin-top: 60px;}
 .accord_wrap .accord_item .accord_btn.on {background: url('../img/common/ico_arr_up.png')no-repeat; background-size: 15px; background-position: calc(100% - 10px);}
 .accord_wrap .accord_item .accord_btn > p {font-size: 16px; font-weight: 500;}
 .accord_wrap .accord_item .accord_btn + .accord_cont {display: none; margin-top: 30px;}
+.accord_wrap + .btn_group {margin-top: 40px;}
 
 /* calendar */
 .calendar_wrap {margin-top: 30px; padding-top: 30px; border-top: 1px solid #ddd;}
