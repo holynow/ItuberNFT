@@ -10,6 +10,7 @@ var include = {
         document.write('<link rel="stylesheet" href="/mo/css/jquery-ui.min.css">');
         document.write('<link rel="stylesheet" href="/mo/css/global.css">');
         document.write('<link rel="stylesheet" href="/mo/css/content.css">');
+        document.write('<link rel="stylesheet" href="/mo/css/fonts.css">');
     },
     scripts : function(){
         document.write('<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.min.js"></script>');

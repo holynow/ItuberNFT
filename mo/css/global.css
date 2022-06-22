@@ -24,6 +24,7 @@ sup{top:-0.5em;}
 legend{position:absolute; left:-99999px; display:block; width:1px; height:1px; overflow:hidden; text-indent:-99999px; clip:rect(0,0,0,0); *display:none;}
 caption{visibility:hidden; overflow:hidden; width:0;height:0;font-size:0;line-height:0}
 fieldset, img{border:0}
+fieldset {min-width: 100%;}
 select, input, textarea {vertical-align:middle; } /* 20200821 label, 삭제 */
 img{max-width: 100%; vertical-align: top;}
 button{border: 0; background: none; padding: 0; margin: 0;}
