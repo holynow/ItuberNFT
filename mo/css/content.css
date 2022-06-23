@@ -321,9 +321,38 @@
 .section.value .section_tit em {color: #fff;}
 .section.value .section_tit h3,
 .section.value .section_tit p {color: #B5B7FD;}
-.section.value::before {content: ''; display: block; position: absolute; left:0; bottom: 0; width: 350px; height: 305px; background: url('../img/etc/img_graph_arrow.png')no-repeat center; background-size: 100%; z-index: -2;}
-.section.value::after {content: ''; display: block; position: absolute; left:30px; bottom: -100px; transform: rotate(45deg); width: 250px; height: 500px; background: #3F3A9B; z-index: -1; animation: arrowMove 3s linear forwards;}
+.section.value .coin img {position: absolute; top: 50%; left: 50%; transform: translate(-50%); filter: hue-rotate(205deg); opacity: 0;}
+.section.value.on .coin .coin1 {width: 150px; animation: coinAni1 2s forwards ease-in-out;}
+.section.value .char 
+.section.value.on .coin .coin2 {width: 110px; animation: coinAni2 2s forwards ease-in-out;}
+.section.value.on .coin .coin3 {width: 100px; animation: coinAni3 2s forwards ease-in-out;}
+.section.value.on::before {content: ''; display: block; position: absolute; left:0; bottom: 100px; width: 365px; height: 305px; background: url('../img/etc/img_graph_arrow.png')no-repeat center; background-size: 100%; z-index: -2; animation: opacity 1s linear forwards;}
+.section.value.on::after {content: ''; display: block; position: absolute; left: 30px; bottom: -100px; transform: rotate(45deg); width: 250px; height: 500px; background: #3F3A9B; z-index: -1; animation: arrowMove 1s linear forwards;}
 
+@keyframes coinAni1 {
+    100% {
+        top: 40%;
+        left: 80%;
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes coinAni2 {
+    100% {
+        top: 30%;
+        left: -5%;
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes coinAni3 {
+    100% {
+        top: 70%;
+        left: 5%;
+        transform: translate(0);
+        opacity: 1;
+    }
+}
 @keyframes infinity {
     0% {
         transform: translateX(-50%) rotate3d(0, 100, -20, 0deg);
@@ -339,6 +368,14 @@
     }
     100% {
         left: 100%;
-        bottom: 50%;
+        bottom: 100%;
+    }
+}
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
