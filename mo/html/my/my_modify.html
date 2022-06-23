@@ -112,17 +112,33 @@
                                 비밀번호
                             </label>
                         </div>
-                        <div class="input_group w_full auth">
+                        <div class="input_group w_full ">
                             <input
                                 type="password"
                                 id="pw"
                                 class="input_text"
                                 placeholder=""
-                                value="1234577887df"
+                                value=""
+                            />
+                        </div>
+                        <div class="form_head">
+                            <label for="pw" class="form_label">
+                                비밀번호 확인
+                            </label>
+                        </div>
+                        <div class="input_group w_full auth error"> 
+                            <input
+                                type="password"
+                                id="pw"
+                                class="input_text"
+                                placeholder=""
+                                value=""
                             />
                             <button type="button" class="btn_round_bk auth_btn">
                                 <span>변경</span>
                             </button>
+                             <!-- input_group에 error 클래스 있을경우 valid 텍스트 노출-->
+                            <p class="valid">비밀번호가 일치하지 않습니다.</p>
                         </div>
                     </div>
                 </div>

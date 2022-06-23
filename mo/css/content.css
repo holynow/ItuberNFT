@@ -294,6 +294,51 @@
 .faq .accord_wrap .accord_item .accord_cont p > strong {display: block; margin-bottom: 5px; font-weight: 500; font-size: 14px; line-height: 1.2; color: #333;}
 
 /* about */
-.about .tit_wrap {margin: 0;}
-.about .tit_wrap h2.tit {font-size: 40px; font-weight: 500;}
-.about .tit_wrap h2.tit > em {font-weight: 700;}
+.section_wrap .section .tit_wrap {margin: 0;}
+.section_wrap .section .tit_wrap h2.tit {font-size: 40px; font-weight: 500;}
+.section_wrap .section .tit_wrap h2.tit > em {font-weight: 700;}
+.section_wrap .section .tit_wrap > p {margin-top: 5px; font-size: 18px;}
+.section_wrap .section .section_tit {padding: 0 30px; text-align: center;}
+.section_wrap .section .section_tit h3 {font-size: 22px; font-weight: 500;}
+.section_wrap .section .section_tit p {margin-top: 10px; font-size: 14px; line-height: 20px;}
+/* section want */
+.section_wrap .section {position: relative; padding: 40px 0; min-height: 550px; }
+.section.top:before {content: ''; display: block; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 380px; height: 100%; background: url('../img/etc/img_bogo_mic.png')no-repeat center bottom; background-size: 100%;}
+.section.top .tit_wrap h2,
+.section.top .tit_wrap p {color: #fff;}
+.section.top .tit_wrap em {color: #9FFF5F;}
+.section .section_tit em {display: inline-block; position: relative; margin: 30px 0;}
+.section .section_tit em:before {content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(45deg); width: 30px; height: 30px; border: 2px solid #fff;}
+.section.want .section_tit em,
+.section.want .section_tit h3,
+.section.want .section_tit p {color: #fff;}
+.section.want > div:before {content: ''; display: block; position: absolute; bottom: -80px; left: -20px; width: 375px; height: 100%; background: url('../img/etc/img_hand.png')no-repeat bottom center; background-size: 100%; z-index: 1;}
+.section.want:before {content: ''; display: block; position: absolute; bottom: 70px; left: 50%; width: 166px; height: 230px; background: #f361ff; animation: infinity 3s linear infinite; filter: blur(20px); z-index: 2;}
+.section.want:after {content: ''; display: block; position: absolute; bottom: 70px; left: 50%; width: 166px; height: 230px; background: url('../img/etc/img_character_card.png')no-repeat center; background-size: 100%; animation: infinity 3s linear infinite; z-index: 2;}
+.section.top {background: url('../img/etc/bg_section1.png')no-repeat top center; background-size: cover;}
+.section.want {background: url('../img/etc/bg_section2.png')no-repeat top center; background-size: cover;}
+.section.value {background: #3F3A9B; z-index: -3; overflow: hidden;}
+.section.value .section_tit em {color: #fff;}
+.section.value .section_tit h3,
+.section.value .section_tit p {color: #B5B7FD;}
+.section.value::before {content: ''; display: block; position: absolute; left:0; bottom: 0; width: 350px; height: 305px; background: url('../img/etc/img_graph_arrow.png')no-repeat center; background-size: 100%; z-index: -2;}
+.section.value::after {content: ''; display: block; position: absolute; left:30px; bottom: -100px; transform: rotate(45deg); width: 250px; height: 500px; background: #3F3A9B; z-index: -1; animation: arrowMove 3s linear forwards;}
+
+@keyframes infinity {
+    0% {
+        transform: translateX(-50%) rotate3d(0, 100, -20, 0deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate3d(0, 100, -20, 360deg);
+    }
+}
+@keyframes arrowMove {
+    0% {
+        left: 30px;
+        bottom: -100px;
+    }
+    100% {
+        left: 100%;
+        bottom: 50%;
+    }
+}
