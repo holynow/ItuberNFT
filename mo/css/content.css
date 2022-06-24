@@ -119,7 +119,7 @@
 .item_wrap .item .item_info .char_name {display: flex;}
 .item_wrap .item .item_info .char_name > p {margin-top: 3px; font-size: 14px; color: #555;}
 .item_wrap .item .item_info .char_name > p + p::before {content: '|'; display: inline-block; margin: 0 5px; font-size: 5px; vertical-align: 3px;}
-.item_wrap .item .item_info .ip_name {margin-top: 15px; font-size: 13px; color: #999;}
+.item_wrap .item .item_info .ip_name {margin-top: 5px; font-size: 13px; color: #999;}
 .item_wrap .item .item_info .point_area {width: 100%; text-align: right;}
 .item_wrap .item .item_info .point_area .result_num {font-size: 16px; color: #999;}
 .item_wrap .item .item_info .point_area .result_num > span {padding-right: 3px; color: #999;}
@@ -329,21 +329,21 @@
 .section.value.on::before {content: ''; display: block; position: absolute; left:0; bottom: 150px; width: 365px; height: 305px; background: url('../img/etc/img_graph_arrow.png')no-repeat center; background-size: 100%; z-index: -2; animation: opacity 2s linear forwards;}
 .section.value.on::after {content: ''; display: block; position: absolute; bottom: 0; width: 100%; height: 100%; background: #504DC6; z-index: -1; animation: arrowMove 1.5s linear forwards;}
 .section.sale {height: 1000px; background: #403B9C; z-index: -4;}
-.section.sale .nft_card ul li {position: absolute; left: 50%; top: 30%; transform: translateX(-50%); transition: all 2s ease-in-out; z-index: 1; filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .2));}
+.section.sale .nft_card ul li {position: absolute; left: 50%; top: 30%; transform: translateX(-50%); transition: all 1.5s ease-in-out; z-index: 1; filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .2));}
 .section.sale .nft_card ul .card01 {width: 170px; z-index: 2;}
 .section.sale .nft_card ul .card02 {width: 106px;}
 .section.sale .nft_card ul .card03 {width: 85px;}
 .section.sale .nft_card ul .card04 {width: 98px;}
 .section.sale .nft_card ul .card05 {width: 71px;}
 .section.sale .nft_card ul .card06 {width: 84px;}
-.section.sale.on .nft_card ul li.card02 {top: 260px; left: 90%;}
-.section.sale.on .nft_card ul li.card03 {top: 280px; left: 30px;}
+.section.sale.on .nft_card ul li.card02 {top: 230px; left: 90%;}
+.section.sale.on .nft_card ul li.card03 {top: 250px; left: 30px;}
 .section.sale.on .nft_card ul li.card04 {top: 460px; left: 10%;}
 .section.sale.on .nft_card ul li.card05 {top: 420px; left: 92%;}
 .section.sale.on .nft_card ul li.card06 {top: 540px; left: 75%;}
 .section.sale.on .nft_card ul li img {width: 100%;}
-.section.sale.on:after {content: ''; display: block; position: absolute; top: 40%; width: 100%; height: 1100px; background: url('/mo/img/etc/bg_last.png')no-repeat; background-size: cover; z-index: -1; animation: opacity 1s forwards linear}
-.section.now {margin-top: -300px; background-image: url('/mo/img/etc/bg_now.png')no-repeat; background-size: 100%;}
+.section.sale:after {content: ''; display: block; position: absolute; top: 40%; width: 100%; height: 1100px; background: url('/mo/img/etc/bg_last.png')no-repeat; background-size: cover; z-index: -1;}
+.section.now {margin-top: -300px; background: url('/mo/img/etc/bg_now.png')no-repeat; background-size: 100%;}
 .section.now .logo {max-width: 110px; margin: 0 auto;}
 .section.now .logo + p {margin: 25px 0 30px; color: #fff; font-size: 22px; line-height: 30px; text-align: center;}
 .section.now .logo + p span {font-weight: 700; color: #fff;}

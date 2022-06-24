@@ -14,7 +14,7 @@ $(function () {
             if ($('.tooltip').length > 0) { this.tooltipHandler.init(); }
             if ($('.tab_wrap').length > 0) { this.tabHandler.init(); }
             if ($('.calendar_wrap').length > 0) { this.calendarHandler.init(); }
-            if ($('.follow_gnb_bar, .fixed_bottom_area').length > 0) { this.scrollEvent.init(); }
+            if ($('.follow_gnb_bar, .fixed_bottom_area, .about').length > 0) { this.scrollEvent.init(); }
         },
         calendarHandler: {
             calendar: '.datepicker',
@@ -36,10 +36,12 @@ $(function () {
         scrollEvent: {
             gnbBar: '.follow_gnb_bar',
             topBtn: '.fixed_bottom_area',
+            section: '.section',
             init: function () {
                 var _this = this;
                 $('body').on('scroll', function () {
                     _this.targetShow();
+                    _this.aboutShow(this);
                 })
             },
             targetShow: function () {
@@ -53,6 +55,16 @@ $(function () {
                     $(_this.gnbBar).removeClass('on');     
                     $(_this.topBtn).removeClass('on');     
                 }
+            },
+            aboutShow: function (body) {
+                var _this = this;
+                $(_this.section).each(function (e) {
+                    if ($(body).scrollTop() >= Math.ceil($(_this.section).eq(e).offset().top) * 2) {
+                        $(_this.section).eq(e).addClass('on')
+                    } else {
+                        $(_this.section).eq(e).removeClass('on')
+                    }
+                })
             }
         },
         // 탭 버튼
@@ -309,6 +321,6 @@ $(function () {
             }
         }
     };
-
+   
     ui.init();
 })
