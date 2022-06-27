@@ -24,7 +24,6 @@ sup{top:-0.5em;}
 legend{position:absolute; left:-99999px; display:block; width:1px; height:1px; overflow:hidden; text-indent:-99999px; clip:rect(0,0,0,0); *display:none;}
 caption{visibility:hidden; overflow:hidden; width:0;height:0;font-size:0;line-height:0}
 fieldset, img{border:0}
-fieldset {min-width: 100%;}
 select, input, textarea {vertical-align:middle; } /* 20200821 label, 삭제 */
 img{max-width: 100%; vertical-align: top;}
 button{border: 0; background: none; padding: 0; margin: 0;}
@@ -131,7 +130,7 @@ label > .ico_ess::before {margin-bottom: 9px;}
 .board_form .form_group .input_group {position: relative;}
 .board_form .form_group .input_group .input_select option[value=""][disabled] {display: none;}
 .board_form .form_group .input_group .input_select,
-.board_form .form_group .input_group .input_text {padding: 15px 10px; font-size: 16px; border-bottom: 1px solid #ddd;}
+.board_form .form_group .input_group .input_text {width: 100%; padding: 15px 10px; font-size: 16px; border-bottom: 1px solid #ddd;}
 .board_form .form_group .input_group .input_text::placeholder {font-size: 14px; color: #ddd;}
 .board_form .form_group .input_group .error,
 .board_form .form_group .input_group .valid {display: none; margin-top: 8px; font-size: 13px; color: #FF7582;}
@@ -156,7 +155,7 @@ label > .ico_ess::before {margin-bottom: 9px;}
 [class^="input_group"] > select,
 [class^="input_group"][class*="w_full"] > input {width: 100%;}
 [class^="input_group"][class*="w_150"] > input {max-width: 150px;}
-[class^="input_group"] > input[type="password"] {font-family: Verdana; letter-spacing: 0.125em;}
+[class^="input_group"] > input[type="password"] {font-family: Verdana; letter-spacing: -0.025em;}
 [class^="input_group"][class*="w_full"] .input_select,
 [class^="input_group"][class*="w_full"] .input_text {width: 100%;}
 [class^="input_group"][class*="auth"] > input {padding-right: 70px;}
