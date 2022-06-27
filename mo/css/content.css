@@ -302,6 +302,14 @@
 .section_wrap .section .section_tit {padding: 0 30px; text-align: center;}
 .section_wrap .section .section_tit h3 {font-size: 22px; font-weight: 500;}
 .section_wrap .section .section_tit p {margin-top: 10px; font-size: 14px; line-height: 20px;}
+
+/* customer */
+.customer_wrap .customer_box {padding: 50px 40px; width: 100%; height: 383px; background-color: #6166FF; border-radius: 20px; text-align: center; background-image: url('../img/etc/img_customer.png'); background-repeat: no-repeat; background-size: contain; background-position: center bottom;}
+.customer_wrap .customer_box > em {font-size: 16px; color: #fff; font-weight: 500;}
+.customer_wrap .customer_box > p {margin-top: 10px; font-size: 28px; color: #fff; font-weight: 700;}
+.customer_wrap .customer_txt {margin-top: 40px; font-size: 14px; color: #555; line-height: 1.4;}
+.customer_wrap .customer_txt + .btn_group {margin-top: 30px;}
+
 /* section want */
 .section_wrap .section {position: relative; padding: 40px 0; min-height: 550px; }
 .section.top:before {content: ''; display: block; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 380px; height: 100%; background: url('../img/etc/img_bogo_mic.png')no-repeat center bottom; background-size: 100%;}
@@ -322,12 +330,12 @@
 .section.value .coins {position: absolute; left: 50%; bottom: -10px; transform: translateX(-46%); margin: 0 auto; width: 340px; z-index: 0; animation: fadedown 1s forwards linear; opacity: 1;}
 .section.value .char img,
 .section.value .coins img {width: 100%;}
-.section.value .coin img {position: absolute; top: 80%; left: 50%; transform: translate(-50%) scale(0); filter: hue-rotate(205deg); opacity: 0;}
-.section.value.on .coin .coin1 {width: 180px; animation: coinAni1 1.5s forwards ease-in-out;}
-.section.value.on .coin .coin2 {width: 140px; animation: coinAni2 1.5s forwards ease-in-out;}
-.section.value.on .coin .coin3 {width: 90px; animation: coinAni3 1.5s forwards ease-in-out;}
+.section.value .coin img {position: absolute; top: 50%; left: 50%; filter: hue-rotate(205deg); opacity: 0;}
+.section.value.on .coin .coin1 {width: 180px; animation: coinAni 1.5s forwards ease-in-out; top: 40%; left: 75%; transform: translate(0) scale(0) rotate(-400deg);}
+.section.value.on .coin .coin2 {width: 140px; animation: coinAni 1.5s forwards ease-in-out; top: 30%; left: -9%; transform: translate(0) scale(0) rotate(500deg);}
+.section.value.on .coin .coin3 {width: 90px; animation: coinAni 1.5s forwards ease-in-out; top: 70%; left: 5%; transform: translate(0) scale(0) rotate(500deg);}
 .section.value.on::before {content: ''; display: block; position: absolute; left:0; bottom: 150px; width: 365px; height: 305px; background: url('../img/etc/img_graph_arrow.png')no-repeat center; background-size: 100%; z-index: -2; animation: opacity 2s linear forwards;}
-.section.value.on::after {content: ''; display: block; position: absolute; bottom: 0; width: 100%; height: 100%; background: #504DC6; z-index: -1; animation: arrowMove 1.5s linear forwards;}
+.section.value.on::after {content: ''; display: block; position: absolute; bottom: 0; width: 100%; height: 100%; background: #504DC6; z-index: -1; animation: arrowMove 1s linear forwards;}
 .section.sale {height: 1000px; background: #403B9C; z-index: -4;}
 .section.sale .nft_card ul li {position: absolute; left: 50%; top: 30%; transform: translateX(-50%); transition: all 1.5s ease-in-out; z-index: 1; filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .2));}
 .section.sale .nft_card ul .card01 {width: 170px; z-index: 2;}
@@ -343,11 +351,13 @@
 .section.sale.on .nft_card ul li.card06 {top: 540px; left: 75%;}
 .section.sale.on .nft_card ul li img {width: 100%;}
 .section.sale:after {content: ''; display: block; position: absolute; top: 40%; width: 100%; height: 1100px; background: url('/mo/img/etc/bg_last.png')no-repeat; background-size: cover; z-index: -1;}
-.section.now {margin-top: -300px; background: url('/mo/img/etc/bg_now.png')no-repeat; background-size: 100%;}
+.section.now {margin-top: -300px; z-index: -2;}
+.section.now:before {content: ''; display: block; position: absolute; top: 0; width: 100%; height: 100%; background: url('/mo/img/etc/bg_now.png')no-repeat; background-size: 100%; z-index: -2;}
 .section.now .logo {max-width: 110px; margin: 0 auto;}
 .section.now .logo + p {margin: 25px 0 30px; color: #fff; font-size: 22px; line-height: 30px; text-align: center;}
 .section.now .logo + p span {font-weight: 700; color: #fff;}
-.section.now .use_img {max-width: 317px; margin: 0 auto;}
+.section.now .use_img {transition: all 2s ease-in-out; transform: translateY(100px); max-width: 317px; margin: 0 auto; opacity: 0;}
+.section.now.on .use_img {transform: translateY(0); opacity: 1;}
 .section.now .use_img img {width: 100%; filter: drop-shadow(2px 2px 20px rgba(0,0,0, .3));}
 .section.use {margin-top: -150px; height: 100%;}
 .section.use::after {content: ''; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('/mo/img/etc/bg_use.png')no-repeat; background-size: cover;}
@@ -370,26 +380,8 @@
         bottom: -40px;
     }
 }
-@keyframes coinAni1 {
+@keyframes coinAni {
     100% {
-        top: 40%;
-        left: 75%;
-        transform: translate(0) scale(1);
-        opacity: 1;
-    }
-}
-@keyframes coinAni2 {
-    100% {
-        top: 30%;
-        left: -9%;
-        transform: translate(0) scale(1);
-        opacity: 1;
-    }
-}
-@keyframes coinAni3 {
-    100% {
-        top: 70%;
-        left: 5%;
         transform: translate(0) scale(1);
         opacity: 1;
     }
