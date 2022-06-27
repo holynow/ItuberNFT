@@ -9,6 +9,7 @@
     <script>include.scripts();</script>
   </head>
   <body>
+    <div class="dim"></div>
     <div class="wrap">
       <!-- skip navi --> 
       <script>include.skipNav();</script>
@@ -413,7 +414,7 @@
       <script>include.fixBottom();</script>
       <!-- pop area -->
       <!-- 구매팝업 -->
-        <div class="pop_container layer_pop2" id="popup01">
+        <div class="pop_container layer_pop2" id="popup01" style="display: block;">
             <div class="pop_tit">
                 <h3 class="tit">구매</h3>
             </div>
@@ -451,11 +452,26 @@
                 </button>
             </div>
         </div>
+        <!-- 구매완료 -->
         <!-- pop area -->
         <!-- <div class="pop_container layer_pop" id="popup02">
             <div class="pop_inner">
                <p>구매가 완료되었습니다.
                 구매 내역은 [내정보 > 거래내역]에서 확인하세요.
+               </p>
+               
+               <div class="btn_group alignC">
+                 <button type="button" class="btn_point_round_h50_wfull pop_close">
+                   <span>확인</span>
+                  </button>
+                </div>
+            </div>
+        </div> -->
+        <!-- 구매취소 -->
+        <!-- pop area -->
+        <!-- <div class="pop_container layer_pop" id="popup02">
+            <div class="pop_inner">
+               <p>구매가 취소되었습니다.
                </p>
                
                <div class="btn_group alignC">

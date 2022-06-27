@@ -50,6 +50,9 @@ label > .ico_ess::before {margin-bottom: 9px;}
 /* txt_weight */
 .text_b {font-weight: 700;}
 
+/* txt align */
+.text_center {text-align: center;}
+
 /* txt_color */
 .col_red {color:#e44d4d;}
 .col_pur {color:#6166FF;}
@@ -191,6 +194,8 @@ label > .ico_ess::before {margin-bottom: 9px;}
 [class^="btn"][class*="modi"] > span {color: #fff;}
 [class^="btn"][class*="wh"] {background: #fff;}
 [class^="btn"][class*="wh"] > span {color: #333;}
+[class^="btn"][class*="gray"] {background: #999;}
+[class^="btn"][class*="gray"] > span {color: #fff;}
 [class^="btn"][class*="line"] {border: 1px solid #555;}
 [class^="btn"][class*="bk"] {background: #333;}
 [class^="btn"][class*="bk"] > span {color: #fff;}
@@ -253,7 +258,8 @@ fieldset + .point_note {margin-top: 60px;}
 .dash_list.ex_mark li {padding-left: 23px; color: #6166FF;}
 
 /* popup */
-.pop_container {display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #fff; z-index: 120;}
+.pop_container {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #fff; z-index: 120;}
+.pop_container .point {color: #6166FF; font-weight: 500;}
 .pop_container.layer_pop {top: 50%; left: 50%; transform: translate(-50%, -50%); width: calc(100% - 40px); height: auto; padding: 48px 40px; border-radius: 10px;}
 .pop_container.layer_pop .pop_inner p {font-size: 16px; text-align: center; line-height: 1.4;}
 .pop_container.layer_pop .pop_inner .btn_group {margin-top: 30px;}
@@ -265,7 +271,6 @@ fieldset + .point_note {margin-top: 60px;}
 .pop_container.layer_pop2 .pop_inner {padding: 40px 0 10px;}
 .pop_container.layer_pop2 .pop_inner .tit_wrap {margin: 0;}
 .pop_container.layer_pop2 .pop_inner .inner_txt {font-size: 18px; line-height: 26px;}
-.pop_container.layer_pop2 .pop_inner .inner_txt .point {color: #6166FF; font-weight: 500;}
 .pop_container.layer_pop2 .pop_inner .inner_txt .refer {margin-bottom: 20px; font-size: 12px; color: #666;}
 .pop_container.layer_pop2 .pop_inner + .btn_group {margin-top: 40px;}
 /* full popup */
@@ -276,6 +281,9 @@ fieldset + .point_note {margin-top: 60px;}
 .pop_container.full_pop .tit_wrap h3 + p { margin-top: 20px; font-size: 13px; line-height: 24px;}
 .pop_container.full_pop .pop_inner {padding: 0 20px 80px;}
 .pop_container.full_pop .pop_close {position: absolute; top: 20px; right: 20px;}
+.pop_container .pop_inner p + p {margin-top: 20px;}
+.pop_container .pop_inner .timer {font-size: 40px; font-weight: 700; padding: 0 5px;}
+
 /* terms */
 .terms_cont .tit {margin-top: 40px;}
 .terms_cont .tit h4 {font-size: 22px; font-weight: 500;}
