@@ -172,7 +172,9 @@
 .info_wrap .info_header .user_info {display: flex; align-items: center;}
 .info_wrap .info_header .user_info .user_id {margin-left: 10px;}
 .info_wrap .info_header .user_info .user_id p {font-size: 24px; font-weight: 500; color: #fff;}
-.info_wrap .info_header .user_info .user_id span {display: inline-block; margin-top: 3px; font-size: 16px; font-weight: 400; color: #fff;}
+.info_wrap .info_header .user_info .user_id span {display: inline-block; margin: 3px 0 0 0; font-size: 16px;  color: #fff; font-weight: 400;}
+.info_wrap .info_header .user_info .user_id .login_btn {font-size: 16px; color: #fff;}
+.info_wrap .info_header .user_info .user_id .login_btn span {display: inline-block; margin: 3px 5px 0 0; font-size: 16px;  color: #fff; text-decoration: underline; font-weight: 700;}
 .info_wrap .info_header .user_profile {width: 60px; height: 60px; border-radius: 50%; background: #fff; border: 5px solid #CDCEFF; font-size: 30px; text-align: center; line-height: 50px;}
 .info_wrap .info_header .info_setting {display: block; margin-left: auto; width: 30px; height: 30px;}
 .info_wrap .ddp_wrap {position: relative; margin-top: -30px; transform: translateY(60px); padding: 20px; background: #fff; border-radius: 20px; box-shadow: 3px 3px 10px rgba(0,0,0,.1)}
@@ -193,7 +195,7 @@
 .inner_wrap .gnb_list_wrap .notice_list {margin-top: 20px; padding: 0 10px;}
 .inner_wrap .gnb_list_wrap .notice_list li {font-size: 15px; font-weight: 500;}
 .inner_wrap .gnb_list_wrap .notice_list li + li {margin-top: 20px;}
-.info_wrap .logout_btn {position: absolute; top: 20px; right: 20px;}
+.info_wrap .logout_btn {position: absolute; top: -45px; right: 20px;}
 .info_wrap .logout_btn span {padding-left: 35px; font-size: 18px; vertical-align: -webkit-baseline-middle; color: #fff;}
 .info_wrap.modify .info_header {padding: 50px 0; margin-bottom: 40px;}
 .info_wrap.modify .info_header .my_profile {margin: 0 auto; width: 80px; height: 80px; border-radius: 50%; background: #fff; border: 5px solid #CDCEFF; font-size: 35px; text-align: center; line-height: 70px;}

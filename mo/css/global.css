@@ -208,10 +208,12 @@ label > .ico_ess::before {margin-bottom: 9px;}
 .breakdown_list_wrap dl {display: flex; justify-content: space-between; align-items: center;}
 .breakdown_list_wrap dl + dl {margin-top: 10px;}
 .breakdown_list_wrap dl dt {font-size: 14px; color: #555;}
+.breakdown_list_wrap .dec {font-size: 13px; color: #999;}
 .breakdown_list_wrap dl dd {font-size: 16px;}
 .breakdown_list_wrap dl dd span {padding-right: 5px; font-size: 25px; font-weight: 700; color: #333;}
 .breakdown_list_wrap dl dd .emphasis {font-size: 25px; color: #6166FF;}
-.breakdown_list_wrap .result_price {padding: 10px 0; font-size: 20px;}
+.breakdown_list_wrap .result_price {padding: 10px 0; font-size: 20px; text-align: right;}
+.breakdown_list_wrap dl dd .result_price  + .dec {margin-top: 0; font-size: 12px; text-align: right;}
 .breakdown_list_wrap .result_price span {padding: 0 10px;}
 .breakdown_list_wrap + .breakdown_list_wrap {margin-top: 40px; padding-top: 40px; border-top: 1px dashed #555;}
 /* tooltip */
