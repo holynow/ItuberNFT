@@ -220,6 +220,7 @@ $(function () {
         agreeCheck: {
             allCheckBtn: '.all_check',
             checkInput: '.item input',
+            checkLabel: '.allcheck_wrap > label',
             init: function () {
                 var _this = this;
                 $(_this.allCheckBtn).on('click', function () {
@@ -230,8 +231,11 @@ $(function () {
                 var _this = this;
                 if ($($this).is(':checked')){
                     $(_this.checkInput).prop('checked', true);
+                    $(_this.checkLabel).text('선택해제')
+
                 } else {
                     $(_this.checkInput).prop('checked', false);
+                    $(_this.checkLabel).text('전체선택')
                 }
             },
         },

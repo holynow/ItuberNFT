@@ -210,8 +210,10 @@
 .my_nft .nft_list .sub_tit_wrap .total_num p {font-size: 13px; color: #999;}
 .my_nft .nft_list .sub_tit_wrap .total_num p > span {padding: 0 5px; font-size: 16px; font-weight: 500;}
 .my_nft .nft_list .sub_tit_wrap + .list_wrap {margin-top: 10px;}
+.my_nft .nft_list .sub_tit_wrap .top_btn_group {display: flex;}
+.my_nft .nft_list .sub_tit_wrap .top_btn_group .allcheck_wrap label,
 .my_nft .nft_list .sub_tit_wrap .top_btn_group > button {font-size: 13px; font-weight: 500; color: #555;}
-.my_nft .nft_list .sub_tit_wrap .top_btn_group > button + button {margin-left: 10px;}
+.my_nft .nft_list .sub_tit_wrap .top_btn_group > button {margin-left: 10px;}
 .my_nft .nft_list .list_wrap .status_badge {position: absolute; top: 15px; left: unset; right: 15px;}
 .my_nft .nft_list .list_wrap .status_badge span {background: #6166FF;}
 .my_nft .nft_list .list_wrap li {position: relative; padding: 15px; border-radius: 10px; box-shadow: 5px 5px 15px rgba(40,40,40,.1); background: #fff;}
