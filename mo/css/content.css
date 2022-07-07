@@ -30,7 +30,7 @@
 
 /* detail */
 .share_btn {display: inline-block;}
-.share_btn:before {content: ''; display: block; width: 23px; height: 26px; background: url('../img/common/ico_share.png')no-repeat; background-size: 100%;}
+.share_btn:before {content: ''; display: block; width: 30px; height: 30px; background: url('../img/common/ico_share.png')no-repeat; background-size: 100%;}
 .detail_cont .nft_info {margin-top: 30px; padding: 0 20px;}
 .detail_cont .nft_info .nft_name {font-size: 20px; font-weight: 700;}
 .detail_cont .nft_info .char_name {display: flex; align-items: center; margin-top: 6px;}
@@ -105,7 +105,7 @@
 .character_detail .btn_group + .img_area {margin-top: 60px;}
 .character_detail .img_area + .img_area {margin-top: 50px;}
 .character_detail .inner_txt {padding: 40px 0 50px;}
-.character_detail .inner_txt > strong {display: block; font-size: 22px; font-weight: 700; text-align: center;}
+.character_detail .inner_txt > strong {display: block; font-size: 32px; font-weight: 700; text-align: center;}
 .character_detail .inner_txt > span {display: block; margin-top: 5px; font-size: 16px; font-weight: 500; text-align: center;}
 .character_detail .inner_txt .sub_tit {margin-top: 20px; font-size: 16px; text-align: center;}
 .character_detail .inner_txt .txt {margin-top: 20px; font-size: 14px; line-height: 21px;}

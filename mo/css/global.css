@@ -226,7 +226,7 @@ label > .ico_ess::before {margin-bottom: 9px;}
 .breakdown_list_wrap + .breakdown_list_wrap {margin-top: 40px; padding-top: 40px; border-top: 1px dashed #555;}
 /* tooltip */
 .tooltip {position: relative; margin-left: 5px;}
-.tooltip:before {content: '?'; display: inline-block; position: relative; width: 14px; height: 14px; background: #333; border-radius: 50%; color: #fff; font-size: 10px; line-height: 14px; vertical-align: 2px;}
+.tooltip:before {content: '?'; display: inline-block; position: relative; width: 18px; height: 18px; background: #333; border-radius: 50%; color: #fff; font-size: 13px; line-height: 18px; vertical-align: 1px;}
 .tooltip > span {display: none; position: absolute; top: -4px; left: 22px; padding: 5px 6px 3px; min-width: 130px; color: #fff; background: #333; border-radius: 3px; font-size: 12px; line-height: 18px;}
 .tooltip.on > span {display: block}
 .tooltip > span:before {content: ''; display: inline-block; position: absolute; top: 8px; left: -3px; width: 7px; height: 7px; transform: rotate(45deg); background: #333;}
@@ -333,8 +333,9 @@ fieldset + .point_note {margin-top: 60px;}
 .checkbox_wrap .check_list .item input[type="checkbox"]:checked + label:before {background: url('../img/common/ico_checkbox_on.png') no-repeat; background-size: 18px;}
 .checkbox_wrap input[type="radio"] + label:before {content: ''; display: inline-block; margin-right: 7px; width: 18px; height: 18px; background: url('../img/common/ico_radio_off.png') no-repeat; background-size: 18px; vertical-align: top;}
 .checkbox_wrap input[type="radio"]:checked + label:before {background: url('../img/common/ico_radio_on.png') no-repeat; background-size: 18px;}
-.checkbox_wrap[class*="like_btn"][class*="big"] input[type="checkbox"] + label:before {content: ''; display: inline-block; margin-right: 8px; width: 28px; height: 26px; background: url('../img/common/ico_like_off.png')no-repeat; background-size: 100%; vertical-align: middle;}
-.checkbox_wrap[class*="like_btn"][class*="big"] input[type="checkbox"]:checked + label:before {content: ''; display: inline-block; margin-right: 8px; width: 28px; height: 26px; background: url('../img/common/ico_like_on.png')no-repeat; background-size: 100%; vertical-align: middle;}
+.checkbox_wrap[class*="like_btn"][class*="big"] input[type="checkbox"] + label:before {content: ''; display: inline-block; margin-right: 8px; width: 30px; height: 30px; background: url('../img/common/ico_gnb_like.png')no-repeat; background-size: 100%; vertical-align: middle;}
+.checkbox_wrap[class*="like_btn"][class*="big"] input[type="checkbox"]:checked + label:before {content: ''; display: inline-block; margin-right: 8px; width: 30px; height: 30px; background: url('../img/common/ico_gnb_like_on.png')no-repeat; background-size: 100%; vertical-align: middle;}
+.checkbox_wrap[class*="like_btn"][class*="big"] input[type="checkbox"] + label {font-size: 16px; font-weight: 500; line-height: 50px;}
 .checkbox_wrap[class*="like_btn"] input[type="checkbox"] + label:before {content: ''; display: inline-block; margin-right: 3px; width: 18px; height: 16px; background: url('../img/common/ico_like_off.png')no-repeat; background-size: 100%; vertical-align: -3px;}
 .checkbox_wrap[class*="like_btn"] input[type="checkbox"] + label {font-size: 14px; line-height: 50px;}
 .checkbox_wrap[class*="like_btn"] input[type="checkbox"]:checked + label:before {content: ''; display: inline-block; margin-right: 3px; width: 18px; height: 16px; background: url('../img/common/ico_like_on.png')no-repeat; background-size: 100%; vertical-align: -2px;}
@@ -378,9 +379,9 @@ fieldset + .point_note {margin-top: 60px;}
 
 /* accordian */
 .board_form + .accord_wrap {margin-top: 50px;}
-.accord_wrap .accord_item .accord_btn {display: block; padding: 10px 30px 10px 0; width: 100%; background: url('../img/common/ico_arr_down.png')no-repeat; background-size: 15px; background-position: calc(100% - 10px); text-align: left; border-bottom: 1px solid #ddd;}
-.accord_wrap .accord_item .accord_btn.on {background: url('../img/common/ico_arr_up.png')no-repeat; background-size: 15px; background-position: calc(100% - 10px);}
-.accord_wrap .accord_item .accord_btn > p {font-size: 18px; line-height: 26px; font-weight: 500;}
+.accord_wrap .accord_item .accord_btn {display: block; padding: 10px 30px 10px 0; width: 100%; background: url('../img/common/ico_accord_down.png')no-repeat; background-size: 30px; background-position: calc(100% - 10px); text-align: left; border-bottom: 1px solid #ddd;}
+.accord_wrap .accord_item .accord_btn.on {background: url('../img/common/ico_accord_up.png')no-repeat; background-size: 30px; background-position: calc(100% - 10px);}
+.accord_wrap .accord_item .accord_btn > p {font-size: 16px; line-height: 26px; font-weight: 500;}
 .accord_wrap .accord_item .accord_btn + .accord_cont {display: none; margin-top: 30px;}
 .accord_wrap + .btn_group {margin-top: 40px;}
 
