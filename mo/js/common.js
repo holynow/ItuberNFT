@@ -138,6 +138,7 @@ $(function () {
             init: function () {
                 var _this = this;
                 var swiper = new Swiper(_this.swiper, {
+                    autoHeight: true,
                     navigation: {
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
