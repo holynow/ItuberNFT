@@ -115,8 +115,8 @@
 .item_wrap[class*="row"][class*="_1"] {grid-template-columns: 1fr;}
 .item_wrap[class*="row"][class*="_2"] {grid-template-columns: repeat(2, 1fr);}
 .item_wrap .item {position: relative; border-radius: 10px; overflow: hidden;}
-.item_wrap .item .item_img {position: relative; overflow: hidden; padding-bottom: 65%;} 
-.item_wrap .item .item_img img {position: absolute; top: 0; left: 50%; transform: translate(-50%, 0); width: 100%;}
+.item_wrap .item .item_img {position: relative; overflow: hidden; height: auto;} 
+.item_wrap .item .item_img img {width: 100%;}
 .item_wrap .item .item_info {padding: 20px; background: #fff;}
 .item_wrap .item .item_info .nft_name {font-size: 18px; color: #6166FF; font-weight: 500;}
 .item_wrap .item .item_info .char_name {display: flex;}
@@ -143,10 +143,10 @@
 .item_wrap.row_2 .item_info .top_area .char_name > p {margin-top: 5px; font-size: 12px; color: #999;}
 .item_wrap.row_2 .item_info .top_area .ip_name {margin-top: 5px; font-size: 12px; color: #6166FF;}
 .item_wrap.row_2 .item_info .top_area .nft_price {margin-top: 10px; text-align: right; font-size: 14px; color: #666;}
-.item_wrap.row_2 .item_info .top_area .nft_price .min {padding-right: 5px; font-size: 14px; font-weight: 500;}
-.item_wrap.row_2 .item_info .top_area .nft_price .max {padding: 0 5px; font-size: 18px; font-weight: 500;}
+.item_wrap.row_2 .item_info .top_area .nft_price .min {padding-right: 3px; font-size: 14px; font-weight: 500;}
+.item_wrap.row_2 .item_info .top_area .nft_price .max {padding: 0 3px; font-size: 18px; font-weight: 500;}
 .item_wrap.row_2 .item_info .bottom_area {display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top: 10px; padding-top: 10px; border-top: 1px solid #ddd;}
-.item_wrap.row_2 .item_info .bottom_area .result_num {padding: 2px 7px 3px; background: #555; border-radius: 20px; color: #fff; line-height: 12px;}
+.item_wrap.row_2 .item_info .bottom_area .result_num {padding: 2px 7px 3px; background: #555; border-radius: 20px; color: #fff; line-height: 13px;}
 .item_wrap.row_2 .item_info .bottom_area .result_num > span {display: inline-block; margin: 0 2px 0 0; font-size: 12px; color: #fff;}
 .item_wrap.row_2 .item_info .bottom_area .result_num span + span {margin: 0 0 0 2px;}
 .item_wrap .item.vod:before {content: ''; display: block; position: absolute; top: 10px; right: 10px; width: 30px; height: 24px; background: url('../img/common/ico_camera.png')no-repeat; background-size: 100%; z-index: 1;}
@@ -177,7 +177,8 @@
 .info_wrap .info_header .user_info .user_id p {font-size: 24px; font-weight: 500; color: #fff;}
 .info_wrap .info_header .user_info .user_id span {display: inline-block; margin: 3px 0 0 0; font-size: 16px;  color: #fff; font-weight: 400;}
 .info_wrap .info_header .user_info .user_id .login_btn {font-size: 16px; color: #fff;}
-.info_wrap .info_header .user_info .user_id .login_btn span {display: inline-block; margin: 3px 5px 0 0; font-size: 16px;  color: #fff; text-decoration: underline; font-weight: 700;}
+.info_wrap .info_header .user_info .user_id .login_btn span {position: relative; display: inline-block; margin: 3px 5px 0 0; font-size: 18px;  color: #fff; font-weight: 700;}
+.info_wrap .info_header .user_info .user_id .login_btn span:after {content: ''; display: block; width: 100%; height: 2px; background: #fff;}
 .info_wrap .info_header .user_profile {width: 60px; height: 60px; border-radius: 50%; background: #fff; border: 5px solid #CDCEFF; font-size: 30px; text-align: center; line-height: 50px;}
 .info_wrap .info_header .info_setting {display: block; margin-left: auto; width: 30px; height: 30px;}
 .info_wrap .ddp_wrap {position: relative; margin-top: -30px; transform: translateY(60px); padding: 20px; background: #fff; border-radius: 20px; box-shadow: 3px 3px 10px rgba(0,0,0,.1)}
