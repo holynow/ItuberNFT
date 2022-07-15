@@ -35,10 +35,12 @@
 .detail_cont .nft_info .nft_name {font-size: 20px; font-weight: 700;}
 .detail_cont .nft_info .char_name {display: flex; align-items: center; margin-top: 6px;}
 .detail_cont .nft_info .char_name > p {font-size: 15px; color: #555;}
+.detail_cont .nft_info .author_info p + p:before,
 .detail_cont .nft_info .char_name > p + p:before {content: ''; display: inline-block; width: 1px; height: 10px; margin: 0 10px; background: #ddd;}
-.detail_cont .nft_info .author_info {margin-top: 20px;}
-.detail_cont .nft_info .author_info > p {margin-top: 10px; font-size: 14px; color: #999;}
-.detail_cont .nft_info .author_info > p > a {color: #6166FF;}
+.detail_cont .nft_info .author_info {display: flex; margin-top: 10px;}
+.detail_cont .nft_info .author_info > p {font-size: 14px; color: #999;}
+.detail_cont .nft_info .author_info + .ip_name {margin-top: 10px;}
+.detail_cont .nft_info .ip_name > a {color: #6166FF;}
 .detail_cont .cont_list_wrap {margin-top: 40px;}
 .detail_cont .cont_list_wrap .accord_wrap + .accord_wrap {margin-top: 40px;}
 .detail_cont .cont_list_wrap .accord_wrap .accord_item {padding: 0 20px;}
