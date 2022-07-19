@@ -109,6 +109,8 @@ label > .ico_ess::before {margin-bottom: 9px;}
 .slide_wrap .table_wrap .table_cont {overflow: auto;}
 .slide_wrap .table_wrap table {width: 700px; margin-top: 10px; border-top: 2px solid #333;}
 .slide_wrap .table_wrap table tr th {background: #f2f2ff;}
+.slide_wrap.type02 .table_wrap table {width: 100%;} 
+.slide_wrap.type02 .sub_tit_wrap {display: flex; justify-content: flex-end; align-items: center;}
 
 /* table */
 .table_wrap table {width: 100%; border-collapse: collapse;}
