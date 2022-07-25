@@ -93,6 +93,8 @@ label > .ico_ess::before {margin-bottom: 9px;}
 .header .header_inner {display: flex; justify-content: space-between; align-items: center; padding: 0 20px; height: 100%;}
 .header .header_inner .header_title {display: flex; align-items: center;}
 .header .header_inner .header_title .page_title {padding-left: 20px; font-size: 16px; font-weight: 500;}
+.header .header_title .header_logo {width: 90px;}
+.header .header_title .header_lgoo img {width: 100%;}
 .header .header_inner .header_menu .btn_menu {width: 30px; height: 30px; position: relative;}
 .header .header_inner .header_menu .btn_menu:before,
 .header .header_inner .header_menu .btn_menu:after {content: ''; display: block; position: absolute; top: 0; right: 15px; width: 3px; height: 30px; background: #333; transition: all .2s ease-in-out; z-index: 101;}
@@ -405,23 +407,23 @@ fieldset + .point_note {margin-top: 60px;}
 .ui-datepicker select.ui-datepicker-month {margin-right: 10px; width: 30%; border: 1px solid #ddd; border-radius: 5px; padding: 2px 5px;}
 /* footer */
 .footer {background: #333;}
-.footer .footer_inner {padding: 30px 20px 100px;}
+.footer .footer_inner {padding: 20px 20px 100px;}
 .footer .footer_inner .footer_head {display: flex; align-items: center; justify-content: space-between;}
-.footer .footer_inner .footer_head .office_name p {font-size: 18px; font-weight: 500; color: #fff;}
+.footer .footer_inner .footer_head .office_name p {font-size: 16px; font-weight: 500; color: #fff;}
 .footer .footer_inner .footer_head .footer_btn_wrap .sns_btns {display: flex; justify-content: flex-end;}
 .footer .footer_inner .footer_head .footer_btn_wrap .sns_btns li > a {display: block;}
 .footer .footer_inner .footer_head .footer_btn_wrap .sns_btns li + li {margin-left: 10px;}
-.footer .footer_inner .footer_info .footer_sort_list {margin-top: 40px;}
+.footer .footer_inner .footer_info .footer_sort_list {margin-top: 20px;}
 .footer .footer_inner .footer_info .footer_sort_list li {display: flex; font-size: 13px;}
-.footer .footer_inner .footer_info .footer_sort_list li + li {margin-top: 6px;}
-.footer .footer_inner .footer_info .footer_sort_list .tit {font-weight: 500; color: #ddd;}
-.footer .footer_inner .footer_info .footer_sort_list .txt {padding-left: 10px; color: #ddd;}
+.footer .footer_inner .footer_info .footer_sort_list li + li {margin-top: 5px;}
+.footer .footer_inner .footer_info .footer_sort_list .tit {font-weight: 500; color: #999;}
+.footer .footer_inner .footer_info .footer_sort_list .txt {padding-left: 10px; color: #999;}
 .footer .footer_inner .footer_info .footer_sort_list .txt:before {content: ''; display: inline-block; margin-right: 10px; width: 1px; height: 10px; background: #555;}
-.footer .footer_inner .footer_menu .copy {margin-top: 30px; font-size: 12px; color: #ddd;}
-.footer .footer_inner .footer_menu {margin-top: 20px; padding-top: 20px; border-top: 1px solid #555;}
+.footer .footer_inner .footer_menu .copy {margin-top: 20px; font-size: 12px; color: #999;}
+.footer .footer_inner .footer_menu {margin-top: 10px; padding-top: 10px; border-top: 1px solid #555;}
 .footer .footer_inner .footer_menu .footer_menu_list {display: flex; justify-content: flex-start;}
 .footer .footer_inner .footer_menu .footer_menu_list li + li {margin-left: 20px;}
-.footer .footer_inner .footer_menu .footer_menu_list li span {position: relative; font-size: 12px; color: #fff; border-bottom: 1px solid #ddd;}
+.footer .footer_inner .footer_menu .footer_menu_list li span {position: relative; font-size: 12px; color: #999; border-bottom: 1px solid #999;}
 
 /* ico */
 span + i[class^="ico"] {margin-left: 5px;}
