@@ -36,7 +36,7 @@ $(function () {
         scrollEvent: {
             gnbBar: '.follow_gnb_bar',
             topBtn: '.fixed_bottom_area',
-            section: '.section',
+            // section: '.section',
             init: function () {
                 var _this = this;
                 $('body').on('scroll', function () {
