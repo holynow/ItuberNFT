@@ -344,7 +344,6 @@ $(function () {
             }   
         }
     }
-  
     isMobile()
     ui.init();
 })

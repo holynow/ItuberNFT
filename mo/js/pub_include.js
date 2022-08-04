@@ -125,7 +125,7 @@ var include = {
         document.write('</li>');
         document.write('<li>');
         document.write('<span class="tit">E-mail</span>');
-        document.write('<span class="txt">i-tuber@dooribun.com</span>');
+        document.write('<span class="txt">itubernft@dooribun.com</span>');
         document.write('</li>');
         document.write('</ul>');
         document.write('</div>');
