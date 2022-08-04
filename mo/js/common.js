@@ -339,8 +339,8 @@ $(function () {
                 contentArea[i].classList.add('mobile')
             }   
         }else{
-            for (var i = 0; i <= contentArea.length - 1; i++) {
-                contentArea[i].classList.remove('mobile')
+            for (var j = 0; j <= contentArea.length - 1; j++) {
+                contentArea[j].classList.remove('mobile')
             }   
         }
     }
