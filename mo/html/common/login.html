@@ -9,6 +9,7 @@
     <script>include.scripts();</script>
   </head>
   <body>
+    <div class="dim"></div>
     <div class="wrap">
       <!-- skip navi -->
       <script>include.skipNav();</script>
@@ -104,7 +105,32 @@
       <!-- fixed_bottom_area -->
       <script>include.fixBottom();</script>
       <!-- footer -->
-      <script>include.footer();</script>
+      <!-- <script>include.footer();</script> -->
+      <!-- pop area -->
+       <div class="pop_container layer_pop" id="popup01" style="display: block">
+        <div class="pop_inner">
+          <p>
+            크롬 외의 브라우저에서는 <br><span class="col_pur">일부 기능이 동작하지 않습니다.</span><br>
+            링크 복사 후 크롬 브라우저에서 열어주세요 
+          </p>
+          <div class="btn_group row2">
+            <button type="button" class="btn_round_h50_point link_copy">
+              <span>링크 복사</span>
+            </button>
+            <button type="button" class="btn_round_line_h50 pop_close">
+              <span>닫기</span>
+            </button>
+          </div>
+          <div class="checkbox_wrap">
+              <div class="check_list">
+                <div class="item">
+                  <input type="checkbox" id="checkbox1">
+                  <label for="checkbox1">오늘하루 열지 않기</label>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

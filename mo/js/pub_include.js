@@ -72,7 +72,7 @@ var include = {
         document.write('</li>');
         document.write('<li>');
         document.write('<a href="/mo/html/my/my_info.html" title="내 정보 페이지 이동">');
-        document.write('<span>MY INFO</span>');
+        document.write('<span>MY</span>');
         document.write('</a>');
         document.write('</li>');
         document.write('</ul>');

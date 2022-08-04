@@ -3,7 +3,7 @@
 /* main */
 .main {position: relative;}
 .main .content_area {padding-bottom: 0;}
-.main .header {position: absolute; top: 0; left: 0; width: 100%; z-index: 10;}
+.main .header {position: absolute; top: 0; left: 50%; transform: translate(-50%); width: 100%; z-index: 10;}
 .header.align_c .header_inner {justify-content: center;}
 .header.align_c .header_inner .header_title .page_title {padding: 0; color: #333; font-weight: 500; font-size: 20px;}
 .main .header.align_c .header_inner .header_title .page_title {color: #fff;}
@@ -19,8 +19,8 @@
 .main_cont {position: relative; margin-top: -120px; z-index: 1;}
 .main .search_wrap {position: relative; margin: 0 20px;}
 .main .search_wrap .search_bar {background-color: #fff;}
-.main .search_wrap + .sale_list_wrap {margin-top: 30px;}
-.main .sale_list_wrap {padding: 40px 30px 160px; background: #eee;}
+.main .search_wrap + .sale_list_wrap {margin-top: 30px; background: #fff;}
+.main .sale_list_wrap {padding: 40px 30px 80px; background: #eee;}
 
 /* sale list */
 .nft_detail_wrap .act_bar {display: flex; justify-content: space-between; align-items: center; width: 100%; height: 50px; padding: 0 20px; border-bottom: 1px solid #ddd;}
@@ -57,19 +57,21 @@
 .detail_cont .total_trans_wrap {position: relative; height: 200px; overflow-y: auto;}
 .detail_cont .total_trans_wrap .no_result_area {margin: 0 auto; padding: 60px 0; text-align: center; font-size: 14px;}
 .detail_cont .btn_group + .refer {margin-top: 20px; font-size: 12px; color: #999;}
+.detail_cont .sale_list {margin: 40px 0; height: 310px;}
+.tit_wrap + .detail_cont .sale_list {margin-top: 10px;}
 .detail_cont .sale_list table tr {position: relative;}
-.detail_cont .sale_list table tr th {background: #fff;}
-.detail_cont .sale_list table tr td {background: #fff;}
-.detail_cont .sale_list table tr:nth-child(odd) td {background: #F6F3FF;}
+.detail_cont .sale_list table tr th {background: #fff; font-size: 16px;}
+.detail_cont .sale_list table tr td {background: #fff; padding: 20px 0; font-size: 16px;}
 .detail_cont .sale_list table td label {position: absolute; top: 0; left: 0; width: calc(100% - 10px); height: 100%;}
 .detail_cont dl + .sale_list, 
 .detail_cont .sale_list + dl {margin-top: 30px;}
 .detail_cont .sale_list + .btn_group {margin-top: 40px;}
-.detail_cont .sale_list table td.checkbox_wrap input[type="radio"] + label:before {position: absolute; left: 15px; top: 10px; opacity: .8;}
+.detail_cont .sale_list table td.checkbox_wrap input[type="radio"] + label:before {position: absolute; left: 35px; top: 20px; opacity: .8;}
 .nft_trans_wrap {margin-top:20px}
 .detail_cont .cont_list_wrap .accord_wrap .accord_item.full_type {padding: 0;}
 .detail_cont .cont_list_wrap .accord_wrap .accord_item.full_type .accord_btn {margin: 0 auto; width: calc(100% - 40px);}
 .detail_cont .cont_list_wrap .accord_wrap .accord_item.full_type .inner_txt {padding: 40px 20px 50px;}
+.detail_cont .cont_list_wrap .accord_wrap .tab_cont > .accord_item {margin: 20px 0; padding: 0;}
 /* card box wrap */
 .card_box_wrap .box_item {padding: 30px; border-radius: 20px; background: #f7f7f7;}
 .card_box_wrap .box_item .no_result {text-align: center;}
@@ -85,7 +87,7 @@
 .card_box_wrap .box_item .final_price {margin-top: 30px; padding-top: 30px; border-top: 1px solid #ddd;}
 .card_box_wrap .box_item .final_price dd > span {font-size: 30px;}
 .card_box_wrap .box_item .box_tit {display: flex; justify-content: space-between; align-items: center;}
-.card_box_wrap .box_item .perchase_quant select {background: none; font-size: 20px; font-weight: 700; border-bottom: 1px solid #ddd; }
+.card_box_wrap .box_item .perchase_quant select {padding: 0 5px 0 0; font-size: 20px; font-weight: 700; border-bottom: 1px solid #222; background: transparent; appearance: auto;}
 .card_box_wrap .box_item.my_point {background: #6166FF;}
 .card_box_wrap .box_item.my_point .box_tit > p {font-size: 14px; color: #fff;}
 .card_box_wrap .box_item.my_point .box_tit span {font-size: 14px; color: #fff;}
@@ -116,7 +118,7 @@
 .item_wrap[class*="row"] {display: grid; grid-gap: 20px; gap: 20px;}
 .item_wrap[class*="row"][class*="_1"] {grid-template-columns: 1fr;}
 .item_wrap[class*="row"][class*="_2"] {grid-template-columns: repeat(2, 1fr);}
-.item_wrap .item {position: relative; border-radius: 10px; overflow: hidden;}
+.item_wrap .item {position: relative; border-radius: 10px; overflow: hidden; box-shadow: 2px 2px 10px rgba(0,0,0,.1);}
 .item_wrap .item .item_img {position: relative; overflow: hidden; height: auto;} 
 .item_wrap .item .item_img img {width: 100%;}
 .item_wrap .item .item_info {padding: 20px; background: #fff;}
@@ -169,7 +171,7 @@
 .publish_info + .btn_group {margin-top: 30px;}
 
 /* my */
-.my_info .header {background: #6166FF;}
+.my_info .header {background: #6166FF!important;}
 .my_info .header .page_title {color: #fff;}
 .my_info .header .header_title i[class^="ico"][class*="arr"][class*="left"]:before {width: 10px; height: 20px; background: url('../img/common/ico_arr_left_wh.png')no-repeat; background-size: 10px;}
 .info_wrap {position: relative;}
@@ -198,17 +200,19 @@
 .inner_wrap .gnb_list_wrap .order_list {display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 30px; font-size: 15px; font-weight: 500;}
 .inner_wrap .gnb_list_wrap .order_list li {text-align: center;}
 .inner_wrap .gnb_list_wrap .order_list li .icon {margin: 0 auto 5px; width: 30px;}
-.inner_wrap .gnb_list_wrap .notice_list {margin-top: 20px; padding: 0 10px;}
+.inner_wrap .gnb_list_wrap .gnb_tit + .notice_list {margin-top: 20px;}
+.inner_wrap .gnb_list_wrap .notice_list {padding: 0 10px;}
 .inner_wrap .gnb_list_wrap .notice_list li {font-size: 15px; font-weight: 500;}
 .inner_wrap .gnb_list_wrap .notice_list li + li {margin-top: 20px;}
-.info_wrap .logout_btn {position: absolute; top: -45px; right: 20px;}
-.info_wrap .logout_btn span {padding-left: 35px; font-size: 18px; vertical-align: -webkit-baseline-middle; color: #fff;}
+.inner_wrap .gnb_list_wrap .join_btn span {font-size: 18px; font-weight: 500;}
+.inner_wrap .gnb_list_wrap .join_btn span::after {content: ''; margin-left: 5px; width: 10px; height: 14px; display: inline-block; box-sizing: border-box; background: url('../img/common/ico_arr_right_pp.png')no-repeat; background-size: 100%;}
+.info_wrap .logout_btn span {padding-left: 25px; font-size: 18px; font-weight: 700; color: #333;}
 .info_wrap.modify .info_header {padding: 50px 0; margin-bottom: 40px;}
 .info_wrap.modify .info_header .my_profile {margin: 0 auto; width: 80px; height: 80px; border-radius: 50%; background: #fff; border: 5px solid #CDCEFF; font-size: 35px; text-align: center; line-height: 70px;}
  
 /* my nft */
 .my_nft .content_area {padding-bottom: 0; background: #f7f7f7;}
-.my_nft .inner_wrap {padding: 40px 20px 100px;}
+.my_nft .inner_wrap {padding: 40px 20px 60px;}
 .my_nft .nft_list .sub_tit_wrap {display: flex; justify-content: space-between;}
 .my_nft .nft_list .sub_tit_wrap .total_num p {font-size: 13px; color: #999;}
 .my_nft .nft_list .sub_tit_wrap .total_num p > span {padding: 0 5px; font-size: 16px; font-weight: 500;}
@@ -323,6 +327,7 @@
 .section_wrap .section .section_tit p {margin-top: 10px; font-size: 14px; line-height: 20px;}
 
 /* customer */
+.customer_wrap {margin-top: 40px;}
 .customer_wrap .customer_box {padding: 50px 40px; width: 100%; height: 383px; background-color: #6166FF; border-radius: 20px; text-align: center; background-image: url('../img/etc/img_customer.png'); background-repeat: no-repeat; background-size: contain; background-position: center bottom;}
 .customer_wrap .customer_box > em {font-size: 16px; color: #fff; font-weight: 500;}
 .customer_wrap .customer_box > p {margin-top: 10px; font-size: 28px; color: #fff; font-weight: 700;}
@@ -342,10 +347,11 @@
 .section .section_tit em,
 .section .section_tit h3,
 .section .section_tit p {color: #fff;}
-.section.want:before {content: ''; display: block; position: absolute; bottom: -80px; left: -20px; width: 375px; height: 100%; background: url('../img/etc/img_hand.png')no-repeat bottom center; background-size: 100%; z-index: 1;}
+.section.want:before {content: ''; display: block; position: absolute; bottom: -80px; left: 0; width: 375px; height: 100%; background: url('../img/etc/img_hand.png')no-repeat bottom center; background-size: 100%; z-index: 1;}
 .section.want:after {content: ''; display: block; position: absolute; bottom: 70px; left: 50%; width: 166px; height: 230px; background: url('../img/etc/img_character_card.png')no-repeat center; background-size: 100%; animation: infinity 3s linear infinite; z-index: 2; filter: drop-shadow(0px 0px 20px #DB27FF);}
+@media (max-width:430px) {.section.want:before {left: -20px;}}
 .section.want {background: url('../img/etc/bg_section2.png')no-repeat top center; background-size: cover;}
-.section.value {background: #504DC6; z-index: -3;}
+.section.value {background: #504DC6;}
 .section.value .char {position: absolute; left: 50%; bottom: -30px; transform: translateX(-50%); margin: 0 auto; width: 300px; z-index: 1; animation: fadeup 1s forwards linear; opacity: 1;}
 .section.value .coins {position: absolute; left: 50%; bottom: -10px; transform: translateX(-46%); margin: 0 auto; width: 340px; z-index: 0; animation: fadedown 1s forwards linear; opacity: 1;}
 .section.value .char img,
@@ -354,9 +360,9 @@
 .section.value.on .coin .coin1 {width: 180px; animation: coinAni 1.5s forwards ease-in-out; top: 40%; left: 75%; transform: translate(0) scale(0) rotate(-400deg);}
 .section.value.on .coin .coin2 {width: 140px; animation: coinAni 1.5s forwards ease-in-out; top: 30%; left: -9%; transform: translate(0) scale(0) rotate(500deg);}
 .section.value.on .coin .coin3 {width: 90px; animation: coinAni 1.5s forwards ease-in-out; top: 70%; left: 5%; transform: translate(0) scale(0) rotate(500deg);}
-.section.value.on::before {content: ''; display: block; position: absolute; left:0; bottom: 150px; width: 365px; height: 305px; background: url('../img/etc/img_graph_arrow.png')no-repeat center; background-size: 100%; z-index: -2; animation: opacity 2s linear forwards;}
-.section.value.on::after {content: ''; display: block; position: absolute; bottom: 0; width: 100%; height: 100%; background: #504DC6; z-index: -1; animation: arrowMove 1s linear forwards;}
-.section.sale {height: 1000px; background: #403B9C; z-index: -4;}
+.section.value.on::before {content: ''; display: block; position: absolute; left:0; bottom: 150px; width: 365px; height: 305px; background: url('../img/etc/img_graph_arrow.png')no-repeat center; background-size: 100%; animation: opacity 2s linear forwards;}
+.section.value.on::after {content: ''; display: block; position: absolute; bottom: 0; width: 100%; height: 100%; background: #504DC6; animation: arrowMove 1s linear forwards;}
+.section.sale {height: 1000px; background: #403B9C;}
 .section.sale .nft_card ul li {position: absolute; left: 50%; top: 30%; transform: translateX(-50%); transition: all 1.5s ease-in-out; z-index: 1; filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .2));}
 .section.sale .nft_card ul .card01 {width: 170px; z-index: 2;}
 .section.sale .nft_card ul .card02 {width: 106px;}
@@ -370,9 +376,9 @@
 .section.sale.on .nft_card ul li.card05 {top: 420px; left: 92%;}
 .section.sale.on .nft_card ul li.card06 {top: 540px; left: 75%;}
 .section.sale.on .nft_card ul li img {width: 100%;}
-.section.sale:after {content: ''; display: block; position: absolute; top: 40%; width: 100%; height: 1100px; background: url('/mo/img/etc/bg_last.png')no-repeat; background-size: cover; z-index: -1;}
-.section.now {margin-top: -300px; z-index: -2;}
-.section.now:before {content: ''; display: block; position: absolute; top: 0; width: 100%; height: 100%; background: url('/mo/img/etc/bg_now.png')no-repeat; background-size: 100%; z-index: -2;}
+.section.sale:after {content: ''; display: block; position: absolute; top: 40%; width: 100%; height: 1100px; background: url('/mo/img/etc/bg_last.png')no-repeat; background-size: cover; }
+.section.now {margin-top: -300px;}
+.section.now:before {content: ''; display: block; position: absolute; top: 0; width: 100%; height: 100%; background: url('/mo/img/etc/bg_now.png')no-repeat; background-size: 100%;}
 .section.now .logo {max-width: 110px; margin: 0 auto;}
 .section.now .logo + p {margin: 25px 0 30px; color: #fff; font-size: 22px; line-height: 30px; text-align: center;}
 .section.now .logo + p span {font-weight: 700; color: #fff;}

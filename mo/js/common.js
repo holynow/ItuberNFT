@@ -95,7 +95,10 @@ $(function () {
             init: function () {
                 var _this = this;
                 $(_this.tooltipBtn).on('click', function () {
-                    $(this).toggleClass('on')
+                    if (!$(this).hasClass('on')) {
+                        $(this).addClass('on')
+                    }
+                    
                 })
             }
         },
@@ -326,6 +329,10 @@ $(function () {
             }
         }
     };
-   
+    // mobile check
+    if (window.orientation !== undefined) {
+        let contentArea = $('html, .footer, .content_area, .follow_gnb_bar');
+        contentArea.addClass('mobile');
+    }
     ui.init();
 })
