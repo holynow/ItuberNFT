@@ -331,14 +331,14 @@ $(function () {
     };
     // mobile check
     function isMobile() {
+        var contentArea = document.querySelectorAll('html, .footer, .content_area, .follow_gnb_bar')
         var UserAgent = navigator.userAgent;
         if (UserAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null)
         {
-            var contentArea = document.querySelectorAll('html, .footer, .content_area, .follow_gnb_bar')
             for (var i = 0; i <= contentArea.length - 1; i++) {
                 contentArea[i].classList.add('mobile')
             }   
-        }else{
+        } else{
             for (var j = 0; j <= contentArea.length - 1; j++) {
                 contentArea[j].classList.remove('mobile')
             }   
