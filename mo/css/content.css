@@ -134,10 +134,14 @@
 .item_wrap .item .item_info .point_area .value > span {padding-right: 5px; font-size: 30px; font-weight: 700;}
 .status_badge {position: absolute; top: 15px; left: 15px; z-index: 1;}
 .status_badge span {padding: 4px 10px; font-size: 13px; color: #fff; border-radius: 3px;}
+.status_badge span + span {margin-left: 5px;}
 .on_sale .status_badge span {background: #000;}
 .end_sale .status_badge span {background: #BF0000;}
 .wait .status_badge span {background: #555;}
+.status_badge span.deadline {background: #ff00bc;}
 .end_sale.sold_out::before{content: ''; display: block; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); width: 80px; height: 80px; background: url('../img/market/ico_soldout_badge.png')no-repeat; z-index: 1; background-size: 100%;}
+.main_cont .end_sale.sold_out .item_img::before{content: ''; display: block; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); width: 80px; height: 80px; background: url('../img/market/ico_soldout_badge.png')no-repeat; z-index: 1; background-size: 100%;}
+.main_cont .end_sale.sold_out::before {display: none;}
 .item_wrap + .btn_group {margin-top: 40px;}
 
 /* item_list row2 (marketplace) */
@@ -396,6 +400,9 @@
 .section.use .use_list_wrap ul li .img {max-width: 80px;}
 .section.use .use_list_wrap ul li em {font-size: 20px; color: #fff; font-weight: 700;}
 .section.use .use_list_wrap ul li p {margin-top: 5px; font-size: 12px; line-height: 16px; color: #fff;}
+/* 알림팝 추가 */
+.notification_pop {position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%); margin: 0 auto; text-align: center; animation: opacity .4s ease-in-out; }
+.notification_pop > span {padding: 15px 20px; background: rgba(0,0,0,.8); color: #fff; font-size: 16px; border-radius: 10px;}
 @keyframes fadedown {
     0% {
         opacity: 0;

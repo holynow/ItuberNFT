@@ -9,7 +9,6 @@
     <script>include.scripts();</script>
   </head>
   <body>
-    <div class="dim"></div>
     <div class="wrap">
       <!-- skip navi -->
       <script>include.skipNav();</script>
@@ -107,7 +106,7 @@
       <!-- footer -->
       <!-- <script>include.footer();</script> -->
       <!-- pop area -->
-       <div class="pop_container layer_pop" id="popup01" style="display: block">
+       <div class="pop_container layer_pop" id="popup01">
         <div class="pop_inner">
           <p>
             크롬 외의 브라우저에서는 <br><span class="col_pur">일부 기능이 동작하지 않습니다.</span><br>
@@ -115,7 +114,7 @@
           </p>
           <div class="btn_group row2">
             <button type="button" class="btn_round_h50_point link_copy">
-              <span>링크 복사</span>
+              <span class="copy_btn">링크 복사</span>
             </button>
             <button type="button" class="btn_round_line_h50 pop_close">
               <span>닫기</span>
@@ -130,6 +129,10 @@
               </div>
           </div>
         </div>
+      </div>
+      <!-- 알림창 -->
+      <div class="notification_pop">
+        <span>링크가 복사되었습니다.</span>
       </div>
     </div>
   </body>
