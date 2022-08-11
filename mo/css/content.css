@@ -61,12 +61,12 @@
 .tit_wrap + .detail_cont .sale_list {margin-top: 10px;}
 .detail_cont .sale_list table tr {position: relative;}
 .detail_cont .sale_list table tr th {background: #fff; font-size: 16px;}
-.detail_cont .sale_list table tr td {background: #fff; padding: 20px 0; font-size: 16px;}
-.detail_cont .sale_list table td label {position: absolute; top: 0; left: 0; width: calc(100% - 10px); height: 100%;}
+.detail_cont .sale_list table tr td {position: relative; background: #fff; padding: 20px 0; font-size: 16px;}
+.detail_cont .sale_list table td label {position: absolute; top: 0; right: 0; left: 0; margin: 0 auto; width: calc(100% - 10px); height: 100%;}
 .detail_cont dl + .sale_list, 
 .detail_cont .sale_list + dl {margin-top: 30px;}
 .detail_cont .sale_list + .btn_group {margin-top: 40px;}
-.detail_cont .sale_list table td.checkbox_wrap input[type="radio"] + label:before {position: absolute; left: 35px; top: 20px; opacity: .8;}
+.detail_cont .sale_list table td.checkbox_wrap input[type="radio"] + label:before {position: absolute; left: 0; right: 0; top: 20px; margin: 0 auto; opacity: .8;}
 .nft_trans_wrap {margin-top:20px}
 .detail_cont .cont_list_wrap .accord_wrap .accord_item.full_type {padding: 0;}
 .detail_cont .cont_list_wrap .accord_wrap .accord_item.full_type .accord_btn {margin: 0 auto; width: calc(100% - 40px);}
@@ -140,7 +140,7 @@
 .wait .status_badge span {background: #555;}
 .status_badge span.deadline {background: #ff00bc;}
 .end_sale.sold_out::before{content: ''; display: block; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); width: 80px; height: 80px; background: url('../img/market/ico_soldout_badge.png')no-repeat; z-index: 1; background-size: 100%;}
-.main_cont .end_sale.sold_out .item_img::before{content: ''; display: block; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); width: 80px; height: 80px; background: url('../img/market/ico_soldout_badge.png')no-repeat; z-index: 1; background-size: 100%;}
+.main_cont .end_sale.sold_out .item_img::before{content: ''; display: block; position: absolute; bottom: 20px; right: 20px; width: 80px; height: 80px; background: url('../img/market/ico_soldout_badge.png')no-repeat; z-index: 1; background-size: 100%;}
 .main_cont .end_sale.sold_out::before {display: none;}
 .item_wrap + .btn_group {margin-top: 40px;}
 
