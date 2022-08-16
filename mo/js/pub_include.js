@@ -83,7 +83,7 @@ var include = {
         document.write('<div class="footer_inner">');
         document.write('<div class="footer_head">');
         document.write('<div class="office_name">');
-        document.write('<p>I-TUBER NFT</p>');
+        document.write('<p>DOORIBUN</p>');
         document.write('</div>');
         document.write('<div class="footer_btn_wrap">');
         document.write('<ul class="sns_btns">');
