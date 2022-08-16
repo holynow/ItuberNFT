@@ -84,7 +84,7 @@ label > .ico_ess::before {margin-bottom: 9px;}
 .inner_wrap {padding: 0 20px;}
 
 /* fixed bottom */
-.fixed_bottom_area {position: fixed; right: 15px; bottom: 80px; z-index: 99; opacity: 0; transition: all .4s ease-in-out;}
+.fixed_bottom_area {position: fixed; right: 3%; bottom: 80px; z-index: 99; opacity: 0; transition: all .4s ease-in-out;}
 .fixed_bottom_area.on {transform: translateY(0px); opacity: 1;}
 .fixed_bottom_area .fixed_item button {width: 40px; height: 40px; border-radius: 50px; background: rgba(0,0,0,.5);}
 .fixed_bottom_area .fixed_item button > span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 0;}
