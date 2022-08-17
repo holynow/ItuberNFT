@@ -403,6 +403,28 @@
 /* 알림팝 추가 */
 .notification_pop {position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%); margin: 0 auto; text-align: center; animation: opacity .4s ease-in-out; }
 .notification_pop > span {padding: 15px 20px; background: rgba(0,0,0,.8); color: #fff; font-size: 16px; border-radius: 10px;}
+/* 404 page */
+.error_page {padding: 0!important;}
+.error_page .error_404 {display: flex; flex-direction: column; align-items: center; height: 100vh; padding: 200px 20px 0; background: url('/mo/img/common/img_404_ch.png')no-repeat center 120%; background-size: 500px; background-color: azure;}
+.error_page .error_404 .tit {text-align: center;}
+.error_page .error_404 .tit h1 {margin-bottom: 10px; font-size: 120px;}
+.error_page .error_404 .tit h1 + p {margin-bottom: 20px; font-size: 24px; color: #333; font-weight: bold; line-height: 1.6;}
+.error_page .error_404 .tit p {font-size: 16px; color: #555; line-height: 1.6;}
+.btn-home {margin-top: 40px; background: #5358E3; border: 1px solid #555; height: 50px; padding: 0 40px; text-align: center; border-radius: 5px;}
+.btn-home span {font-size: 16px; color: #fff; line-height: 50px; font-weight: bold;}
+@media (max-width:500px) {
+    .error-page .error_404 .tit h1 {font-size: 80px;}
+    .error-page .error_404 .tit h1 + p {font-size: 17px;}
+    .error-page .error_404 .tit p {font-size: 14px;}
+}
+    @media (max-height:750px) {
+    .error_page .error_404 {padding-top: 100px;}
+    .ituber-logo {max-width: 80px;}
+}
+@media (max-height:845px) {
+    .error_page .error_404 {background-size: 300px;}
+    .ituber_logo {max-width: 80px;}
+}
 @keyframes fadedown {
     0% {
         opacity: 0;
