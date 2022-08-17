@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>        
+        html,body,div,h1,h2,p,span,ul,li,button,a {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif; line-height: 1.2; letter-spacing: -0.025em; color: #333;}
+        a{text-decoration: none;}
+        /* font */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        /* error */
+        .col-pur {color: #5358E3;}
+        .error-page.error-404 {display: flex;  padding: 100px 20px 0; flex-direction: column; align-items: center; height: 100vh; background: url('https://ituber-dev.s3.ap-northeast-2.amazonaws.com/img/common/img_404_ch.png')no-repeat center 120%; background-size: 500px; background-color: azure;}
+        .error-page.error-404 .tit {text-align: center;}
+        .error-page.error-404 .tit h1 {margin-bottom: 10px; font-size: 120px;}
+        .error-page.error-404 .tit h1 + p {margin-bottom: 20px; font-size: 24px; color: #333; font-weight: bold; line-height: 1.6;}
+        .error-page.error-404 .tit p {font-size: 16px; color: #555; line-height: 1.6;}
+        .btn-home {margin-top: 40px; background: #5358E3; border: 1px solid #555; height: 50px; padding: 0 40px; text-align: center; border-radius: 5px;}
+        .btn-home span {font-size: 16px; color: #fff; line-height: 50px; font-weight: bold;}
+        .ituber-logo {position: fixed; left: 0; right: 0; bottom: 3%; max-width: 120px; margin: 0 auto;}
+        .ituber-logo img {width: 100%;}
+        @media (max-width:500px) {
+            .error-page.error-404 .tit h1 {font-size: 80px;}
+            .error-page.error-404 .tit h1 + p {font-size: 17px;}
+            .error-page.error-404 .tit p {font-size: 14px;}
+        }
+        @media (max-height:840px) {
+            .error-page.error-404 {background-size: 300px;}
+            .ituber-logo {max-width: 80px;}
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+        <div class="error-page error-404">
+            <div class="tit">
+                <!-- <i class="ico-warning"></i> -->
+                <h1 class="col-pur">404</h1>
+                <p>원하시는 페이지를 찾을 수 없습니다.</p>
+                <p>찾으려는 페이지의 주소가 잘못 입력되었거나, 주소의 변경 혹은 삭제로 인해 사용하실 수 없습니다.</p>
+                <p>입력하신 주소가 정확한지 다시 한번 확인해 주시기 바랍니다.</p>
+            </div>
+            <a href="#none" class="btn-home">
+                <span>홈으로 가기</span>
+            </a>
+           <div class="ituber-logo">
+                <img src="https://ituber-dev.s3.ap-northeast-2.amazonaws.com/img/common/img_logo_wh.png" alt="">
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
