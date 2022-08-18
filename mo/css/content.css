@@ -72,6 +72,11 @@
 .detail_cont .cont_list_wrap .accord_wrap .accord_item.full_type .accord_btn {margin: 0 auto; width: calc(100% - 40px);}
 .detail_cont .cont_list_wrap .accord_wrap .accord_item.full_type .inner_txt {padding: 40px 20px 50px;}
 .detail_cont .cont_list_wrap .accord_wrap .tab_cont > .accord_item {margin: 20px 0; padding: 0;}
+
+/* top banner */
+.top_banner {display: flex; align-items: center; color: #333; height: 100px; margin: 30px 0; padding: 20px; background: url('/mo/img/market/img_top_banner.jpg') 100%; background-size: cover;}
+.top_banner p {width: 100%; text-align: right; line-height: 1.5; font-size: 14px;}
+
 /* card box wrap */
 .card_box_wrap .box_item {padding: 30px; border-radius: 20px; background: #f7f7f7;}
 .card_box_wrap .box_item .no_result {text-align: center;}

@@ -4,6 +4,9 @@ var include = {
         document.write('<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>');
         document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>');
         document.write('<meta name="format-detection" content="telephone=no"/>');
+        document.write('<meta name="naver-site-verification" content="6d88449a60af38802fc30f6dc79af0c504e6d867" />');
+        document.write('<meta name="google-site-verification" content="msWIoH7rao4XAo3WDfCX9dzytu9PUk4RpL--jWqqv1c" />');
+        document.write('<meta name="facebook-domain-verification" content="ft62cbkaw4xu9nmyo70kfwf5al1972" />');
     },
     styles: function () {
         document.write('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.css">');
