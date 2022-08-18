@@ -7,6 +7,9 @@ var include = {
         document.write('<meta name="naver-site-verification" content="6d88449a60af38802fc30f6dc79af0c504e6d867" />');
         document.write('<meta name="google-site-verification" content="msWIoH7rao4XAo3WDfCX9dzytu9PUk4RpL--jWqqv1c" />');
         document.write('<meta name="facebook-domain-verification" content="ft62cbkaw4xu9nmyo70kfwf5al1972" />');
+        document.write('<meta name="title" content="아이튜버NFT">')        
+        document.write('<meta name="keywords" content="아이튜버, 두리번, 아이튜버NFT, I-TUBER NFT, 아이튜버 크리에이터">')
+        document.write('<meta name="description" content="콘텐츠 제작이 가능한 캐릭터전문 NFT를 사고 팔 수 있는 거래소로, 콘텐츠의 인지도가 확산되면 NFT 가치도 함께 올라갑니다.">')        
     },
     styles: function () {
         document.write('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.css">');
