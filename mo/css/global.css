@@ -377,6 +377,10 @@ fieldset + .point_note {margin-top: 60px;}
 .follow_gnb_bar .gnb_list_wrap li span:before {content: ''; display: block; padding-top: 3px; margin: 0 auto; width: 30px; height: 30px;}
 .follow_gnb_bar .gnb_list_wrap li:nth-child(1) span:before {background: url('/mo/img/common/ico_gnb_opensale.png')no-repeat; background-size: 100%;}
 .follow_gnb_bar .gnb_list_wrap li.active:nth-child(1) span:before {background: url('/mo/img/common/ico_gnb_opensale_act.png')no-repeat; background-size: 100%;}
+.follow_gnb_bar .gnb_list_wrap li.active:nth-child(2) span:before {background: url('/mo/img/common/ico_market_place_act.png')no-repeat; background-size: 100%;}
+.follow_gnb_bar .gnb_list_wrap li.active:nth-child(3) span:before {background: url('/mo/img/common/ico_gnb_like_act.png')no-repeat; background-size: 100%;}
+.follow_gnb_bar .gnb_list_wrap li.active:nth-child(4) span:before {background: url('/mo/img/common/ico_gnb_mynft_act.png')no-repeat; background-size: 100%;}
+.follow_gnb_bar .gnb_list_wrap li.active:nth-child(5) span:before {background: url('/mo/img/common/ico_gnb_myinfo_act.png')no-repeat; background-size: 100%;}
 .follow_gnb_bar .gnb_list_wrap li:nth-child(2) span:before {background: url('/mo/img/common/ico_market_place.png')no-repeat; background-size: 100%;}
 .follow_gnb_bar .gnb_list_wrap li:nth-child(3) span:before {background: url('/mo/img/common/ico_gnb_like.png')no-repeat; background-size: 100%;}
 .follow_gnb_bar .gnb_list_wrap li:nth-child(4) span:before {background: url('/mo/img/common/ico_gnb_mynft.png')no-repeat; background-size: 100%;}
