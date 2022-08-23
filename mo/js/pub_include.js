@@ -57,7 +57,7 @@ var include = {
     followGnb: function () {
         document.write('<div class="follow_gnb_bar">');
         document.write('<ul class="gnb_list_wrap">');
-        document.write('<li>');
+        document.write('<li class="active">');
         document.write('<a href="/mo/index.html" title="open sale 페이지 이동">');
         document.write('<span>OPEN SALE</span>');
         document.write('</a>');

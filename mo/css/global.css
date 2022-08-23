@@ -376,10 +376,12 @@ fieldset + .point_note {margin-top: 60px;}
 .follow_gnb_bar .gnb_list_wrap li {flex: 1; font-size: 10px; font-weight: 500; text-align: center;}
 .follow_gnb_bar .gnb_list_wrap li span:before {content: ''; display: block; padding-top: 3px; margin: 0 auto; width: 30px; height: 30px;}
 .follow_gnb_bar .gnb_list_wrap li:nth-child(1) span:before {background: url('/mo/img/common/ico_gnb_opensale.png')no-repeat; background-size: 100%;}
+.follow_gnb_bar .gnb_list_wrap li.active:nth-child(1) span:before {background: url('/mo/img/common/ico_gnb_opensale_act.png')no-repeat; background-size: 100%;}
 .follow_gnb_bar .gnb_list_wrap li:nth-child(2) span:before {background: url('/mo/img/common/ico_market_place.png')no-repeat; background-size: 100%;}
 .follow_gnb_bar .gnb_list_wrap li:nth-child(3) span:before {background: url('/mo/img/common/ico_gnb_like.png')no-repeat; background-size: 100%;}
 .follow_gnb_bar .gnb_list_wrap li:nth-child(4) span:before {background: url('/mo/img/common/ico_gnb_mynft.png')no-repeat; background-size: 100%;}
 .follow_gnb_bar .gnb_list_wrap li:nth-child(5) span:before {background: url('/mo/img/common/ico_gnb_myinfo.png')no-repeat; background-size: 100%;}
+.follow_gnb_bar .gnb_list_wrap li.active span {color: #6166FF;}
 
 /* 검색결과없음 */
 .no_result_wrap {margin-top: 20px; padding: 50px 0 50px; border-top: 1px solid #333;}
