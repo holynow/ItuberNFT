@@ -145,7 +145,7 @@
 .end_sale .status_badge span {background: #BF0000;}
 .wait .status_badge span {background: #555;}
 .status_badge span.deadline {background: #ff00bc;}
-.end_sale.sold_out::before{content: ''; display: block; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); width: 80px; height: 80px; background: url('../img/market/ico_soldout_badge.png')no-repeat; z-index: 1; background-size: 100%;}
+.end_sale.sold_out::before{content: ''; display: block; position: absolute; right: 20px; bottom: 20px; width: 80px; height: 80px; background: url('../img/market/ico_soldout_badge.png')no-repeat; z-index: 1; background-size: 100%;}
 .main_cont .end_sale.sold_out .item_img::before{content: ''; display: block; position: absolute; bottom: 20px; right: 20px; width: 80px; height: 80px; background: url('../img/market/ico_soldout_badge.png')no-repeat; z-index: 1; background-size: 100%;}
 .main_cont .end_sale.sold_out::before {display: none;}
 .item_wrap + .btn_group {margin-top: 40px;}
@@ -166,6 +166,9 @@
 .item_wrap.row_2 .item_info .bottom_area .result_num > span {display: inline-block; margin: 0 2px 0 0; font-size: 12px; color: #fff;}
 .item_wrap.row_2 .item_info .bottom_area .result_num span + span {margin: 0 0 0 2px;}
 .item_wrap .item.vod:before {content: ''; display: block; position: absolute; top: 10px; right: 10px; width: 30px; height: 24px; background: url('../img/common/ico_camera.png')no-repeat; background-size: 100%; z-index: 1;}
+.nft_detail_wrap .detail_header .nft_img.vod:after,
+.item_wrap.row_1 .item.vod:after {content: ''; display: block; position: absolute; top: 15px; right: 15px; width: 45px; height: 36px; background: url('../img/common/ico_camera.png')no-repeat; background-size: 100%; z-index: 1;}
+.item_wrap.row_1 .item.vod::before {display: none;}
 /* login area */
 .login_area .logo_title {display: block; padding: 50px 0 60px; margin: 0 auto; width: 162px; text-align: center;}
 .login_area .login_sns_area {margin-top: 50px;}

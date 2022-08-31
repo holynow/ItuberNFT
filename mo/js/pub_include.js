@@ -119,6 +119,10 @@ var include = {
         document.write('<div class="footer_address_wrap">');
         document.write('<ul class="footer_sort_list">');
         document.write('<li>');
+        document.write('<span class="tit">대표</span>');
+        document.write('<span class="txt">서국한</span>');
+        document.write('</li>');
+        document.write('<li>');
         document.write('<span class="tit">주소</span>');
         document.write('<span class="txt">서울시 마포구 토정로 194 (두리번)</span>');
         document.write('</li>');
