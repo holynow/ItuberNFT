@@ -1,5 +1,6 @@
 
 ## ituberNFT 홈페이지
-> 아이튜버의 캐릭터 NFT를 사고 팔수 있는 마켓입니다. 
+> 아이튜버의 캐릭터 NFT를 사고 판매할수 있는 마켓
+> > 디자인 100% / 퍼블리싱 100%
 
 [ituberNFT 링크](http://itubernft.com "아이튜버NFT")
